@@ -125,7 +125,7 @@ permalink: /team/
 
     <div class="person-card">
       <div class="img-circle">
-        <img src="/images/people/Pispisa.png" alt="Doct. Gaetano Pio Pispisa">
+        <img src="/images/people/Pispisa.png" alt="Doct. Gaetano Pio Pispisa" style="object-position: 75% top !important;">
       </div>
       <span class="person-name">Doct. Gaetano Pio Pispisa</span>
       <span class="person-role">PhD Student</span>
