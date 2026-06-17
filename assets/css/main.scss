@@ -1,12 +1,26 @@
 ---
 ---
 
-@import "so-simple";
-
-/* Rimpicciolisce l'immagine hero */
 .page-image img {
-  max-height: 400px;  /* cambia questo valore a piacere */
+  max-height: 400px;
   width: 100%;
-  object-fit: cover;  /* taglia i bordi senza distorcere */
-  object-position: center;  /* centra il crop */
+  object-fit: cover;
+  object-position: center;
+}
+.page-image {
+  position: relative;
+}
+
+.page-image::after {
+  content: "Stratus Lab Unime";
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: white;
+  font-size: 2.5em;
+  font-weight: bold;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+  pointer-events: none;
 }
