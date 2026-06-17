@@ -81,16 +81,15 @@ permalink: /team/
         <img src="/images/people/Longo.png" alt="Prof. Francesco Longo">
       </div>
       <span class="person-name">Prof. Francesco Longo</span>
-      <span class="person-role">Principal Investigator</span>
+      <span class="person-role">Associate professor</span>
     </div>
 
     <div class="person-card">
       <div class="img-circle">
-        <img src="/images/people/Merlino.png" alt="Prof. Giovanni Merlino"
-             style="margin-left: 30px; width: auto;">
+        <img src="/images/people/Merlino.png" alt="Prof. Giovanni Merlino">
       </div>
       <span class="person-name">Prof. Giovanni Merlino</span>
-      <span class="person-role">Principal Investigator</span>
+      <span class="person-role">Associate professor</span>
     </div>
 
   </div>
