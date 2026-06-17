@@ -88,26 +88,26 @@ permalink: /team/
 
     <div class="person-card">
       <img src="/images/people/Fabiano.png" alt="Dott. Manuel Fabiano">
-      <span class="person-name">Dott. Manuel Fabiano</span>
+      <span class="person-name">Doct. Manuel Fabiano</span>
       <span class="person-role">PhD Student</span>
     </div>
 
     <div class="person-card">
       <img src="/images/people/Bucaria.png" alt="Dott. Vincenzo Bucaria">
-      <span class="person-name">Dott. Vincenzo Bucaria</span>
+      <span class="person-name">Doct. Vincenzo Bucaria</span>
       <span class="person-role">PhD Student</span>
     </div>
 
     <div class="person-card">
       <img src="/images/people/Lombardo.png" alt="Dott. Giovanni Lombardo">
-      <span class="person-name">Dott. Giovanni Lombardo</span>
+      <span class="person-name">Doct. Giovanni Lombardo</span>
       <span class="person-role">PhD Student</span>
     </div>
 
     <div class="person-card">
       <img src="/images/people/Pispisa.png" alt="Dott. Gaetano Pio Pispisa">
-      <span class="person-name">Dott. Gaetano Pio Pispisa</span>
-      <span class="person-role">Research Assistant</span>
+      <span class="person-name">Doct. Gaetano Pio Pispisa</span>
+      <span class="person-role">PhD Student</span>
     </div>
 
   </div>
