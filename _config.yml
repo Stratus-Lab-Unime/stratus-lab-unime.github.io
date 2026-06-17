@@ -10,8 +10,8 @@ locale: it-IT
 title: Stratus Lab Unime
 description: Secure TRustless Autonomous Technologies for Ubiquitous Systems Lab
 url: "https://stratus-lab-unime.github.io"
-baseurl: ""
-skin: "default.css"
+baseurl: "/stratus.github.io"
+skin: "default"
 
 paginate: 5
 paginate_path: /page:num/
