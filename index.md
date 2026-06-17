@@ -1,19 +1,22 @@
 ---
 layout: home
 title: Stratus Lab
----
-
-The **STRATUS LAB** research group at the Department of Engineering of the University of Messina collaborates on projects in Artificial Intelligence, Large Language Models, IoT, Cybersecurity, and numerical optimization, with a focus on industrial, educational, and technological applications.
-
-The main research lines include: the use of LLMs for personalized virtual tutors in local schools and for vehicle control via textual prompts; the development of route optimization algorithms in collaboration with a Milan-based delivery company; and participation in the Zancle E-Drive project for the development of an autonomous electric car for Formula Student.
-
-The lab also manages a cybersecurity hacklab that participates annually in CyberChallenge.IT and other competitions.
-
-The group collaborates with national and international institutions including STMicroelectronics, CNR, SERICS, CINI, Northeastern University, ETH Zurich, and NVIDIA.
-
+image:
+  path: /images/hero.jpg
+  caption: "Stratus Lab - Università di Messina"
 ---
 
 <style>
+.entry-feature-image {
+  max-height: 350px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.page-content p {
+  text-align: justify;
+}
+
 .partners-section {
   margin: 2em 0;
 }
@@ -49,6 +52,16 @@ The group collaborates with national and international institutions including ST
   opacity: 1;
 }
 </style>
+
+The **STRATUS LAB** research group at the Department of Engineering of the University of Messina collaborates on projects in Artificial Intelligence, Large Language Models, IoT, Cybersecurity, and numerical optimization, with a focus on industrial, educational, and technological applications.
+
+The main research lines include: the use of LLMs for personalized virtual tutors in local schools and for vehicle control via textual prompts; the development of route optimization algorithms in collaboration with a Milan-based delivery company; and participation in the Zancle E-Drive project for the development of an autonomous electric car for Formula Student.
+
+The lab also manages a cybersecurity hacklab that participates annually in CyberChallenge.IT and other competitions.
+
+The group collaborates with national and international institutions including STMicroelectronics, CNR, SERICS, CINI, Northeastern University, ETH Zurich, and NVIDIA.
+
+---
 
 <div class="partners-section">
   <h3>Our Partners</h3>
