@@ -64,7 +64,7 @@ permalink: /team/
 </style>
 
 <div class="people-section">
-  <h2>Principal Investigators</h2>
+  <h2>Professors</h2>
   <div class="people-grid">
 
     <div class="person-card">
@@ -83,7 +83,7 @@ permalink: /team/
 </div>
 
 <div class="people-section">
-  <h2>Researchers & PhD Students</h2>
+  <h2>PhD Students</h2>
   <div class="people-grid">
 
     <div class="person-card">
