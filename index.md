@@ -3,7 +3,6 @@ layout: home
 title: Stratus Lab
 image:
   path: /images/hero.jpg
-  caption: "Stratus Lab - Università di Messina"
 ---
 
 <style>
