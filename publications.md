@@ -53,6 +53,11 @@ permalink: /publications/
 
 <ul class="pub-list">
   <li class="pub-item">
+    <div class="pub-title"><a href="https://doi.org/10.1016/j.talanta.2025.129218" target="_blank">Detection of anthraquinone natural dyes in silk artifacts based on KI-modified silver nanoparticles SERS technology</a></div>
+    <div class="pub-authors">Wang R.</div>
+    <div class="pub-venue">Talanta<span class="pub-year">2026</span></div>
+  </li>
+  <li class="pub-item">
     <div class="pub-title">Zero-Trust Software-Defined Vehicles: a Security Paradigm for the Automotive Cloud-Edge Continuum</div>
     <div class="pub-authors">Lombardo G.</div>
     <div class="pub-venue">Ceur Workshop Proceedings<span class="pub-year">2026</span></div>
@@ -91,11 +96,6 @@ permalink: /publications/
     <div class="pub-title"><a href="https://doi.org/10.1016/j.jnca.2025.104268" target="_blank">Seamless remote roaming activation in LoRaWAN via an API-driven gateway bridge service</a></div>
     <div class="pub-authors">D'Agati L.</div>
     <div class="pub-venue">Journal of Network and Computer Applications<span class="pub-year">2025</span></div>
-  </li>
-  <li class="pub-item">
-    <div class="pub-title"><a href="https://doi.org/10.1117/1.NPh.12.3.035009" target="_blank">Functional near-infrared spectroscopy short-channel regression improves cortical activation estimates of working memory load</a></div>
-    <div class="pub-authors">An J.</div>
-    <div class="pub-venue">Neurophotonics<span class="pub-year">2025</span></div>
   </li>
   <li class="pub-item">
     <div class="pub-title"><a href="https://doi.org/10.3390/a18060308" target="_blank">Polarization in Political Rallies: A Markovian Agent-Based Model for Opinion Dynamics</a></div>
@@ -288,14 +288,14 @@ permalink: /publications/
     <div class="pub-venue">Proceedings 2022 IEEE International Conference on Smart Computing Smartcomp 2022<span class="pub-year">2022</span></div>
   </li>
   <li class="pub-item">
-    <div class="pub-title"><a href="https://doi.org/10.1109/SMARTCOMP55677.2022.00073" target="_blank">3D Marketplace: Distributed Attestation of 3D Designs on Blockchain</a></div>
-    <div class="pub-authors">Tapas N.</div>
-    <div class="pub-venue">Proceedings 2022 IEEE International Conference on Smart Computing Smartcomp 2022<span class="pub-year">2022</span></div>
-  </li>
-  <li class="pub-item">
     <div class="pub-title"><a href="https://doi.org/10.1109/ICCCN54977.2022.9868902" target="_blank">Interfacing Intelligent Personal Assistant to SDI/O with one click</a></div>
     <div class="pub-authors">Tricomi G.</div>
     <div class="pub-venue">Proceedings International Conference on Computer Communications and Networks ICCCN<span class="pub-year">2022</span></div>
+  </li>
+  <li class="pub-item">
+    <div class="pub-title"><a href="https://doi.org/10.1109/SMARTCOMP55677.2022.00073" target="_blank">3D Marketplace: Distributed Attestation of 3D Designs on Blockchain</a></div>
+    <div class="pub-authors">Tapas N.</div>
+    <div class="pub-venue">Proceedings 2022 IEEE International Conference on Smart Computing Smartcomp 2022<span class="pub-year">2022</span></div>
   </li>
   <li class="pub-item">
     <div class="pub-title"><a href="https://doi.org/10.1109/ISC255366.2022.9922581" target="_blank">Traffic Condition Estimation at the Smart City Edge using Deep Learning: A Ro-Pax Terminal Case Study</a></div>
