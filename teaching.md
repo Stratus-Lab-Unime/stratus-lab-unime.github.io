@@ -19,11 +19,16 @@ permalink: /teaching/
   background: #fafafa;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
   border-left: 4px solid #6a0dad;
+  text-decoration: none;
+  display: block;
+  color: inherit;
 }
 
 .course-card:hover {
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   transform: translateY(-3px);
+  text-decoration: none;
+  color: inherit;
 }
 
 .course-title {
@@ -75,27 +80,26 @@ permalink: /teaching/
 
 <div class="teaching-grid">
 
-  <div class="course-card">
+  <a class="course-card" href="/teaching/fondamenti-di-informatica/">
     <div class="course-title">Fondamenti di Informatica</div>
     <span class="course-badge">Bachelor's Degree</span>
     <div class="course-degree">Bachelor's Degree Programme in <span>"Ingegneria Elettronica ed Informatica"</span></div>
     <div class="course-professor"><i class="fas fa-user"></i> Prof. Francesco Longo</div>
-  </div>
+  </a>
 
-  <div class="course-card">
+  <a class="course-card" href="/teaching/cybersecurity/">
     <div class="course-title">CyberSecurity</div>
     <span class="course-badge">Master's Degree</span>
     <div class="course-degree">Master's Degree Programme in <span>"Engineering in Computer Science"</span></div>
     <div class="course-professor"><i class="fas fa-user"></i> Prof. Francesco Longo</div>
-  </div>
+  </a>
 
-  <div class="course-card">
+  <a class="course-card" href="/teaching/embedded-systems/">
     <div class="course-title">Embedded Systems</div>
     <span class="course-badge">Master's Degree</span>
     <div class="course-degree">Master's Degree Programme in <span>"Engineering in Computer Science"</span></div>
     <div class="course-professor"><i class="fas fa-user"></i> Prof. Francesco Longo</div>
-  </div>
-
+  </a>
 
 
 
