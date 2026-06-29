@@ -25,3 +25,6 @@ footer_links:
   - title: GitHub
     url: https://github.com/Stratus-Lab-Unime
     icon: fab fa-github-square
+
+after_footer_scripts:
+  - /assets/js/custom.js
