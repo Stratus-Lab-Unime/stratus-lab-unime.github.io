@@ -67,7 +67,7 @@ image:
 }
 </style>
 
-The **STRATUS LAB** — *Secure, TRustless, Autonomous Technologies for Ubiquitous Systems* — is a research group at the Department of Engineering of the University of Messina, led by Prof. Francesco Longo.
+The **STRATUS LAB** — *Secure, TRustless, Autonomous Technologies for Ubiquitous Systems Laboratory* — is a research group at the Department of Engineering of the University of Messina, led by Prof. Francesco Longo.
 
 The group works where computing has left the data center: security and formal verification for industrial and automotive systems, trustless architectures built on self-sovereign identity and federated learning, autonomy for robots and vehicles under real-world constraints, and the virtualization and orchestration that hold the cloud-to-things continuum together. This work runs through national and international research projects.
 
