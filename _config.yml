@@ -6,9 +6,9 @@ plugins:
   - jekyll-paginate
 
 
-locale: it-IT
-title: Stratus Lab Unime
-description: Secure TRustless Autonomous Technologies for Ubiquitous Systems Lab
+locale: en-US
+title: STRATUS Lab
+description: Secure TRustless Autonomous Technologies for Ubiquitous Systems Laboratory
 url: "https://stratus-lab-unime.github.io"
 baseurl: ""
 skin: "/assets/css/skins/default.css"
@@ -17,8 +17,13 @@ paginate: 5
 paginate_path: /page:num/
 
 author:
-  name: "Stratus Lab"
-  bio: "Stratus Lab Unime"
+  name: "STRATUS Lab"
+  bio: "Secure TRustless Autonomous Technologies for Ubiquitous Systems Laboratory"
+
+copyright: >-
+  &copy; 2026 STRATUS Lab, University of Messina.
+  Powered by [Jekyll](https://jekyllrb.com) &amp; [So Simple](https://github.com/mmistakes/so-simple-theme).
+  Built with [Claude Code](https://claude.com/claude-code).
 
 # Footer
 footer_links:

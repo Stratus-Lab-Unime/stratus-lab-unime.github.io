@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Stratus Lab is a research laboratory at the University of Messina focused on developing innovative solutions at the intersection of embedded systems, cybersecurity, artificial intelligence, and cloud computing.
+STRATUS Lab is a research group at the University of Messina focused on developing innovative solutions at the intersection of embedded systems, cybersecurity, artificial intelligence, and cloud computing.
 
 <style>
 .research-grid {
@@ -59,7 +59,7 @@ Stratus Lab is a research laboratory at the University of Messina focused on dev
   <div class="research-item">
     <div class="research-header">
       <i class="fas fa-shield-alt"></i>
-      <h3>Cyber Security</h3>
+      <h3>Cybersecurity</h3>
     </div>
     <p>We protect the integrity of digital infrastructures through trustless approaches and proactive defense strategies, ensuring the security of critical data against the most sophisticated cyber threats.</p>
   </div>
