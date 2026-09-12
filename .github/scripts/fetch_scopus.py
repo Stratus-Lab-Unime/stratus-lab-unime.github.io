@@ -32,7 +32,7 @@ def fetch_all(query):
         print(f"  Request start={start}: HTTP {r.status_code}")
         if r.status_code != 200:
             print(f"  Response: {r.text[:300]}")
-            break
+            raise RuntimeError(f"Scopus API returned HTTP {r.status_code}")
         data = r.json()
         entries = data.get("search-results", {}).get("entry", [])
         if not entries or entries[0].get("error"):
@@ -135,6 +135,11 @@ def entry_to_bibtex(entry, seen_keys):
 print("Fetching papers from Scopus...")
 all_entries = fetch_all(QUERY)
 print(f"\nTotal unique papers: {len(all_entries)}")
+
+# Senza questo controllo un fetch fallito sovrascriverebbe il .bib con un file vuoto
+if not all_entries:
+    print("Error: Scopus returned no results; keeping the existing .bib file.")
+    sys.exit(1)
 
 seen_keys = set()
 bib_output = ""
