@@ -118,6 +118,41 @@ permalink: /team/
   color: #888;
   margin-top: auto;
 }
+
+/* Gli ex membri restano volutamente più sobri di chi c'è ora: la pagina
+   deve parlare prima del gruppo attuale. */
+.alumni-section {
+  margin-top: 3em;
+  border-top: 1px solid #eee;
+  padding-top: 1.5em;
+}
+
+.alumni-section h2 {
+  font-size: 0.9em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #999;
+  margin-bottom: 1em;
+}
+
+.alumni-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.alumni-list li {
+  margin-bottom: 0.4em;
+}
+
+.alumni-name {
+  font-weight: bold;
+  color: #444;
+}
+
+.alumni-role {
+  color: #999;
+}
 </style>
 
 <div class="lab-director">
@@ -175,4 +210,13 @@ permalink: /team/
     </div>
 
   </div>
+</div>
+
+<div class="alumni-section">
+  <h2>Former Members</h2>
+  <ul class="alumni-list">
+    <li><span class="alumni-name">Giovanni Arlotta</span><span class="alumni-role"> &mdash; Research Fellow</span></li>
+    <li><span class="alumni-name">Antonio Battaglia</span><span class="alumni-role"> &mdash; Research Grant Holder</span></li>
+    <li><span class="alumni-name">Alessandro Giuffr&egrave;</span><span class="alumni-role"> &mdash; Research Grant Holder</span></li>
+  </ul>
 </div>
