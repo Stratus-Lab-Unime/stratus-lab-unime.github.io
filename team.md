@@ -5,25 +5,70 @@ permalink: /team/
 ---
 
 <style>
-.people-section {
-  margin: 2em 0;
+.lab-director {
+  display: flex;
+  gap: 2em;
+  align-items: center;
+  margin: 2em 0 2.5em;
 }
 
-.people-section h2 {
-  font-size: 1.1em;
+.director-photo {
+  flex: 0 0 210px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 3px solid #eee;
+}
+
+.director-photo img {
+  width: 100%;
+  display: block;
+  border: none !important;
+  border-radius: 0 !important;
+  margin: 0 !important;
+  max-width: none !important;
+}
+
+.director-name {
+  display: block;
+  font-weight: bold;
+  font-size: 1.35em;
+  color: #222;
+}
+
+.director-role {
+  display: block;
+  font-size: 0.85em;
   text-transform: uppercase;
-  letter-spacing: 2px;
-  color: #888;
-  border-bottom: 2px solid #eee;
-  padding-bottom: 0.5em;
-  margin-bottom: 1.5em;
+  letter-spacing: 1.5px;
+  color: #6a0dad;
+  margin-bottom: 0.8em;
+}
+
+.director-bio {
+  text-align: justify;
+  margin: 0;
+}
+
+/* Sotto i 700px la foto va sopra il testo invece che accanto */
+@media (max-width: 700px) {
+  .lab-director {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .director-photo { flex-basis: auto; width: 180px; }
+  .director-bio { text-align: left; }
+}
+
+.people-section {
+  margin: 2em 0;
 }
 
 .people-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 2em;
-  margin-bottom: 3em;
+  justify-content: center;
+  gap: 1.5em;
 }
 
 .person-card {
@@ -66,68 +111,66 @@ permalink: /team/
   margin-bottom: 0.2em;
 }
 
+/* Allinea il ruolo in fondo alla scheda, così resta alla stessa altezza
+   anche quando il nome accanto occupa due righe. */
 .person-role {
   font-size: 0.8em;
   color: #888;
+  margin-top: auto;
 }
 </style>
 
-<div class="people-section">
-  <h2>Professors</h2>
-  <div class="people-grid">
-
-    <div class="person-card">
-      <div class="img-circle">
-        <img src="/images/people/Longo.png" alt="Prof. Francesco Longo">
-      </div>
-      <span class="person-name">Prof. Francesco Longo</span>
-      <span class="person-role">Associate professor</span>
-    </div>
-
-    <div class="person-card">
-      <div class="img-circle">
-        <img src="/images/people/Merlino.png" alt="Prof. Giovanni Merlino">
-      </div>
-      <span class="person-name">Prof. Giovanni Merlino</span>
-      <span class="person-role">Associate professor</span>
-    </div>
-
+<div class="lab-director">
+  <div class="director-photo">
+    <img src="/images/people/Longo-director.jpg" alt="Francesco Longo">
+  </div>
+  <div class="director-text">
+    <span class="director-name">Francesco Longo</span>
+    <span class="director-role">Lab Director &middot; Associate Professor</span>
+    <p class="director-bio">Francesco Longo is Associate Professor at the Department of Engineering of the University of Messina, where he leads the STRATUS Lab. His work spans distributed systems, cloud and edge computing, and the security of industrial and automotive infrastructure, with more than 170 publications in the field.</p>
   </div>
 </div>
 
 <div class="people-section">
-  <h2>Researchers & PhD Students</h2>
   <div class="people-grid">
 
     <div class="person-card">
       <div class="img-circle">
-        <img src="/images/people/Fabiano.png" alt="Doct. Manuel Fabiano">
+        <img src="/images/people/Merlino.png" alt="Giovanni Merlino">
       </div>
-      <span class="person-name">Doct. Manuel Fabiano</span>
+      <span class="person-name">Giovanni Merlino</span>
+      <span class="person-role">Associate Professor</span>
+    </div>
+
+    <div class="person-card">
+      <div class="img-circle">
+        <img src="/images/people/Fabiano.png" alt="Manuel Fabiano">
+      </div>
+      <span class="person-name">Manuel Fabiano</span>
       <span class="person-role">PhD Student</span>
     </div>
 
     <div class="person-card">
       <div class="img-circle">
-        <img src="/images/people/Bucaria.png" alt="Doct. Vincenzo Bucaria">
+        <img src="/images/people/Bucaria.png" alt="Vincenzo Bucaria">
       </div>
-      <span class="person-name">Doct. Vincenzo Bucaria</span>
+      <span class="person-name">Vincenzo Bucaria</span>
       <span class="person-role">PhD Student</span>
     </div>
 
     <div class="person-card">
       <div class="img-circle">
-        <img src="/images/people/Lombardo.png" alt="Doct. Giovanni Lombardo">
+        <img src="/images/people/Lombardo.png" alt="Giovanni Lombardo">
       </div>
-      <span class="person-name">Doct. Giovanni Lombardo</span>
+      <span class="person-name">Giovanni Lombardo</span>
       <span class="person-role">PhD Student</span>
     </div>
 
     <div class="person-card">
       <div class="img-circle">
-        <img src="/images/people/Pispisa.png" alt="Doct. Gaetano Pio Pispisa" style="object-position: 75% top !important;">
+        <img src="/images/people/Pispisa.png" alt="Gaetano Pio Pispisa" style="object-position: 75% top !important;">
       </div>
-      <span class="person-name">Doct. Gaetano Pio Pispisa</span>
+      <span class="person-name">Gaetano Pio Pispisa</span>
       <span class="person-role">PhD Student</span>
     </div>
 
