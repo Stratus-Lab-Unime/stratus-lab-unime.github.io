@@ -67,13 +67,11 @@ image:
 }
 </style>
 
-The **STRATUS LAB** research group at the Department of Engineering of the University of Messina collaborates on projects in Artificial Intelligence, Large Language Models, IoT, Cybersecurity, and numerical optimization, with a focus on industrial, educational, and technological applications.
+The **STRATUS LAB** — *Secure, TRustless, Autonomous Technologies for Ubiquitous Systems* — is a research group at the Department of Engineering of the University of Messina, led by Prof. Francesco Longo.
 
-The main research lines include: the use of LLMs for personalized virtual tutors in local schools and for vehicle control via textual prompts; the development of route optimization algorithms in collaboration with a Milan-based delivery company; and participation in the Zancle E-Drive project for the development of an autonomous electric car for Formula Student.
+The group works where computing has left the data center: security and formal verification for industrial and automotive systems, trustless architectures built on self-sovereign identity and federated learning, autonomy for robots and vehicles under real-world constraints, and the virtualization and orchestration that hold the cloud-to-things continuum together. This work runs through national and international research projects.
 
-The lab also manages a cybersecurity hacklab that participates annually in CyberChallenge.IT and other competitions.
-
-The group collaborates with national and international institutions including STMicroelectronics, CNR, SERICS, CINI, Northeastern University, ETH Zurich, and NVIDIA.
+The lab supports two student teams: [Zancle E-Drive](https://www.zancle-edrive.it/), which builds a fully electric single-seater for Formula Student and races in [RoboRacer](https://roboracer.ai/), and the MetaGriPwn HackLab, which competes in CyberChallenge.IT and other cybersecurity competitions.
 
 ---
 
