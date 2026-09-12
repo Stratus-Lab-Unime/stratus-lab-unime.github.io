@@ -127,7 +127,7 @@ permalink: /team/
   <div class="director-text">
     <span class="director-name">Francesco Longo</span>
     <span class="director-role">Lab Director &middot; Associate Professor</span>
-    <p class="director-bio">Francesco Longo is Associate Professor at the Department of Engineering of the University of Messina, where he leads the STRATUS Lab. His work spans distributed systems, cloud and edge computing, and the security of industrial and automotive infrastructure, with more than 170 publications in the field.</p>
+    <p class="director-bio">Francesco Longo is Associate Professor at the Department of Engineering of the University of Messina, where he leads the STRATUS Lab. His work spans distributed systems, cloud and edge computing, and the security of industrial and automotive infrastructure, with more than 170 publications in the field. He is a founding partner of <a href="https://smartme.io/" target="_blank" rel="noopener">SmartMe.IO</a>, a Messina-based company building IoT and resilience engineering platforms.</p>
   </div>
 </div>
 

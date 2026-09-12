@@ -56,7 +56,7 @@ image:
   left: 50%;
   transform: translateX(-50%);
   width: 94vw;
-  max-width: 950px;
+  max-width: 1040px;
 }
 
 .partners-section h3 {
@@ -116,5 +116,6 @@ The lab supports two student teams: [Zancle E-Drive](https://www.zancle-edrive.i
     <a href="https://www.northeastern.edu/" target="_blank" rel="noopener" title="Northeastern University"><img src="/images/NE.png" alt="Northeastern University"></a>
     <a href="https://ethz.ch/" target="_blank" rel="noopener" title="ETH Zurich"><img src="/images/ETH.png" alt="ETH Zurich"></a>
     <a href="https://www.nvidia.com/" target="_blank" rel="noopener" title="NVIDIA"><img src="/images/NVIDIA.png" alt="NVIDIA"></a>
+    <a href="https://smartme.io/" target="_blank" rel="noopener" title="SmartMe.IO"><img src="/images/SmartMe.png" alt="SmartMe.IO"></a>
   </div>
 </div>
