@@ -16,7 +16,7 @@ permalink: /team/
   flex: 0 0 210px;
   border-radius: 8px;
   overflow: hidden;
-  border: 3px solid #eee;
+  border: 3px solid var(--line);
 }
 
 .director-photo img {
@@ -32,15 +32,11 @@ permalink: /team/
   display: block;
   font-weight: bold;
   font-size: 1.35em;
-  color: #222;
+  color: var(--ink);
 }
 
 .director-role {
   display: block;
-  font-size: 0.85em;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  color: #6a0dad;
   margin-bottom: 0.8em;
 }
 
@@ -84,13 +80,9 @@ permalink: /team/
   height: 130px;
   border-radius: 50%;
   overflow: hidden;
-  border: 3px solid #eee;
+  border: 3px solid var(--line);
   margin-bottom: 0.8em;
   transition: border-color 0.3s ease;
-}
-
-.img-circle:hover {
-  border-color: #6a0dad;
 }
 
 .img-circle img {
@@ -107,7 +99,7 @@ permalink: /team/
 .person-name {
   font-weight: bold;
   font-size: 0.95em;
-  color: #222;
+  color: var(--ink);
   margin-bottom: 0.2em;
 }
 
@@ -115,7 +107,6 @@ permalink: /team/
    anche quando il nome accanto occupa due righe. */
 .person-role {
   font-size: 0.8em;
-  color: #888;
   margin-top: auto;
 }
 
@@ -123,15 +114,11 @@ permalink: /team/
    deve parlare prima del gruppo attuale. */
 .alumni-section {
   margin-top: 3em;
-  border-top: 1px solid #eee;
+  border-top: 1px solid var(--line);
   padding-top: 1.5em;
 }
 
 .alumni-section h2 {
-  font-size: 0.9em;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: #999;
   margin-bottom: 1em;
 }
 
@@ -147,12 +134,9 @@ permalink: /team/
 
 .alumni-name {
   font-weight: bold;
-  color: #444;
+  color: var(--body-text);
 }
 
-.alumni-role {
-  color: #999;
-}
 </style>
 
 <div class="lab-director">

@@ -5,7 +5,7 @@ permalink: /teaching/fondamenti-di-informatica/
 ---
 
 <div style="margin-bottom:1.5em;">
-  <span style="background:#ede7f6;color:#6a0dad;padding:0.2em 0.8em;border-radius:20px;font-size:0.85em;">Bachelor's Degree</span>
+  <span class="course-badge">Bachelor's Degree</span>
   &nbsp;
   <span style="color:#888;font-size:0.9em;"><i class="fas fa-user"></i> Prof. Francesco Longo</span>
 </div>

@@ -1,0 +1,108 @@
+/* ==========================================================================
+   Stratus Lab — stile comune
+   Caricato dopo main.css e dopo la skin del tema, quindi le regole qui
+   vincono su quelle del tema. Le pagine mantengono inline solo ciò che è
+   davvero specifico: tutto il resto vive qui.
+   ========================================================================== */
+
+:root {
+  --accent: #0277BD;
+  --accent-bright: #039BE5;
+  --accent-soft: #E3F2FA;
+
+  --ink: #222;
+  --body-text: #444;
+  --muted: #888;
+  --line: #E5E5E5;
+  --surface: #FAFAFA;
+
+  --radius: 8px;
+}
+
+/* Collegamenti
+   ========================================================================== */
+a {
+  color: var(--accent);
+}
+
+a:hover,
+.entry a:hover {
+  color: var(--accent-bright);
+}
+
+/* Riquadri
+   Stesso oggetto su Publications, Teaching e About: sfondo chiaro, filo
+   grigio, bordo sinistro colorato.
+   ========================================================================== */
+.pub-item,
+.course-card,
+.research-item {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--accent-bright);
+  border-radius: var(--radius);
+  padding: 1.1em 1.3em;
+  color: var(--body-text);
+}
+
+.pub-title,
+.course-title,
+.research-header h3 {
+  color: var(--ink);
+  font-weight: bold;
+}
+
+/* Pillole
+   ========================================================================== */
+.pub-year,
+.course-badge {
+  display: inline-block;
+  background: var(--accent-soft);
+  color: var(--accent);
+  border-radius: 20px;
+  padding: 0.2em 0.7em;
+  font-size: 0.75em;
+  font-style: normal;
+}
+
+/* Micro-titoli in maiuscoletto
+   Stessa tipografia ovunque; cambia solo il colore, perché il ruolo del
+   direttore è un'informazione, le altre sono etichette di sezione.
+   ========================================================================== */
+.partners-section h3,
+.alumni-section h2,
+.director-role {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.85em;
+}
+
+.partners-section h3,
+.alumni-section h2 {
+  color: var(--muted);
+}
+
+.director-role {
+  color: var(--accent);
+}
+
+/* Testi secondari
+   ========================================================================== */
+.pub-authors,
+.pub-venue,
+.course-degree,
+.course-professor,
+.person-role,
+.alumni-role {
+  color: var(--muted);
+}
+
+/* Dettagli colorati
+   ========================================================================== */
+.img-circle:hover {
+  border-color: var(--accent-bright);
+}
+
+.research-header i {
+  color: var(--accent-bright);
+}

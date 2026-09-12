@@ -61,10 +61,6 @@ image:
 
 .partners-section h3 {
   text-align: center;
-  color: #555;
-  font-size: 1em;
-  text-transform: uppercase;
-  letter-spacing: 2px;
   margin-bottom: 0.9em;
 }
 

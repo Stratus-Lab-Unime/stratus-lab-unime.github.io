@@ -10,17 +10,8 @@ Stratus Lab is a research laboratory at the University of Messina focused on dev
 .research-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 0;
-  background-color: #1a1a2e;
-  border-radius: 8px;
-  overflow: hidden;
+  gap: 1.2em;
   margin: 2em 0;
-}
-
-.research-item {
-  padding: 1.5em;
-  border: 1px solid #2a2a4e;
-  color: #ffffff;
 }
 
 .research-header {
@@ -31,21 +22,18 @@ Stratus Lab is a research laboratory at the University of Messina focused on dev
 }
 
 .research-header i {
-  font-size: 2.5em;
-  color: #ffffff;
-  width: 48px;
+  font-size: 2.2em;
+  width: 44px;
   text-align: center;
 }
 
 .research-header h3 {
-  color: #ffffff;
   margin: 0;
-  font-size: 1.2em;
+  font-size: 1.1em;
   line-height: 1.2;
 }
 
 .research-item p {
-  color: #cccccc;
   font-size: 0.9em;
   line-height: 1.6;
   margin: 0;
