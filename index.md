@@ -48,8 +48,15 @@ image:
   padding-bottom: 14px !important;
 }
 
+/* I loghi hanno proporzioni molto diverse fra loro e non stanno in una riga
+   larga quanto la colonna di testo: questa fascia sfonda il contenitore. */
 .partners-section {
   margin: 1.1em 0;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 94vw;
+  max-width: 950px;
 }
 
 .partners-section h3 {
@@ -66,19 +73,26 @@ image:
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 2em;
+  gap: 1.5em;
+}
+
+.partners-grid a {
+  display: inline-flex;
+  align-items: center;
+  border-bottom: none;
 }
 
 .partners-grid img {
-  height: 50px;
+  height: 60px;
   width: auto;
+  max-width: 120px;
   object-fit: contain;
   filter: grayscale(100%);
   opacity: 0.7;
   transition: all 0.3s ease;
 }
 
-.partners-grid img:hover {
+.partners-grid a:hover img {
   filter: grayscale(0%);
   opacity: 1;
 }
@@ -95,12 +109,12 @@ The lab supports two student teams: [Zancle E-Drive](https://www.zancle-edrive.i
 <div class="partners-section">
   <h3>Our Partners</h3>
   <div class="partners-grid">
-    <img src="/images/ST.png" alt="STMicroelectronics">
-    <img src="/images/CNR.png" alt="CNR">
-    <img src="/images/Serics.png" alt="SERICS">
-    <img src="/images/CINI.png" alt="CINI">
-    <img src="/images/NE.png" alt="Northeastern University">
-    <img src="/images/ETH.png" alt="ETH Zurich">
-    <img src="/images/NVIDIA.png" alt="NVIDIA">
+    <a href="https://www.st.com/" target="_blank" rel="noopener" title="STMicroelectronics"><img src="/images/ST.png" alt="STMicroelectronics"></a>
+    <a href="https://www.cnr.it/" target="_blank" rel="noopener" title="CNR"><img src="/images/CNR.png" alt="CNR"></a>
+    <a href="https://serics.eu/" target="_blank" rel="noopener" title="SERICS"><img src="/images/Serics.png" alt="SERICS"></a>
+    <a href="https://www.consorzio-cini.it/" target="_blank" rel="noopener" title="CINI"><img src="/images/CINI.png" alt="CINI"></a>
+    <a href="https://www.northeastern.edu/" target="_blank" rel="noopener" title="Northeastern University"><img src="/images/NE.png" alt="Northeastern University"></a>
+    <a href="https://ethz.ch/" target="_blank" rel="noopener" title="ETH Zurich"><img src="/images/ETH.png" alt="ETH Zurich"></a>
+    <a href="https://www.nvidia.com/" target="_blank" rel="noopener" title="NVIDIA"><img src="/images/NVIDIA.png" alt="NVIDIA"></a>
   </div>
 </div>
