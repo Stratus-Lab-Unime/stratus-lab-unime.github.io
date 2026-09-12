@@ -17,9 +17,14 @@ image:
 .page-image {
   margin-top: 0 !important;
   padding-top: 0 !important;
+  margin-bottom: 6px !important;
 }
 
+/* Altezza legata al viewport: su schermi bassi la testata si ritira
+   invece di spingere il testo sotto la piega. */
 .entry-feature-image {
+  height: 22vh;
+  min-height: 160px;
   max-height: 350px;
   width: 100%;
   object-fit: cover;
@@ -27,12 +32,24 @@ image:
   display: block;
 }
 
+.page-header h1 {
+  font-size: 2.5rem;
+}
+
 .page-content p {
   text-align: justify;
+  margin-bottom: 0.9em;
+}
+
+.site-footer {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+  padding-top: 14px !important;
+  padding-bottom: 14px !important;
 }
 
 .partners-section {
-  margin: 2em 0;
+  margin: 1.1em 0;
 }
 
 .partners-section h3 {
@@ -41,7 +58,7 @@ image:
   font-size: 1em;
   text-transform: uppercase;
   letter-spacing: 2px;
-  margin-bottom: 1.5em;
+  margin-bottom: 0.9em;
 }
 
 .partners-grid {
