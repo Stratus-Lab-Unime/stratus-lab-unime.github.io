@@ -49,7 +49,7 @@ permalink: /publications/
     <div class="pub-venue">Proceedings 2026 IEEE International Conference on Smart Computing Workshops and Other Affiliated Events SmartComp Companion 2026<span class="pub-year">2026</span></div>
   </li>
   <li class="pub-item">
-    <div class="pub-title">Zero-Trust Software-Defined Vehicles: a Security Paradigm for the Automotive Cloud-Edge Continuum</div>
+    <div class="pub-title"><a href="https://ceur-ws.org/Vol-4198/paper67.pdf" target="_blank">Zero-Trust Software-Defined Vehicles: a Security Paradigm for the Automotive Cloud-Edge Continuum</a></div>
     <div class="pub-authors">Giovanni Lombardo, Vincenzo Alessio Bucaria, Giovanni Merlino, Francesco Longo</div>
     <div class="pub-venue">CEUR Workshop Proceedings<span class="pub-year">2026</span></div>
   </li>
@@ -59,7 +59,7 @@ permalink: /publications/
     <div class="pub-venue">Proceedings 2026 IEEE International Conference on Smart Computing Workshops and Other Affiliated Events SmartComp Companion 2026<span class="pub-year">2026</span></div>
   </li>
   <li class="pub-item">
-    <div class="pub-title">Automatic Verification of Security Properties in Containerized IoT Applications via Bigraphical Modeling</div>
+    <div class="pub-title"><a href="https://ceur-ws.org/Vol-4198/paper59.pdf" target="_blank">Automatic Verification of Security Properties in Containerized IoT Applications via Bigraphical Modeling</a></div>
     <div class="pub-authors">Cristian Coppo, Francesco Longo, Giovanni Merlino, Antonio Puliafito, Marino Miculan</div>
     <div class="pub-venue">CEUR Workshop Proceedings<span class="pub-year">2026</span></div>
   </li>
@@ -119,7 +119,7 @@ permalink: /publications/
     <div class="pub-venue">Algorithms<span class="pub-year">2025</span></div>
   </li>
   <li class="pub-item">
-    <div class="pub-title">A Survey of WebAssembly Usage for Embedded Applications: Safety and Portability Considerations</div>
+    <div class="pub-title"><a href="https://ceur-ws.org/Vol-3962/paper65.pdf" target="_blank">A Survey of WebAssembly Usage for Embedded Applications: Safety and Portability Considerations</a></div>
     <div class="pub-authors">Tancredi Orlando, Luca D’Agati, Francesco Longo, Giovanni Merlino</div>
     <div class="pub-venue">CEUR Workshop Proceedings<span class="pub-year">2025</span></div>
   </li>
@@ -267,11 +267,6 @@ permalink: /publications/
     <div class="pub-title"><a href="https://doi.org/10.1109/CCNC51644.2023.10060344" target="_blank">Cloud-based Web of Things: A Telemedicine Use Case</a></div>
     <div class="pub-authors">Luca D'Agati, Zakaria Benomar, Francesco Longo, Giovanni Merlino, Antonio Puliafito</div>
     <div class="pub-venue">Proceedings IEEE Consumer Communications and Networking Conference CCNC<span class="pub-year">2023</span></div>
-  </li>
-  <li class="pub-item">
-    <div class="pub-title">Preface</div>
-    <div class="pub-authors">Mauro Iacono, Enrico Barbierato, Davide Cerotti, Marco Scarpa, Salvatore Serrano, Francesco Longo</div>
-    <div class="pub-venue">Lecture Notes in Computer Science Including Subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics<span class="pub-year">2023</span></div>
   </li>
   <li class="pub-item">
     <div class="pub-title"><a href="https://doi.org/10.5220/0012037600003488" target="_blank">Empirical Analysis of Federated Learning Algorithms: A Federated Research Infrastructure Use Case</a></div>
@@ -429,12 +424,12 @@ permalink: /publications/
     <div class="pub-venue">Sensors Switzerland<span class="pub-year">2020</span></div>
   </li>
   <li class="pub-item">
-    <div class="pub-title">A reactive cognitive architecture based on natural language processing for the task of decision-making using a rich semantic</div>
+    <div class="pub-title"><a href="https://ceur-ws.org/Vol-2706/paper2.pdf" target="_blank">A reactive cognitive architecture based on natural language processing for the task of decision-making using a rich semantic</a></div>
     <div class="pub-authors">Carmelo Fabio Longo, Francesco Longo, Corrado Santoro</div>
     <div class="pub-venue">CEUR Workshop Proceedings<span class="pub-year">2020</span></div>
   </li>
   <li class="pub-item">
-    <div class="pub-title">A new fog-enabled wireless sensor network architecture for industrial internet of things applications</div>
+    <div class="pub-title"><a href="https://www.imeko.org/publications/tc4-2020/IMEKO-TC4-2020-34.pdf" target="_blank">A new fog-enabled wireless sensor network architecture for industrial internet of things applications</a></div>
     <div class="pub-authors">Zakaria Benomar, Giuseppe Campobello, Francesco Longo, Giovanni Merlino, Antonio Puliafito</div>
     <div class="pub-venue">24th IMEKO Tc4 International Symposium and 22nd International Workshop on ADC and DAC Modelling and Testing<span class="pub-year">2020</span></div>
   </li>

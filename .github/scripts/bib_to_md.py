@@ -1,9 +1,11 @@
+import os
 import re
 import sys
 from collections import defaultdict
 
 BIB_FILE = "_data/publications.bib"
 MD_FILE = "publications.md"
+LINKS_FILE = "_data/publication_links.yml"
 
 HEADER = """---
 layout: page
@@ -88,12 +90,44 @@ def extract_entries(bib_text):
     
     return entries
 
+def normalize(title):
+    """Titolo ridotto a sole lettere e cifre minuscole, così la corrispondenza
+    non dipende da punteggiatura, accenti o spaziatura."""
+    return re.sub(r'[^a-z0-9]', '', title.lower())
+
+# Collegamenti inseriti a mano per le voci che Scopus restituisce senza DOI:
+# tipicamente atti CEUR, che non ne assegnano. Stanno in un file separato perché
+# fetch_scopus.py rigenera il .bib da zero e cancellerebbe qualsiasi aggiunta.
+manual_links = {}
+excluded = set()
+if os.path.exists(LINKS_FILE):
+    with open(LINKS_FILE, encoding="utf-8") as f:
+        current = None
+        for line in f:
+            line = line.split('#')[0].rstrip()
+            if not line.strip():
+                continue
+            if line.startswith('- title:'):
+                current = line.split(':', 1)[1].strip().strip('"\'')
+            elif line.strip().startswith('url:') and current:
+                manual_links[normalize(current)] = line.split(':', 1)[1].strip().strip('"\'')
+                current = None
+            elif line.strip().startswith('exclude:') and current:
+                excluded.add(normalize(current))
+                current = None
+    print(f"Loaded {len(manual_links)} manual links and {len(excluded)} exclusions from {LINKS_FILE}.")
+
 # Leggi file
 with open(BIB_FILE, "r", encoding="utf-8") as f:
     bib_text = f.read()
 
 entries = extract_entries(bib_text)
 print(f"Parsed {len(entries)} entries.")
+
+before = len(entries)
+entries = [e for e in entries if normalize(e['fields'].get('title', '')) not in excluded]
+if before != len(entries):
+    print(f"Excluded {before - len(entries)} entries listed in {LINKS_FILE}.")
 
 # Ordina per anno decrescente
 entries.sort(key=lambda e: int(e['fields'].get('year', 0)), reverse=True)
@@ -129,6 +163,8 @@ for year in sorted(by_year.keys(), reverse=True):
         url = fields.get('url', '') or fields.get('doi', '')
         if url and url.startswith('10.'):
             url = f"https://doi.org/{url}"
+        if not url:
+            url = manual_links.get(normalize(title), '')
 
         title_html = f'<a href="{url}" target="_blank">{title}</a>' if url else title
 
