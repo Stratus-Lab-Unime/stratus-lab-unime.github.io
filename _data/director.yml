@@ -1,0 +1,21 @@
+# Chi guida il laboratorio. Stessa struttura di people.yml, ma reso in cima
+# alla pagina Team con foto grande e bio accanto, non in una scheda a comparsa.
+
+name: Francesco Longo
+role: Lab Director &middot; Associate Professor
+photo: /images/people/Longo-director.jpg
+bio: >-
+  Francesco Longo is Associate Professor at the Department of Engineering of the
+  University of Messina, where he leads the STRATUS Lab. His work spans distributed
+  systems, cloud and edge computing, and the security of industrial and automotive
+  infrastructure, with more than 170 publications in the field. He is a founding
+  partner of <a href="https://smartme.io/" target="_blank" rel="noopener">SmartMe.IO</a>,
+  an academic spin-off building IoT and resilience engineering platforms.
+links:
+  email: francesco.longo@unime.it
+  website: https://unifind.unime.it/resource/person/8443
+  scholar: https://scholar.google.com/citations?user=kW1T1xUAAAAJ
+  scopus: https://www.scopus.com/authid/detail.uri?authorId=34868328300
+  orcid: https://orcid.org/0000-0001-6299-140X
+  github: https://github.com/flongo82
+  linkedin: https://www.linkedin.com/in/francesco-longo-784856206/

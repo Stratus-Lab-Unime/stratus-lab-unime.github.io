@@ -1,0 +1,126 @@
+# Membri attuali del gruppo. L'ordine qui è l'ordine mostrato sulla pagina Team.
+# `id` compare nell'indirizzo della scheda: /team/#merlino
+# I collegamenti vuoti non vengono mostrati.
+#
+# Manca lo Scopus di Pispisa e Fabiano: entrambi hanno lavori indicizzati, ma non
+# dichiarano l'identificativo sul proprio ORCID e non è deducibile.
+# Manca il LinkedIn di Lombardo.
+# Mancano le foto di Trungadi e Candela.
+# Sosta e Candela usano un indirizzo @studenti.unime.it in attesa di quello @unime.it.
+
+- id: merlino
+  name: Giovanni Merlino
+  role: Associate Professor
+  photo: /images/people/Merlino.png
+  bio: >-
+    Giovanni Merlino is Associate Professor of Computer Science Engineering at the
+    Department of Engineering of the University of Messina. His research treats IoT
+    and cyber-physical systems as software-defined infrastructure, with a focus on
+    IT/OT convergence and on decentralization protocols. He conceived the I/Ocloud
+    paradigm, contributed to the design of the Stack4Things middleware, and
+    co-founded the academic spin-off SmartMe.IO.
+  links:
+    website: https://prosodiac.github.io
+    scholar: https://scholar.google.com/citations?user=xHDCAI8AAAAJ
+    github: https://github.com/gmerlino
+    linkedin: https://www.linkedin.com/in/giovannimerlino
+    scopus: https://www.scopus.com/authid/detail.uri?authorId=57193735363
+    orcid: https://orcid.org/0000-0002-1469-7860
+    email: giovanni.merlino@unime.it
+
+- id: pispisa
+  name: Gaetano Pio Pispisa
+  role: PhD Student
+  photo: /images/people/Pispisa.png
+  photo_position: 75% top
+  bio: >-
+    Gaetano Pio Pispisa works on autonomous systems operating under hardware
+    constraints. His research covers decentralized coordination in robot swarms and
+    the techniques that make machine learning feasible within the limited memory and
+    energy budget of an edge device.
+  links:
+    github: https://github.com/kartman88
+    linkedin: https://it.linkedin.com/in/gaetano-pispisa-8a985623a
+    orcid: https://orcid.org/0009-0006-2908-1475
+    email: gaetanopio.pispisa@unime.it
+
+- id: bucaria
+  name: Vincenzo Alessio Bucaria
+  role: PhD Student
+  photo: /images/people/Bucaria.png
+  bio: >-
+    Vincenzo Alessio Bucaria works on the virtualization of reconfigurable hardware,
+    making embedded FPGAs shareable across workloads, and on security architectures
+    for software-defined vehicles.
+  links:
+    github: https://github.com/vincenzobucaria
+    scopus: https://www.scopus.com/authid/detail.uri?authorId=60225938700
+    orcid: https://orcid.org/0009-0008-0837-4070
+    email: vincenzo.bucaria@unime.it
+
+- id: fabiano
+  name: Manuel Fabiano
+  role: PhD Student
+  photo: /images/people/Fabiano.png
+  bio: >-
+    Manuel Fabiano works on the security of industrial control systems, designed long
+    before the threats they now face. His research applies post-quantum cryptography
+    and decentralized identity to legacy industrial protocols, with energy
+    infrastructure as its application domain.
+  links:
+    github: https://github.com/manuelFabiano
+    orcid: https://orcid.org/0009-0001-5282-2036
+    email: manuel.fabiano@unime.it
+
+- id: lombardo
+  name: Giovanni Lombardo
+  role: PhD Student
+  photo: /images/people/Lombardo.png
+  bio: >-
+    Giovanni Lombardo's research follows two lines. One concerns the security and
+    virtualization of automotive and distributed systems, from intrusion detection on
+    in-vehicle networks to hypervisors spanning distributed infrastructure. The other
+    applies machine learning to hyperspectral sensing, for the non-invasive
+    monitoring of crops.
+  links:
+    github: https://github.com/Lomby1902
+    scopus: https://www.scopus.com/authid/detail.uri?authorId=60097846900
+    orcid: https://orcid.org/0009-0003-0653-9349
+    email: lombardo.giovanni@unime.it
+
+- id: sosta
+  name: Domenico Sosta
+  role: Graduate Researcher
+  photo: /images/people/Sosta.jpg
+  bio: >-
+    Domenico Sosta works on reinforcement learning for devices that can barely
+    afford it: bringing agents that learn from interaction onto hardware bound by
+    strict limits of memory, computation and power.
+  links:
+    github: https://github.com/Nico281102
+    email: domenico.sosta@studenti.unime.it  # DA SOSTITUIRE con l'indirizzo @unime.it
+
+- id: trungadi
+  name: Francesco Trungadi
+  role: Undergraduate Researcher
+  photo: ""        # manca
+  bio: >-
+    Francesco Trungadi works on securing legacy industrial control systems. His
+    research introduces post-quantum cryptography and decentralized identity into
+    protocols that predate both, without requiring the installed base to be replaced.
+  links:
+    orcid: https://orcid.org/0009-0002-0184-3272
+    github: https://github.com/fratrung
+    email: francesco.trungadi@unime.it
+
+- id: candela
+  name: Marco Candela
+  role: Undergraduate Researcher
+  photo: ""        # manca
+  bio: >-
+    Marco Candela works on trusted execution environments for embedded systems, as
+    a building block towards cyber-physical systems where no component has to be
+    trusted by default.
+  links:
+    github: https://github.com/marcocandel9  # da confermare: identificato solo per nome
+    email: marco.candela@studenti.unime.it  # DA SOSTITUIRE con l'indirizzo @unime.it
