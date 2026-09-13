@@ -5,7 +5,7 @@
 # Manca lo Scopus di Pispisa e Fabiano: entrambi hanno lavori indicizzati, ma non
 # dichiarano l'identificativo sul proprio ORCID e non è deducibile.
 # Manca il LinkedIn di Lombardo.
-# Mancano le foto di Trungadi e Candela.
+# Manca la foto di Trungadi.
 # Sosta e Candela usano un indirizzo @studenti.unime.it in attesa di quello @unime.it.
 
 - id: merlino
@@ -116,7 +116,7 @@
 - id: candela
   name: Marco Candela
   role: Undergraduate Researcher
-  photo: ""        # manca
+  photo: /images/people/Candela.jpg
   bio: >-
     Marco Candela works on trusted execution environments for embedded systems, as
     a building block towards cyber-physical systems where no component has to be
