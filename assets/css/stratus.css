@@ -19,6 +19,14 @@
   --radius: 8px;
 }
 
+/* Larghezza del contenuto
+   Il tema stringe la home a 768px mentre ogni altra pagina usa 1024px.
+   Allineate, così il testo ha la stessa misura ovunque.
+   ========================================================================== */
+.layout--home .page-wrapper {
+  max-width: 1024px;
+}
+
 /* Collegamenti
    ========================================================================== */
 a {
