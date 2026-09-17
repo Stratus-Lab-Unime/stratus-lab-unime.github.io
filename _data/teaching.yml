@@ -11,6 +11,11 @@
 # pagina lo dichiara una volta in apertura. Se un giorno insegnerà anche qualcun
 # altro del gruppo, andrà reintrodotto un campo `teacher` per voce.
 #
+# `programme` porta il nome ufficiale del corso di studi: in italiano per i corsi
+# erogati in italiano, in inglese per quelli erogati in inglese. È un nome proprio,
+# non si traduce. Il livello non va ripetuto nel nome (niente "Dottorato in
+# Ingegneria"): lo dichiara già `level`, che la pagina rende come etichetta.
+#
 # `credits` e `hours` sono CFU e ore di didattica frontale. `since` è il primo anno
 # accademico di titolarità: dice da quanto il corso è tenuto, che è informazione
 # diversa dall'anno corrente.
@@ -19,7 +24,7 @@
   status: current
   title: Fondamenti di Informatica
   level: Bachelor
-  programme: Electronic and Computer Engineering
+  programme: Ingegneria Elettronica e Informatica
   role: Course leader
   credits: 12
   hours: 96
@@ -52,7 +57,7 @@
   status: current
   title: Cybersecurity nei Cyber Physical Systems
   level: Doctoral
-  programme: Engineering
+  programme: Ingegneria
   role: Course leader
   credits: ""
   hours: 6
@@ -63,7 +68,7 @@
   status: current
   title: Fondamenti di Informatica
   level: Bachelor
-  programme: Biomedical Engineering
+  programme: Ingegneria Biomedica
   role: Course leader, and lecturer of module A
   credits: 6
   hours: 48
@@ -74,7 +79,7 @@
   status: past
   title: Sistemi di Elaborazione delle Informazioni
   level: Single-cycle
-  programme: Medicine and Surgery, Biotechnology track
+  programme: Medicina e Chirurgia ad indirizzo Biotecnologico
   role: Module lecturer, within the integrated course "Fisiologia e Sistemi di Elaborazione delle Informazioni"
   credits: 2
   hours: 25
@@ -85,7 +90,7 @@
   status: past
   title: Elementi di Informatica Applicata
   level: Bachelor
-  programme: Navigation Science and Technology
+  programme: Scienze e Tecnologie della Navigazione
   role: Course leader
   credits: 6
   hours: 48
@@ -96,7 +101,7 @@
   status: past
   title: Sensori, attuatori e sistemi a microcontrollore
   level: Doctoral
-  programme: Bioengineering Applied to Medical Sciences
+  programme: Bioingegneria Applicata alle Scienze Mediche
   role: Course leader
   credits: ""
   hours: 12
@@ -107,7 +112,7 @@
   status: past
   title: Fondamenti di Informatica e Programmazione
   level: Doctoral
-  programme: Bioengineering Applied to Medical Sciences
+  programme: Bioingegneria Applicata alle Scienze Mediche
   role: Course leader
   credits: ""
   hours: 6
@@ -118,7 +123,7 @@
   status: past
   title: Informatica
   level: Specialization school
-  programme: Plastic, Reconstructive and Aesthetic Surgery
+  programme: Chirurgia Plastica, Ricostruttiva ed Estetica
   role: Course leader
   credits: 3
   hours: 24
