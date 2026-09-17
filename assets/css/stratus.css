@@ -44,7 +44,9 @@ a:hover,
    ========================================================================== */
 .pub-item,
 .course-card,
-.research-item {
+.research-item,
+.faq-item,
+.audience {
   background: var(--surface);
   border: 1px solid var(--line);
   border-left: 4px solid var(--accent-bright);
@@ -113,4 +115,97 @@ a:hover,
 
 .research-header i {
   color: var(--accent-bright);
+}
+
+/* Riquadri cliccabili
+   Un riquadro che porta altrove si clicca tutto, non solo sulla parola: il
+   link sta nel titolo e il suo ::after copre l'intero riquadro. Non si può
+   avvolgere il riquadro in un <a> perché kramdown tratta l'ancora come
+   elemento inline, chiude il tag prima del titolo e stampa un </a> letterale.
+   ========================================================================== */
+.audience--link,
+.course-card--link {
+  position: relative;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.audience--link h2 a,
+.course-card--link .course-title a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.audience--link h2 a::after,
+.course-card--link .course-title a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.audience--link:hover,
+.course-card--link:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
+}
+
+/* Riquadri domanda-risposta
+   Stesso oggetto per i blocchi per destinatario di Teaching (.audience) e per
+   le FAQ dei corsi (.faq-item): titolo colorato, testo sotto.
+   Nelle pagine dei corsi le domande sono nella lingua di erogazione, gli
+   ancoraggi no: quelli sono identificatori e restano uguali su tutte le
+   pagine, così un link a una domanda vale per qualunque corso.
+   ========================================================================== */
+.course-page-meta {
+  font-size: 0.85em;
+  color: var(--muted);
+  margin-bottom: 1.8em;
+}
+
+.faq-item,
+.audience {
+  padding: 1.2em 1.4em;
+  margin-bottom: 1.2em;
+}
+
+.faq-item h2,
+.audience h2 {
+  font-size: 1.05em;
+  color: var(--accent);
+  margin: 0 0 0.6em;
+}
+
+.faq-item p,
+.audience p {
+  font-size: 0.9em;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.faq-item p + p,
+.audience p + p {
+  margin-top: 0.7em;
+}
+
+.faq-item ul {
+  font-size: 0.9em;
+  line-height: 1.6;
+  margin: 0.7em 0 0;
+  padding-left: 1.2em;
+}
+
+.faq-item li {
+  margin-bottom: 0.6em;
+}
+
+.faq-item li:last-child {
+  margin-bottom: 0;
+}
+
+.wip {
+  color: var(--muted);
+  font-style: italic;
 }

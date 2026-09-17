@@ -59,6 +59,15 @@ permalink: /teaching/courses/
   margin: 0;
 }
 
+/* Invito a entrare nella pagina del corso: compare solo sulle schede che una
+   pagina ce l'hanno, ed è nella lingua di erogazione del corso perché parla a
+   chi quel corso lo segue. */
+.course-more {
+  font-size: 0.8em;
+  color: var(--accent);
+  margin: 0.7em 0 0;
+}
+
 @media (max-width: 700px) {
   .teaching-grid {
     grid-template-columns: 1fr;
@@ -75,9 +84,14 @@ Courses taught by Francesco Longo at the Department of Engineering of the Univer
   <h2>Currently taught</h2>
   <div class="teaching-grid">
 {% for c in current %}
-    <div class="course-card" id="{{ c.id }}">
+    {%- comment -%}
+    Un corso è cliccabile se esiste una pagina che lo dichiara con `course_id`:
+    il collegamento compare creando il file, senza doverlo elencare anche qui.
+    {%- endcomment -%}
+    {%- assign cp = site.pages | where: "course_id", c.id | first -%}
+    <div class="course-card{% if cp %} course-card--link{% endif %}" id="{{ c.id }}">
       <div class="course-head">
-        <span class="course-title">{{ c.title }}</span>
+        <span class="course-title">{% if cp %}<a href="{{ cp.url | relative_url }}">{{ c.title }}</a>{% else %}{{ c.title }}{% endif %}</span>
         <span class="course-badge">{{ c.level }}</span>
       </div>
       <div class="course-programme">{{ c.programme }}</div>
@@ -87,6 +101,9 @@ Courses taught by Francesco Longo at the Department of Engineering of the Univer
         {{ c.hours }} hours &middot; taught in {{ c.language }}
         {%- if c.since != "" %} &middot; since {{ c.since }}{% endif -%}
       </p>
+      {%- if cp %}
+      <p class="course-more">{% if c.language == "Italian" %}Per maggiori informazioni{% else %}For more information{% endif %} &rarr;</p>
+      {%- endif %}
     </div>
 {% endfor %}
   </div>
@@ -94,9 +111,10 @@ Courses taught by Francesco Longo at the Department of Engineering of the Univer
   <h2>Previously taught</h2>
   <div class="teaching-grid">
 {% for c in past %}
-    <div class="course-card" id="{{ c.id }}">
+    {%- assign cp = site.pages | where: "course_id", c.id | first -%}
+    <div class="course-card{% if cp %} course-card--link{% endif %}" id="{{ c.id }}">
       <div class="course-head">
-        <span class="course-title">{{ c.title }}</span>
+        <span class="course-title">{% if cp %}<a href="{{ cp.url | relative_url }}">{{ c.title }}</a>{% else %}{{ c.title }}{% endif %}</span>
         <span class="course-badge">{{ c.level }}</span>
       </div>
       <div class="course-programme">{{ c.programme }}</div>
@@ -105,6 +123,9 @@ Courses taught by Francesco Longo at the Department of Engineering of the Univer
         {%- if c.credits != "" %}{{ c.credits }} CFU, {% endif -%}
         {{ c.hours }} hours &middot; taught in {{ c.language }} &middot; {{ c.since }}
       </p>
+      {%- if cp %}
+      <p class="course-more">{% if c.language == "Italian" %}Per maggiori informazioni{% else %}For more information{% endif %} &rarr;</p>
+      {%- endif %}
     </div>
 {% endfor %}
   </div>
