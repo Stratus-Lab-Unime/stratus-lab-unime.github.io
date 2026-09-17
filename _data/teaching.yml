@@ -1,0 +1,126 @@
+# Corsi tenuti da membri del gruppo. I dati vengono dal curriculum, aggiornato ad
+# aprile 2024, integrato per i corsi avviati dopo quella data.
+# `status: current` per i corsi ancora attivi, `past` per quelli conclusi.
+#
+# CONVENZIONE. `role` distingue chi tiene l'intero corso da chi ne tiene un modulo:
+# "Course leader" per la titolarità, "Module lecturer" quando l'insegnamento è una
+# parte di un corso integrato. Il dato va indicato sempre, perché un modulo da 2 CFU
+# dentro un corso altrui non è la stessa cosa di un corso da 12 CFU.
+#
+# Il docente non sta nelle singole voci: essendo lo stesso per tutti i corsi, la
+# pagina lo dichiara una volta in apertura. Se un giorno insegnerà anche qualcun
+# altro del gruppo, andrà reintrodotto un campo `teacher` per voce.
+#
+# `credits` e `hours` sono CFU e ore di didattica frontale. `since` è il primo anno
+# accademico di titolarità: dice da quanto il corso è tenuto, che è informazione
+# diversa dall'anno corrente.
+
+- id: fondamenti-di-informatica
+  status: current
+  title: Fondamenti di Informatica
+  level: Bachelor
+  programme: Electronic and Computer Engineering
+  role: Course leader
+  credits: 12
+  hours: 96
+  since: 2016/2017
+  language: Italian
+
+- id: embedded-systems
+  status: current
+  title: Embedded Systems
+  level: Master
+  programme: Computer Engineering and Science
+  role: Course leader
+  credits: 6
+  hours: 48
+  since: 2019/2020
+  language: English
+
+- id: cybersecurity
+  status: current
+  title: CyberSecurity
+  level: Master
+  programme: Engineering in Computer Science
+  role: Course leader
+  credits: 9
+  hours: 72
+  since: 2024/2025
+  language: English
+
+- id: cybersecurity-cps-dottorato
+  status: current
+  title: Cybersecurity nei Cyber Physical Systems
+  level: Doctoral
+  programme: Engineering
+  role: Course leader
+  credits: ""
+  hours: 6
+  since: 2024/2025
+  language: English
+
+- id: fondamenti-informatica-biomedica
+  status: current
+  title: Fondamenti di Informatica
+  level: Bachelor
+  programme: Biomedical Engineering
+  role: Course leader, and lecturer of module A
+  credits: 6
+  hours: 48
+  since: 2020/2021
+  language: Italian
+
+- id: sistemi-elaborazione-informazioni
+  status: past
+  title: Sistemi di Elaborazione delle Informazioni
+  level: Single-cycle
+  programme: Medicine and Surgery, Biotechnology track
+  role: Module lecturer, within the integrated course "Fisiologia e Sistemi di Elaborazione delle Informazioni"
+  credits: 2
+  hours: 25
+  since: 2022/2023 &ndash; 2024/2025
+  language: Italian
+
+- id: elementi-informatica-applicata
+  status: past
+  title: Elementi di Informatica Applicata
+  level: Bachelor
+  programme: Navigation Science and Technology
+  role: Course leader
+  credits: 6
+  hours: 48
+  since: 2017/2018 &ndash; 2020/2021
+  language: Italian
+
+- id: sensori-attuatori
+  status: past
+  title: Sensori, attuatori e sistemi a microcontrollore
+  level: Doctoral
+  programme: Bioengineering Applied to Medical Sciences
+  role: Course leader
+  credits: ""
+  hours: 12
+  since: 2021/2022
+  language: Italian
+
+- id: fondamenti-programmazione-dottorato
+  status: past
+  title: Fondamenti di Informatica e Programmazione
+  level: Doctoral
+  programme: Bioengineering Applied to Medical Sciences
+  role: Course leader
+  credits: ""
+  hours: 6
+  since: 2019/2020 &ndash; 2020/2021
+  language: Italian
+
+- id: informatica-chirurgia
+  status: past
+  title: Informatica
+  level: Specialization school
+  programme: Plastic, Reconstructive and Aesthetic Surgery
+  role: Course leader
+  credits: 3
+  hours: 24
+  since: 2019/2020
+  language: Italian

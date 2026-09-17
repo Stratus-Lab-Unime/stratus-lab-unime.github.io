@@ -5,86 +5,107 @@ permalink: /teaching/
 ---
 
 <style>
+/* Riquadri, pillole e colori stanno in /assets/css/stratus.css */
+.teaching-section h2 {
+  font-size: 0.9em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--muted);
+  margin: 2.2em 0 1.2em;
+}
+
 .teaching-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1.5em;
-  margin: 2em 0;
+  gap: 1.2em;
 }
 
-/* Riquadri, pillole e colori stanno in /assets/css/stratus.css */
 .course-card {
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
-  text-decoration: none;
-  display: block;
+  padding: 1.2em 1.4em;
 }
 
-.course-card:hover {
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  transform: translateY(-3px);
-  text-decoration: none;
+.course-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.6em;
+  margin-bottom: 0.4em;
 }
 
 .course-title {
-  font-size: 1.1em;
-  margin-bottom: 0.5em;
+  font-weight: bold;
+  font-size: 1.05em;
+  color: var(--ink);
 }
 
-.course-degree {
-  font-size: 0.85em;
-  margin-bottom: 0.8em;
-  line-height: 1.5;
-}
-
-.course-degree span {
+.course-programme {
+  font-size: 0.9em;
   font-style: italic;
+  color: var(--body-text);
+  margin-bottom: 0.6em;
 }
 
-.course-badge {
-  margin-bottom: 0.8em;
+.course-role {
+  font-size: 0.78em;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: var(--body-text);
+  margin-bottom: 0.3em;
 }
 
-.course-professor {
-  font-size: 0.85em;
-  display: flex;
-  align-items: center;
-  gap: 0.4em;
+.course-meta {
+  font-size: 0.8em;
+  color: var(--muted);
+  margin: 0;
 }
 
-.course-professor i {
-  color: var(--accent-bright);
-}
-
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .teaching-grid {
     grid-template-columns: 1fr;
   }
 }
 </style>
 
-<div class="teaching-grid">
+Courses taught by Francesco Longo at the Department of Engineering of the University of Messina, and at the other departments and doctoral schools that draw on the group's subject area.
 
-  <a class="course-card" href="/teaching/fondamenti-di-informatica/">
-    <div class="course-title">Fondamenti di Informatica</div>
-    <span class="course-badge">Bachelor's Degree</span>
-    <div class="course-degree">Bachelor's Degree Programme in <span>"Ingegneria Elettronica ed Informatica"</span></div>
-    <div class="course-professor"><i class="fas fa-user"></i> Prof. Francesco Longo</div>
-  </a>
+<div class="teaching-section">
+{% assign current = site.data.teaching | where: "status", "current" %}
+{% assign past = site.data.teaching | where: "status", "past" %}
 
-  <a class="course-card" href="/teaching/cybersecurity/">
-    <div class="course-title">CyberSecurity</div>
-    <span class="course-badge">Master's Degree</span>
-    <div class="course-degree">Master's Degree Programme in <span>"Engineering in Computer Science"</span></div>
-    <div class="course-professor"><i class="fas fa-user"></i> Prof. Francesco Longo</div>
-  </a>
+  <h2>Currently taught</h2>
+  <div class="teaching-grid">
+{% for c in current %}
+    <div class="course-card" id="{{ c.id }}">
+      <div class="course-head">
+        <span class="course-title">{{ c.title }}</span>
+        <span class="course-badge">{{ c.level }}</span>
+      </div>
+      <div class="course-programme">{{ c.programme }}</div>
+      <div class="course-role">{{ c.role }}</div>
+      <p class="course-meta">
+        {%- if c.credits != "" %}{{ c.credits }} CFU, {% endif -%}
+        {{ c.hours }} hours &middot; taught in {{ c.language }}
+        {%- if c.since != "" %} &middot; since {{ c.since }}{% endif -%}
+      </p>
+    </div>
+{% endfor %}
+  </div>
 
-  <a class="course-card" href="/teaching/embedded-systems/">
-    <div class="course-title">Embedded Systems</div>
-    <span class="course-badge">Master's Degree</span>
-    <div class="course-degree">Master's Degree Programme in <span>"Engineering in Computer Science"</span></div>
-    <div class="course-professor"><i class="fas fa-user"></i> Prof. Francesco Longo</div>
-  </a>
-
-
-
+  <h2>Previously taught</h2>
+  <div class="teaching-grid">
+{% for c in past %}
+    <div class="course-card" id="{{ c.id }}">
+      <div class="course-head">
+        <span class="course-title">{{ c.title }}</span>
+        <span class="course-badge">{{ c.level }}</span>
+      </div>
+      <div class="course-programme">{{ c.programme }}</div>
+      <div class="course-role">{{ c.role }}</div>
+      <p class="course-meta">
+        {%- if c.credits != "" %}{{ c.credits }} CFU, {% endif -%}
+        {{ c.hours }} hours &middot; taught in {{ c.language }} &middot; {{ c.since }}
+      </p>
+    </div>
+{% endfor %}
+  </div>
 </div>
