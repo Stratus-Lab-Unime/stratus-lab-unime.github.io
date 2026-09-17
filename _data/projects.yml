@@ -1,0 +1,199 @@
+# Progetti in cui Francesco Longo ha un ruolo formale di responsabilità.
+# `status: current` li mette fra quelli attivi, `past` fra i conclusi.
+# L'ordine qui è quello mostrato in pagina, dal più recente.
+#
+# CONVENZIONE. Ogni voce è resa su quattro righe:
+#   1. acronym + role      l'acronimo come titolo, con il ruolo in etichetta
+#   2. title               il titolo per esteso
+#   3. scope + project     dove si collòca la voce nella gerarchia
+#   4. programme/period/funding, poi i partner
+#
+# `scope` usa un vocabolario controllato, perché le voci non stanno tutte allo
+# stesso livello: "Research line N", "Activity N", "Work packages N". Serve solo
+# quando individua una parte identificabile e numerata del progetto. Si lascia
+# vuoto sia quando la voce è il progetto intero, sia quando il ruolo riguarda
+# l'unità locale: in quel caso lo dice già il ruolo, con "for the University of
+# Messina", che è più chiaro di un'etichetta come "local unit".
+#
+# Quando più voci condividono lo stesso acronimo, `acronym` porta fra parentesi il
+# triennio del Piano che le distingue, mentre `period` resta il periodo di effettivo
+# coinvolgimento del gruppo: i due non coincidono, perché si entra a Piano avviato.
+# Il triennio è ripetuto anche in `programme`, accanto alla dicitura che lo spiega.
+#
+# `role` deve restare comprensibile da solo, anche a costo di sovrapporsi in parte
+# a `scope`: è la prima cosa che si legge, e "Scientific coordinator" senza altro
+# si intende come coordinamento dell'intero progetto. Il ruolo dice che tipo di
+# responsabilità era, lo scope su quale parte.
+#
+# `funding` deve dire a cosa si riferisce la cifra quando la voce non è il progetto
+# intero: "for the activity", "for the research line". Altrimenti il lettore
+# potrebbe prenderla per il finanziamento complessivo del progetto. Per le voci
+# ancora aperte in cui il finanziamento si accumula, "to date": così la cifra resta
+# corretta anche quando cresce.
+#
+# `project` è il progetto che contiene la voce. Si lascia vuoto quando coincide
+# con l'acronimo, per non ripetere due volte lo stesso nome. `project_title` è il
+# suo titolo ufficiale, che non sempre è lo scioglimento dell'acronimo: SYNERGIA e
+# DEMETRA sono nomi propri affiancati a un titolo descrittivo.
+
+- id: quantas
+  scope: "Activity 2.4, work package 2 &ldquo;AGRI BIO&rdquo;"
+  project: "SYNERGIA"
+  project_title: "Sistemi e Sensori per l'Agroalimentare Resiliente ed Energeticamente Sostenibile"
+  status: current
+  acronym: AES-PLANT
+  title: Autonomous embedded system for offline inference of plant nutritional status from VIS/NIR spectroscopy
+  programme: MUR, Programma Nazionale Ricerca e Innovazione (PN RIC) 2021&ndash;2027 &mdash; D.D. 307/2025
+  period: 2026 &ndash; 2028
+  role: Scientific lead of the activity
+  funding: "&euro;55,000 for the activity"
+  description: >-
+    A self-contained, wearable instrument that reads the nutritional state of a plant
+    in the field, with no network connection. A modified RGB camera with optical
+    filters feeds an edge processor built on microcontrollers with convolutional
+    accelerators; leaf images are turned into synthetic spectra, and compact neural
+    models — quantized and pruned to fit the device — produce the estimate on the
+    spot, delivered through open-source smart glasses as a real-time overlay. The
+    targets are an accuracy above 85%, inference under one second and eight hours of
+    battery life.
+  partners: CNR-IMM (work package leader), SmartMe.IO, Federico II of Naples, Bari, Catania, Palermo, Pavia, Scuola Normale Superiore.
+
+- id: cyber21-2025
+  scope: "Research line 2.15"
+  project: ""
+  project_title: ""
+  status: current
+  acronym: CYBER 2.1 (2025&ndash;2027)
+  title: Decentralized, trustless and post-quantum infrastructure for data collection and analysis in Federated Smart Grids
+  programme: National Electrical System Research &mdash; Three-Year Implementation Plan 2025&ndash;2027, MASE&ndash;CNR Programme Agreement
+  period: 2026 &ndash; 2027
+  role: Scientific lead for the University of Messina
+  funding: "&euro;148,200 for the research line"
+  description: >-
+    Smart grids are becoming federations of independent operators, none of whom has
+    reason to trust the others with the data that keeps the system running. The work
+    builds the infrastructure that makes such data collection and analysis possible
+    without a central authority to arbitrate it, and does so with cryptography chosen
+    to survive quantum attack.
+  partners: CNR Institute for Advanced Energy Technologies "Nicola Giordano".
+
+- id: zed
+  scope: ""
+  project: ""
+  project_title: ""
+  status: current
+  acronym: ZED
+  title: Zancle E-Drive
+  programme: University of Messina
+  period: 2021 &ndash; present
+  role: Faculty Advisor
+  funding: "&euro;35,000 granted to the team to date"
+  description: >-
+    A student team that designs and builds a fully electric single-seater for Formula
+    Student, and races it in the driverless categories. More than a hundred
+    undergraduate and graduate students have passed through it, across mechanical,
+    electronic, software and commercial divisions.
+  partners: ""
+
+- id: cyber21-2023
+  scope: "Research line 2.10"
+  project: ""
+  project_title: ""
+  status: past
+  acronym: CYBER 2.1 (2022&ndash;2024)
+  title: Trustless auditing of authentication and authorization for the secure control of energy generation, storage and hydrogen production systems
+  programme: National Electrical System Research &mdash; Three-Year Implementation Plan 2022&ndash;2024, MASE&ndash;CNR Programme Agreement
+  period: 2023 &ndash; 2024
+  role: Scientific lead for the University of Messina
+  funding: "&euro;100,152 for the research line"
+  description: >-
+    The first phase of the collaboration with CNR: a blockchain-based platform for
+    authenticating users and granting secure access to smart grid systems, with
+    hydrogen production as its proving ground.
+  partners: CNR Institute for Advanced Energy Technologies "Nicola Giordano".
+
+- id: demetra
+  scope: ""
+  project: ""
+  project_title: ""
+  status: past
+  acronym: DEMETRA
+  title: An Integrated Platform for Smart Nutrient Estimation in Agriculture 4.0 featuring Smartphone-based Spectroscopy, Machine Learning as-a-Service, and Open Data
+  programme: PRIN 2022
+  period: 2023 &ndash; 2025
+  role: Scientific lead for the University of Messina and Substitute Principal Investigator
+  funding: "&euro;249,098 overall, &euro;80,269 to Messina"
+  description: >-
+    Estimating the nutrients a crop needs from a spectrum captured by an ordinary
+    smartphone, with the models served from the cloud and the results released as open
+    data. The work continues in AES-PLANT, which moves the same inference onto the
+    device itself.
+  partners: University of Pisa, CNR Institute of Information Science and Technologies "Alessandro Faedo".
+
+- id: airfactories
+  scope: ""
+  project: ""
+  project_title: ""
+  status: past
+  acronym: Air Factories 2.0
+  title: A Distributed Factory for Intelligent, Decentralized, Sustainable and Resilient Production
+  programme: FISR Covid 2020
+  period: 2021 &ndash; 2022
+  role: Principal Investigator
+  funding: "&euro;69,764"
+  description: >-
+    A factory with no centre: production distributed across a network of 3D printers,
+    coordinated through blockchain so that orders, provenance and quality records hold
+    without a single operator vouching for them.
+  partners: ""
+
+- id: toolsmart
+  scope: ""
+  project: ""
+  project_title: ""
+  status: past
+  acronym: TOO(L)SMART
+  title: Tools for the informed and inclusive management of urban policies for Smart Cities
+  programme: European Union &mdash; PON Governance and Institutional Capacity 2014&ndash;2020 (ESF/ERDF)
+  period: 2018 &ndash; 2023
+  role: Technology transfer lead for the University of Messina
+  funding: ""
+  description: >-
+    Taking #SmartME, the sensor network built across Messina, and handing it to four
+    other Italian cities — the difficult half of a smart city project being not the
+    first deployment but the second.
+  partners: City of Turin (lead), City of Messina, Padua, Lecce and Syracuse.
+
+- id: cloudwave
+  scope: "Work packages 2.1 and 6.1"
+  project: ""
+  project_title: ""
+  status: past
+  acronym: CloudWave
+  title: Agile Service Engineering for the Future Internet
+  programme: European Union, FP7 — Grant Agreement 610802
+  period: 2013 &ndash; 2016
+  role: Scientific coordinator of work packages
+  funding: "&euro;6.3M EU contribution, &euro;577,720 to Messina"
+  description: >-
+    A monitoring framework that observes a cloud platform at every level at once, and
+    feeds what it sees back into statistical and analytical models that decide how the
+    platform should adapt.
+  partners: IBM Haifa Research Lab, University of Duisburg-Essen, SAP, Intel.
+
+- id: visioncloud
+  scope: ""
+  project: ""
+  project_title: ""
+  status: past
+  acronym: VISION Cloud
+  title: Virtualized Storage Services Foundation for the Future Internet
+  programme: European Union, FP7 — Grant Agreement 257019
+  period: 2010 &ndash; 2013
+  role: Scientific coordinator for the University of Messina
+  funding: "&euro;9.2M EU contribution, &euro;388,000 to Messina"
+  description: >-
+    Establishing what quality of service a distributed storage platform can actually
+    guarantee, by attacking the question three ways at once: analytical modelling,
+    simulation and measurement on the running system.
+  partners: IBM Haifa Research Lab, Siemens, RAI.
