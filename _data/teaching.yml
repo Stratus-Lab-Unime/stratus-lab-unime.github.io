@@ -16,6 +16,12 @@
 # non si traduce. Il livello non va ripetuto nel nome (niente "Dottorato in
 # Ingegneria"): lo dichiara già `level`, che la pagina rende come etichetta.
 #
+# `links` raccoglie gli indirizzi esterni del corso: `elearning` è lo spazio del
+# corso sulla piattaforma di Ateneo, `catalogue` è la scheda ufficiale nel Course
+# Catalogue. Entrambi contengono l'anno accademico nei parametri, quindi vanno
+# rifatti a ogni nuova offerta: stando qui si cambiano in un punto solo invece che
+# dentro il testo delle pagine.
+#
 # `credits` e `hours` sono CFU e ore di didattica frontale. `since` è il primo anno
 # accademico di titolarità: dice da quanto il corso è tenuto, che è informazione
 # diversa dall'anno corrente.
@@ -30,6 +36,9 @@
   hours: 96
   since: 2016/2017
   language: Italian
+  links:
+    elearning: https://elearning.unime.it/course/view.php?id=832
+    catalogue: https://unime.coursecatalogue.cineca.it/corsi/2026/10821/insegnamenti/2026/192/2026/1?coorte=2026&schemaid=13878
 
 - id: embedded-systems
   status: current

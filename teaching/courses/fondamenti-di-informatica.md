@@ -5,17 +5,26 @@ permalink: /teaching/courses/fondamenti-di-informatica/
 course_id: fondamenti-di-informatica
 ---
 
+{% assign c = site.data.teaching | where: "id", page.course_id | first %}
 {% include course-header.html %}
 
 <div class="faq-item" id="topics">
   <h2>Di cosa parla il corso?</h2>
   <p>Di come si rappresenta ed elabora l'informazione in un calcolatore e di come si programma in C. Il modulo A parte dal sistema binario, dall'architettura di Von Neumann e dagli algoritmi per arrivare ai costrutti del linguaggio C, agli array e ai puntatori; il modulo B affronta ricorsione, complessità computazionale, algoritmi di ricerca e ordinamento e le strutture dati elementari: liste, pile e code.</p>
+  <p>Il programma ufficiale sta sulla <a href="{{ c.links.catalogue }}">pagina del corso nel catalogo di Ateneo</a>, con una scheda per ciascuno dei due moduli.</p>
 </div>
 
 <div class="faq-item" id="material">
   <h2>Dove trovo il materiale didattico?</h2>
-  <p>Il materiale più aggiornato sta sul sistema di e-learning di Ateneo. Fate sempre riferimento all'ultimo anno accademico, che in questo momento è il <a href="https://elearning.unime.it/course/view.php?id=832">2026/2027</a>. Per accedere ai file dovete iscrivervi al corso.</p>
+  <p>Il materiale più aggiornato sta sul sistema di e-learning di Ateneo. Fate sempre riferimento all'ultimo anno accademico, che in questo momento è il <a href="{{ c.links.elearning }}">2026/2027</a>. Per accedere ai file dovete iscrivervi al corso.</p>
   <p>Il collegamento porta a una pagina di Ingegneria Biomedica: è quella corretta, non avete sbagliato. L'insegnamento è incardinato su quel corso di laurea.</p>
+</div>
+
+<div class="faq-item" id="contact">
+  <h2>Come contatto il professore e dove trovo gli avvisi?</h2>
+  <p>Potete scrivermi a <a href="mailto:flongo@unime.it">flongo@unime.it</a>, su WhatsApp o su Teams quando volete: non disturbate mai. Se sono impegnato, concordiamo un appuntamento.</p>
+  <p>Il ricevimento in presenza è il martedì dalle 15.00 alle 16.00, al Dipartimento di Ingegneria, blocco B, settimo piano, stanza 743. Mandatemi prima una mail o un messaggio, per avere conferma che ci sono.</p>
+  <p>Gli avvisi dell'ultimo minuto passano dalla chat WhatsApp di classe, che uso anche per le notizie dal Dipartimento e dall'Ateneo. Ne creo una nuova a ogni anno accademico: il link si trova nel blocco di slide #0 del modulo A, sull'e-learning.</p>
 </div>
 
 <div class="faq-item" id="exam">
@@ -31,11 +40,4 @@ course_id: fondamenti-di-informatica
   <p>Durante il primo semestre si svolgono due prove in itinere, corrispondenti alla prima e alla seconda prova scritta. Valgono esattamente un anno, fino alla corrispondente prova in itinere dell'anno successivo: per gli studenti in corso, fino all'appello di novembre incluso.</p>
   <p>Se non sostenete o non superate le prove in itinere, a ogni appello potete ripetere la prima e la seconda prova scritta, sostenere la terza prova scritta e sostenere la prova orale, quest'ultima solo dopo aver superato tutte le prove scritte.</p>
   <p>I testi degli appelli precedenti sono raccolti per prova: <a href="https://drive.google.com/drive/folders/19wuUuArBTbhi1hpOWUDAXQ4I7mww5mTy">prima</a>, <a href="https://drive.google.com/drive/folders/1wdfgNtqygGgs8Fym3zvkRnAkh5R5IIe-">seconda</a> e <a href="https://drive.google.com/drive/folders/1BBWfuju_t2m774QvXoGM7asBNmHu_0L0">terza</a>.</p>
-</div>
-
-<div class="faq-item" id="contact">
-  <h2>Come contatto il professore e dove trovo gli avvisi?</h2>
-  <p>Potete scrivermi a <a href="mailto:flongo@unime.it">flongo@unime.it</a>, su WhatsApp o su Teams quando volete: non disturbate mai. Se sono impegnato, concordiamo un appuntamento.</p>
-  <p>Il ricevimento in presenza è il martedì dalle 15.00 alle 16.00, al Dipartimento di Ingegneria, blocco B, settimo piano, stanza 743. Mandatemi prima una mail o un messaggio, per avere conferma che ci sono.</p>
-  <p>Gli avvisi dell'ultimo minuto passano dalla chat WhatsApp di classe, che uso anche per le notizie dal Dipartimento e dall'Ateneo. Ne creo una nuova a ogni anno accademico: il link si trova nel blocco di slide #0 del modulo A, sull'e-learning.</p>
 </div>
