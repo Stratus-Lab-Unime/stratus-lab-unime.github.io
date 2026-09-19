@@ -16,6 +16,11 @@
   --line: #E5E5E5;
   --surface: #FAFAFA;
 
+  /* Unico colore fuori dalla scala dell'azzurro: serve per gli avvisi, cioè
+     per le cose che allo studente, se ignorate, costano care. */
+  --warn: #C62828;
+  --warn-soft: #FDECEA;
+
   --radius: 8px;
 }
 
@@ -178,6 +183,42 @@ a:hover,
   margin: 0 0 0.6em;
 }
 
+/* Domanda a scomparsa
+   Ogni riquadro è un <details>: la domanda resta sempre visibile, la risposta
+   si apre al clic. Elemento nativo, quindi funziona da tastiera e con i lettori
+   di schermo senza aggiungere nulla. */
+.faq-item > summary {
+  display: flex;
+  align-items: baseline;
+  gap: 0.8em;
+  cursor: pointer;
+  list-style: none;
+}
+
+.faq-item > summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item > summary h2 {
+  margin: 0;
+}
+
+.faq-item > summary::after {
+  content: "+";
+  margin-left: auto;
+  color: var(--accent);
+  font-size: 1.2em;
+  line-height: 1;
+}
+
+.faq-item[open] > summary::after {
+  content: "\2212";
+}
+
+.faq-item[open] > summary {
+  margin-bottom: 0.8em;
+}
+
 .faq-item p,
 .audience p {
   font-size: 0.9em;
@@ -208,4 +249,12 @@ a:hover,
 .wip {
   color: var(--muted);
   font-style: italic;
+}
+
+.faq-warning {
+  background: var(--warn-soft);
+  border-left: 4px solid var(--warn);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 0.9em 1.1em;
+  margin-top: 1em;
 }
