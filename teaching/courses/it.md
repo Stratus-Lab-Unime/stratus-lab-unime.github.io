@@ -1,5 +1,7 @@
 ---
 layout: page
+translation: /teaching/courses/
+translation_label: English
 lang: it
 title: Corsi
 permalink: /teaching/courses/it/
@@ -76,9 +78,7 @@ permalink: /teaching/courses/it/
 }
 </style>
 
-<a class="lang-switch" href="{{ '/teaching/courses/' | relative_url }}">English</a>
-
-Corsi tenuti da Francesco Longo al Dipartimento di Ingegneria dell'Università di Messina e, per gli insegnamenti di informatica, in altri dipartimenti e scuole di dottorato dell'Ateneo. This page is also available <a href="{{ '/teaching/courses/' | relative_url }}">in English</a>.
+Corsi tenuti da Francesco Longo al Dipartimento di Ingegneria dell'Università degli Studi di Messina e in altri dipartimenti e scuole di dottorato dell'Ateneo. This page is also available <a href="{{ '/teaching/courses/' | relative_url }}">in English</a>.
 
 <div class="teaching-section">
 {% assign current = site.data.teaching | where: "status", "current" %}
