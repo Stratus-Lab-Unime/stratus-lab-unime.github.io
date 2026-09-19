@@ -195,6 +195,13 @@ a:hover,
   list-style: none;
 }
 
+/* Il triangolo nativo si toglie in tre modi diversi a seconda del motore del
+   browser: `list-style` qui sopra, `::marker` e, sui browser WebKit più vecchi,
+   lo pseudo-elemento proprietario. */
+.faq-item > summary::marker {
+  content: "";
+}
+
 .faq-item > summary::-webkit-details-marker {
   display: none;
 }

@@ -37,17 +37,12 @@ The acronym came first. We needed a name for a group working on <span class="acr
 
 <figure class="lupa-photo">
   <img src="/images/lupa/lupa-porto.jpg" alt="A low bank of fog crossing the Strait of Messina behind a marina, under a clear sky">
-  <figcaption>The fog crosses the Strait as a single flat layer, with clear air above it. Photo: Normanno.com</figcaption>
+  <figcaption>The fog crosses the Strait as a single flat layer, with clear air above it. Photo: <a href="https://www.normanno.com/">Normanno.com</a></figcaption>
 </figure>
 
 A stratus is the low, flat, featureless cloud that spreads in sheets instead of piling up. When it comes down far enough to touch the surface, it stops being called a cloud and starts being called fog. That is the whole difference: altitude.
 
 And the Strait of Messina produces one of the finest examples in the Mediterranean. Here it is called **la Lupa** — the she-wolf.
-
-<figure class="lupa-photo">
-  <img src="/images/lupa/lupa-tetti.jpg" alt="The fog seen from the rooftops of Messina, with the mountains of Calabria emerging above it">
-  <figcaption>Seen from the rooftops of Messina: the city below, the stratus in the middle, Calabria above. Photo: Normanno.com</figcaption>
-</figure>
 
 It is advection fog. In spring the water of the Strait stays below 17 °C, kept cold by the deep currents that constantly exchange water between the Tyrrhenian and the Ionian. When the first warm, humid air of North African origin drifts across that cold surface, it cools abruptly, condenses, and settles into a layer one to two hundred metres thick that crosses the Strait and swallows both shores in minutes.
 
@@ -57,7 +52,7 @@ As for the name, the most credible account is that the fog made the boats howl. 
 
 <figure class="lupa-photo">
   <img src="/images/lupa/lupa-madonnina.jpg" alt="The Madonna della Lettera statue at the entrance of Messina harbour, standing against the fog">
-  <figcaption>La Lupa at the harbour mouth. Photo: Normanno.com</figcaption>
+  <figcaption>La Lupa at the harbour mouth. Photo: <a href="https://www.normanno.com/">Normanno.com</a></figcaption>
 </figure>
 
 Serendipity has given science penicillin and X-rays. It gave us a name that belongs to this stretch of sea.
