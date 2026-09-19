@@ -37,7 +37,6 @@ image:
 }
 
 .page-content p {
-  text-align: justify;
   margin-bottom: 0.9em;
 }
 

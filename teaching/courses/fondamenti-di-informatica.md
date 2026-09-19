@@ -1,5 +1,6 @@
 ---
 layout: page
+lang: it
 title: Fondamenti di Informatica
 permalink: /teaching/courses/fondamenti-di-informatica/
 course_id: fondamenti-di-informatica

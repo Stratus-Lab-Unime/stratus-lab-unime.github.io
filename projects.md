@@ -94,7 +94,6 @@ Projects in which Francesco Longo holds, or has held, a formal position of scien
   font-size: 0.9em;
   line-height: 1.6;
   margin: 0;
-  text-align: justify;
 }
 
 .project-partners {

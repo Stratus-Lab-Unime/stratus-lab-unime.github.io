@@ -1,5 +1,6 @@
 ---
 layout: page
+lang: it
 title: Fondamenti di Informatica (modulo A)
 permalink: /teaching/courses/fondamenti-informatica-biomedica/
 course_id: fondamenti-informatica-biomedica

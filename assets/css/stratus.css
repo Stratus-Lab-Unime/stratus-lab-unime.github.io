@@ -290,3 +290,28 @@ a:hover,
   color: #fff;
   text-decoration: none;
 }
+
+/* Giustificazione
+   Giustificare senza sillabare apre buchi bianchi fra le parole, e su uno schermo
+   stretto diventano fiumi verticali: `hyphens` è quindi parte della regola, non un
+   ornamento. Il browser sillaba secondo la lingua dichiarata dalla pagina, per cui
+   le pagine in italiano portano `lang: it` nel front matter.
+   Titoli, etichette e didascalie restano fuori: su una riga sola la
+   giustificazione non fa nulla e la sillabazione spezzerebbe parole in evidenza.
+   ========================================================================== */
+.page-content p,
+.page-content li {
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+/* Sotto i 700px la colonna è troppo stretta perché la giustificazione regga senza
+   sillabare, e la sillabazione dipende da dizionari che non tutti i browser hanno:
+   Chromium su Linux, per esempio, non li include. Su schermo stretto quindi si
+   resta a bandiera, che è sempre leggibile. */
+@media (min-width: 700px) {
+  .page-content p,
+  .page-content li {
+    text-align: justify;
+  }
+}

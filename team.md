@@ -41,7 +41,6 @@ permalink: /team/
 }
 
 .director-bio {
-  text-align: justify;
   margin: 0 0 1em;
 }
 
@@ -224,7 +223,6 @@ a.img-circle:focus-visible {
   font-size: 0.9em;
   line-height: 1.6;
   margin: 0 0 1em;
-  text-align: justify;
 }
 
 .person-links {
@@ -277,6 +275,8 @@ a.img-circle:focus-visible {
   .person-links { justify-content: center; }
 }
 </style>
+
+The people of STRATUS Lab, led by Francesco Longo. Each member's photograph opens a short profile, with a biography, contacts and research profiles.
 
 {% assign d = site.data.director %}
 <div class="lab-director">
