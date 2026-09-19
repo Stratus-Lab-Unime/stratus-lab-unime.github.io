@@ -67,17 +67,6 @@
     <<: *fondamenti_links
     catalogue: https://unime.coursecatalogue.cineca.it/corsi/2026/10816/insegnamenti/2026/2721-1/2026/9999?annoOrdinamento=2026&coorte=2026
 
-- id: embedded-systems
-  status: current
-  title: Embedded Systems
-  level: Master
-  programme: Engineering in Computer Science
-  role: Course leader
-  credits: 6
-  hours: 48
-  since: 2019/2020
-  language: English
-
 - id: cybersecurity
   status: current
   title: CyberSecurity
@@ -87,6 +76,17 @@
   credits: 9
   hours: 72
   since: 2024/2025
+  language: English
+
+- id: embedded-systems
+  status: current
+  title: Embedded Systems
+  level: Master
+  programme: Engineering in Computer Science
+  role: Course leader
+  credits: 6
+  hours: 48
+  since: 2019/2020
   language: English
 
 - id: cybersecurity-cps-dottorato
@@ -100,17 +100,6 @@
   since: 2024/2025
   language: English
 
-- id: sistemi-elaborazione-informazioni
-  status: past
-  title: Sistemi di Elaborazione delle Informazioni
-  level: Single-cycle
-  programme: Medicina e Chirurgia ad indirizzo Biotecnologico
-  role: Module lecturer, within the integrated course "Fisiologia e Sistemi di Elaborazione delle Informazioni"
-  credits: 2
-  hours: 25
-  since: 2022/2023 &ndash; 2024/2025
-  language: Italian
-
 - id: elementi-informatica-applicata
   status: past
   title: Elementi di Informatica Applicata
@@ -120,6 +109,17 @@
   credits: 6
   hours: 48
   since: 2017/2018 &ndash; 2020/2021
+  language: Italian
+
+- id: sistemi-elaborazione-informazioni
+  status: past
+  title: Sistemi di Elaborazione delle Informazioni
+  level: Single-cycle
+  programme: Medicina e Chirurgia ad indirizzo Biotecnologico
+  role: Module lecturer, within the integrated course "Fisiologia e Sistemi di Elaborazione delle Informazioni"
+  credits: 2
+  hours: 25
+  since: 2022/2023 &ndash; 2024/2025
   language: Italian
 
 - id: sensori-attuatori
