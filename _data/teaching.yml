@@ -18,9 +18,11 @@
 #
 # `links` raccoglie gli indirizzi esterni del corso: `elearning` è lo spazio del
 # corso sulla piattaforma di Ateneo, `catalogue` è la scheda ufficiale nel Course
-# Catalogue. Entrambi contengono l'anno accademico nei parametri, quindi vanno
-# rifatti a ogni nuova offerta: stando qui si cambiano in un punto solo invece che
-# dentro il testo delle pagine.
+# Catalogue, `archive_1`, `archive_2` e `archive_3` sono gli archivi dei testi degli
+# appelli precedenti, uno per prova scritta. I primi due contengono l'anno accademico
+# nei parametri e vanno rifatti a ogni nuova offerta; gli archivi vengono citati da
+# più risposte della stessa pagina. Stando qui si cambiano in un punto solo invece
+# che dentro il testo delle pagine.
 #
 # `credits` e `hours` sono CFU e ore di didattica frontale. `since` è il primo anno
 # accademico di titolarità: dice da quanto il corso è tenuto, che è informazione
@@ -36,9 +38,29 @@
   hours: 96
   since: 2016/2017
   language: Italian
-  links:
+  links: &fondamenti_links
     elearning: https://elearning.unime.it/course/view.php?id=832
     catalogue: https://unime.coursecatalogue.cineca.it/corsi/2026/10821/insegnamenti/2026/192/2026/1?coorte=2026&schemaid=13878
+    archive_1: https://drive.google.com/drive/folders/19wuUuArBTbhi1hpOWUDAXQ4I7mww5mTy
+    archive_2: https://drive.google.com/drive/folders/1wdfgNtqygGgs8Fym3zvkRnAkh5R5IIe-
+    archive_3: https://drive.google.com/drive/folders/1BBWfuju_t2m774QvXoGM7asBNmHu_0L0
+
+- id: fondamenti-informatica-biomedica
+  status: current
+  title: Fondamenti di Informatica (modulo A)
+  level: Bachelor
+  programme: Ingegneria Biomedica
+  role: Course leader, and lecturer of module A
+  credits: 6
+  hours: 48
+  since: 2020/2021
+  language: Italian
+  # Stessi spazi e stessi archivi del corso di Elettronica e Informatica: le prove
+  # sono comuni ai due corsi di laurea. Cambia solo la scheda di catalogo, che qui
+  # è quella del modulo A (codice 2721-1), l'unico tenuto dal Prof. Longo.
+  links:
+    <<: *fondamenti_links
+    catalogue: https://unime.coursecatalogue.cineca.it/corsi/2026/10816/insegnamenti/2026/2721-1/2026/9999?annoOrdinamento=2026&coorte=2026
 
 - id: embedded-systems
   status: current
@@ -72,17 +94,6 @@
   hours: 6
   since: 2024/2025
   language: English
-
-- id: fondamenti-informatica-biomedica
-  status: current
-  title: Fondamenti di Informatica
-  level: Bachelor
-  programme: Ingegneria Biomedica
-  role: Course leader, and lecturer of module A
-  credits: 6
-  hours: 48
-  since: 2020/2021
-  language: Italian
 
 - id: sistemi-elaborazione-informazioni
   status: past
