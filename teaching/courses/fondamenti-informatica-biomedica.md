@@ -39,6 +39,8 @@ course_id: fondamenti-informatica-biomedica
     <li><b>Prima prova scritta</b>, test a risposta multipla più un esercizio su carta. Argomenti: conoscere i principi di base dell'informatica, l'architettura dell'elaboratore, la rappresentazione digitale dell'informazione e i concetti di base dei linguaggi, ovvero tutto il programma fino all'introduzione al linguaggio C inclusa (blocchi da 1 a 5).</li>
     <li><b>Seconda prova scritta</b>, prova di programmazione di base al calcolatore. Argomenti: conoscere i concetti di base del linguaggio C, variabili e I/O di base, espressioni e operatori, strutture di controllo, array e stringhe, puntatori, tipi strutturati, funzioni e file, ovvero tutta la parte sul C (blocchi da 6 a 13).</li>
   </ul>
+  <p>Durante il primo semestre si svolgono due prove in itinere, corrispondenti alla prima e alla seconda prova scritta. Valgono esattamente un anno, fino alla corrispondente prova in itinere dell'anno successivo: per gli studenti in corso, fino all'appello di novembre incluso.</p>
+  <p>Se le prove in itinere non vengono sostenute o non vengono superate, a ogni appello è possibile ripetere la prima e la seconda prova scritta.</p>
   <p>I testi delle prove precedenti sono raccolti per prova: <a href="{{ c.links.archive_1 }}">prima</a> e <a href="{{ c.links.archive_2 }}">seconda</a>.</p>
 </details>
 

@@ -11,6 +11,10 @@
 # pagina lo dichiara una volta in apertura. Se un giorno insegnerà anche qualcun
 # altro del gruppo, andrà reintrodotto un campo `teacher` per voce.
 #
+# `scope` si compila solo quando CFU e ore non sono quelli del corso intero, per
+# esempio perché la pagina riguarda un singolo modulo: la testata lo stampa fra
+# parentesi dopo le ore, così il numero non viene letto come se fosse del corso.
+#
 # `programme` porta il nome ufficiale del corso di studi: in italiano per i corsi
 # erogati in italiano, in inglese per quelli erogati in inglese. È un nome proprio,
 # non si traduce. Il livello non va ripetuto nel nome (niente "Dottorato in
@@ -53,6 +57,7 @@
   role: Course leader, and lecturer of module A
   credits: 6
   hours: 48
+  scope: modulo A
   since: 2020/2021
   language: Italian
   # Stessi spazi e stessi archivi del corso di Elettronica e Informatica: le prove
