@@ -88,6 +88,9 @@
   hours: 48
   since: 2019/2020
   language: English
+  links:
+    elearning: https://elearning.unime.it/course/view.php?id=830
+    catalogue: https://unime.coursecatalogue.cineca.it/corsi/2025/10817/insegnamenti/2026/10970/2025/9999?coorte=2025&schemaid=13052
 
 - id: cybersecurity-cps-dottorato
   status: current
