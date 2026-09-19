@@ -321,3 +321,20 @@ a:hover,
     text-align: justify;
   }
 }
+
+/* Icone
+   Disegnate in linea da _data/icons.yml. Prendono colore e dimensione dal testo che
+   le contiene, come faceva il <i> di Font Awesome; lo scostamento verticale è
+   quello che Font Awesome applicava per appoggiarle alla linea di base.
+   ========================================================================== */
+.icon {
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  vertical-align: -0.125em;
+}
+
+.social-icon .icon {
+  width: 2em;
+  height: 2em;
+}

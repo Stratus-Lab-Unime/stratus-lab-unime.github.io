@@ -51,7 +51,7 @@ The group's work follows the four lines that give the laboratory its name.
 
   <div class="research-item">
     <div class="research-header">
-      <i class="fas fa-shield-alt"></i>
+      {% include icon.html name="shield-alt" %}
       <h3>Secure</h3>
     </div>
     <p>Industrial and automotive systems were built before the threats they now face. We work on post-quantum cryptography for legacy protocols such as Modbus, anomaly detection on automotive CAN buses, and formal verification of security properties in containerized IoT deployments.</p>
@@ -59,7 +59,7 @@ The group's work follows the four lines that give the laboratory its name.
 
   <div class="research-item">
     <div class="research-header">
-      <i class="fas fa-key"></i>
+      {% include icon.html name="key" %}
       <h3>TRustless</h3>
     </div>
     <p>Rather than hardening the central authority, we remove it: self-sovereign identity in place of central credential issuers, zero-trust architectures for software-defined vehicles, and federated learning that keeps data where it is produced — together with the attacks that federation does not, by itself, prevent.</p>
@@ -67,7 +67,7 @@ The group's work follows the four lines that give the laboratory its name.
 
   <div class="research-item">
     <div class="research-header">
-      <i class="fas fa-cogs"></i>
+      {% include icon.html name="cogs" %}
       <h3>Autonomous</h3>
     </div>
     <p>Machines that decide for themselves, within the limits of the hardware they run on: decentralized control migration for long-endurance robot swarms, reinforcement learning inside the memory budget of an edge device, and neuro-symbolic models that pair learning with domain knowledge.</p>
@@ -75,7 +75,7 @@ The group's work follows the four lines that give the laboratory its name.
 
   <div class="research-item">
     <div class="research-header">
-      <i class="fas fa-cloud"></i>
+      {% include icon.html name="cloud" %}
       <h3>Ubiquitous Systems</h3>
     </div>
     <p>The substrate everything else depends on, from the embedded device to the data center: virtualization of embedded FPGAs, distributed hypervisors, serverless orchestration across the cloud-to-things continuum, and the IoT infrastructure that ties them together.</p>

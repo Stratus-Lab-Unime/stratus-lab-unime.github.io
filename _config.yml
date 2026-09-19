@@ -29,16 +29,16 @@ copyright: >-
 footer_links:
   - title: GitHub
     url: https://github.com/Stratus-Lab-Unime
-    icon: fab fa-github-square
+    icon: github-square
 
-# Le librerie del tema sono servite dal repository invece che dai loro CDN: così il
-# browser di chi visita il sito non contatta code.jquery.com e use.fontawesome.com,
-# che altrimenti ne vedrebbero l'indirizzo IP. L'elenco sostituisce per intero quello
-# predefinito del tema, quindi comprende anche main.min.js.
+# jQuery è servita dal repository invece che dal suo CDN, così il browser di chi
+# visita il sito non contatta code.jquery.com, che altrimenti ne vedrebbe
+# l'indirizzo IP. L'elenco sostituisce per intero quello predefinito del tema,
+# quindi comprende anche main.min.js. Font Awesome non compare perché le sue icone
+# sono disegnate in linea: vedi _data/icons.yml.
 footer_scripts:
   - /assets/js/vendor/jquery-3.3.1.min.js
   - /assets/js/main.min.js
-  - /assets/js/vendor/fontawesome-5.0.12-all.js
 
 after_footer_scripts:
   - /assets/js/custom.js
