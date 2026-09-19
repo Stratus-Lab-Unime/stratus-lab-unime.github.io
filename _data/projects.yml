@@ -48,14 +48,10 @@
   role: Scientific lead of the activity
   funding: "&euro;55,000 for the activity"
   description: >-
-    A self-contained, wearable instrument that reads the nutritional state of a plant
-    in the field, with no network connection. A modified RGB camera with optical
-    filters feeds an edge processor built on microcontrollers with convolutional
-    accelerators; leaf images are turned into synthetic spectra, and compact neural
-    models — quantized and pruned to fit the device — produce the estimate on the
-    spot, delivered through open-source smart glasses as a real-time overlay. The
-    targets are an accuracy above 85%, inference under one second and eight hours of
-    battery life.
+    A wearable instrument that reads the nutritional state of a plant in the field,
+    without a network. A modified RGB camera feeds an edge processor where compact
+    neural models, quantized to fit the device, turn leaf images into an estimate, shown
+    on smart glasses as a real-time overlay in under a second.
   partners: CNR-IMM (work package leader), SmartMe.IO, Federico II of Naples, Bari, Catania, Palermo, Pavia, Scuola Normale Superiore.
 
 - id: cyber21-2025
@@ -71,10 +67,9 @@
   funding: "&euro;148,200 for the research line"
   description: >-
     Smart grids are becoming federations of independent operators, none of whom has
-    reason to trust the others with the data that keeps the system running. The work
-    builds the infrastructure that makes such data collection and analysis possible
-    without a central authority to arbitrate it, and does so with cryptography chosen
-    to survive quantum attack.
+    reason to trust the others with the data that keeps it running. The work builds the
+    infrastructure that collects and analyses that data without a central authority,
+    with cryptography chosen to survive quantum attack.
   partners: CNR Institute for Advanced Energy Technologies "Nicola Giordano".
 
 - id: zed
