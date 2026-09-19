@@ -1,7 +1,8 @@
 ---
 layout: page
-title: Courses
-permalink: /teaching/courses/
+lang: it
+title: Corsi
+permalink: /teaching/courses/it/
 ---
 
 <style>
@@ -75,15 +76,15 @@ permalink: /teaching/courses/
 }
 </style>
 
-<a class="lang-switch" href="{{ '/teaching/courses/it/' | relative_url }}">Italiano</a>
+<a class="lang-switch" href="{{ '/teaching/courses/' | relative_url }}">English</a>
 
-Courses taught by Francesco Longo at the Department of Engineering of the University of Messina and, for computer science subjects, in other departments and doctoral schools of the University. Questa pagina è disponibile anche <a href="{{ '/teaching/courses/it/' | relative_url }}">in italiano</a>.
+Corsi tenuti da Francesco Longo al Dipartimento di Ingegneria dell'Università di Messina e, per gli insegnamenti di informatica, in altri dipartimenti e scuole di dottorato dell'Ateneo. This page is also available <a href="{{ '/teaching/courses/' | relative_url }}">in English</a>.
 
 <div class="teaching-section">
 {% assign current = site.data.teaching | where: "status", "current" %}
 {% assign past = site.data.teaching | where: "status", "past" %}
 
-  <h2>Currently taught</h2>
+  <h2>Insegnamenti attuali</h2>
   <div class="teaching-grid">
 {% for c in current %}
     {%- comment -%}
@@ -94,14 +95,14 @@ Courses taught by Francesco Longo at the Department of Engineering of the Univer
     <div class="course-card{% if cp %} course-card--link{% endif %}" id="{{ c.id }}">
       <div class="course-head">
         <span class="course-title">{% if cp %}<a href="{{ cp.url | relative_url }}">{{ c.title }}</a>{% else %}{{ c.title }}{% endif %}</span>
-        <span class="course-badge">{{ c.level }}</span>
+        <span class="course-badge">{{ site.data.i18n.level[c.level] | default: c.level }}</span>
       </div>
       <div class="course-programme">{{ c.programme }}</div>
-      <div class="course-role">{{ c.role }}</div>
+      <div class="course-role">{{ site.data.i18n.role[c.role] | default: c.role }}</div>
       <p class="course-meta">
         {%- if c.credits != "" %}{{ c.credits }} CFU, {% endif -%}
-        {{ c.hours }} hours &middot; taught in {{ c.language }}
-        {%- if c.since != "" %} &middot; since {{ c.since }}{% endif -%}
+        {{ c.hours }} ore &middot; in {{ site.data.i18n.language[c.language] | default: c.language }}
+        {%- if c.since != "" %} &middot; dal {{ c.since }}{% endif -%}
       </p>
       {%- if cp %}
       <p class="course-more">{% if c.language == "Italian" %}Per maggiori informazioni{% else %}For more information{% endif %} &rarr;</p>
@@ -110,20 +111,20 @@ Courses taught by Francesco Longo at the Department of Engineering of the Univer
 {% endfor %}
   </div>
 
-  <h2>Previously taught</h2>
+  <h2>Insegnamenti passati</h2>
   <div class="teaching-grid">
 {% for c in past %}
     {%- assign cp = site.pages | where: "course_id", c.id | first -%}
     <div class="course-card{% if cp %} course-card--link{% endif %}" id="{{ c.id }}">
       <div class="course-head">
         <span class="course-title">{% if cp %}<a href="{{ cp.url | relative_url }}">{{ c.title }}</a>{% else %}{{ c.title }}{% endif %}</span>
-        <span class="course-badge">{{ c.level }}</span>
+        <span class="course-badge">{{ site.data.i18n.level[c.level] | default: c.level }}</span>
       </div>
       <div class="course-programme">{{ c.programme }}</div>
-      <div class="course-role">{{ c.role }}</div>
+      <div class="course-role">{{ site.data.i18n.role[c.role] | default: c.role }}</div>
       <p class="course-meta">
         {%- if c.credits != "" %}{{ c.credits }} CFU, {% endif -%}
-        {{ c.hours }} hours &middot; taught in {{ c.language }} &middot; {{ c.since }}
+        {{ c.hours }} ore &middot; in {{ site.data.i18n.language[c.language] | default: c.language }} &middot; {{ c.since }}
       </p>
       {%- if cp %}
       <p class="course-more">{% if c.language == "Italian" %}Per maggiori informazioni{% else %}For more information{% endif %} &rarr;</p>
