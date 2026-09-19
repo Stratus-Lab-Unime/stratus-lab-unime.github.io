@@ -276,7 +276,7 @@ a.img-circle:focus-visible {
 }
 </style>
 
-The people of STRATUS Lab, led by Francesco Longo. Each member's photograph opens a short profile, with a biography, contacts and research profiles.
+The people of STRATUS Lab. Each photograph opens a short profile.
 
 {% assign d = site.data.director %}
 <div class="lab-director">
