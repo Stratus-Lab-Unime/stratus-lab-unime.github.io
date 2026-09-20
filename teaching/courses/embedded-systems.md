@@ -37,7 +37,8 @@ course_id: embedded-systems
 
 <details class="faq-item" id="prep-project">
   <summary><h2>What do I need to know before submitting the project?</h2></summary>
-  <p>The project has to result in a fully working embedded system, and it must be agreed with Prof. Longo before any implementation work begins: a project started on one's own initiative is not admitted to the oral examination. The best way to propose one is to write on Teams, where a chat dedicated to the project is then created and stays available for whatever comes up along the way. The proposal has to state the objectives and the functionalities of the system, the hardware platform and the development tools, and the software architecture with its main design choices. It is an individual project.</p>
+  <p>The project has to result in a fully working embedded system, and it is developed individually. The best way to propose one is to write on Teams, where a chat dedicated to the project is then created and stays available for whatever comes up along the way. The proposal has to state the objectives and the functionalities of the system, the hardware platform and the development tools, and the software architecture with its main design choices.</p>
+  <p class="faq-warning">The topic must be agreed with Prof. Longo before any implementation work begins. A project started on one's own initiative, without explicit approval, is not admitted to the oral examination.</p>
   <p>There are three modalities, each with its own maximum grade.</p>
   <ul>
     <li><b>A custom system on Arduino</b>, written in C: an embedded system of the student's own choosing. Maximum grade 24/30.</li>
@@ -45,6 +46,7 @@ course_id: embedded-systems
     <li><b>An advanced project on STM32 or FPGA</b>: an advanced or research-oriented topic, with a higher level of design complexity, system integration and technical depth. Maximum grade 30/30, with honours.</li>
   </ul>
   <p class="faq-warning">On the Arduino boards only standard C with direct hardware access is allowed. The Arduino programming model, with <code>setup()</code> and <code>loop()</code>, and every Arduino function or library, such as <code>digitalRead()</code> and <code>digitalWrite()</code>, are forbidden: a project that uses them is not accepted. The Arduino IDE may be used to compile and upload, and for nothing else.</p>
+  <p>The grade rewards the correctness and the completeness of the implementation, its technical difficulty and how well it fits the modality that was chosen, the quality of the code, of the documentation and of the design, and the clarity, the technical depth and the maturity shown in the discussion. The homework done during the course counts here too.</p>
   <p>Three things have to be delivered by the deadline: a report explaining the theoretical background and the implementation, a slide deck to support the presentation, and all the source code, including scripts, configuration files and anything else needed to run or test the system. Prof. Longo creates a shared OneDrive folder for the project on request, separate from the one used for the homework, and the materials go there and nowhere else: folders created by students are not accepted, and a project missing any of the three is not accepted either.</p>
 </details>
 
