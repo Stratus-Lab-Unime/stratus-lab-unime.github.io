@@ -77,6 +77,9 @@
   hours: 72
   since: 2024/2025
   language: English
+  links:
+    elearning: https://elearning.unime.it/course/view.php?id=502
+    catalogue: https://unime.coursecatalogue.cineca.it/corsi/2026/10817/insegnamenti/2026/14817/2026/9999?coorte=2026&schemaid=13876
 
 - id: embedded-systems
   status: current

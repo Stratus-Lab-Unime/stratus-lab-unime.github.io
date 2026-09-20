@@ -22,15 +22,15 @@ course_id: embedded-systems
 
 <details class="faq-item" id="contact">
   <summary><h2>How do I contact the professor and where do I find announcements?</h2></summary>
-  <p>Prof. Longo can be reached at <a href="mailto:flongo@unime.it">flongo@unime.it</a>, on WhatsApp or on Teams at any time: students are never an interruption.</p>
-  <p>Office hours are on Tuesdays from 15.00 to 16.00, at the Department of Engineering, block B, seventh floor, room 743. It is best to send an email or a message beforehand, to make sure Prof. Longo is there.</p>
+  <p>Prof. Longo can be reached at <a href="mailto:francesco.longo@unime.it">francesco.longo@unime.it</a>, on WhatsApp or on Teams at any time: students are never an interruption.</p>
+  <p>Office hours are on Tuesdays and Thursdays from 15.00 to 16.00, at the Department of Engineering, block B, seventh floor, room 743. It is best to send an email or a message beforehand, to make sure Prof. Longo is there.</p>
   <p>Last-minute announcements go through the class WhatsApp chat, which is the same one used for <a href="{{ '/teaching/courses/cybersecurity/' | relative_url }}">CyberSecurity</a>: that page explains how to join.</p>
 </details>
 
 <details class="faq-item" id="exam">
   <summary><h2>How is the exam structured?</h2></summary>
   <p>Two things are assessed: the homework assigned during the course, and the project with the oral examination that goes with it.</p>
-  <p>Homework takes the form of slides, reports or videos, to be delivered by the deadline set for each assignment. Every assignment is given a mark: one that is not delivered is marked 16, and one delivered late carries a penalty of five points, with 16 as the floor in any case. The marks are published on the e-learning platform.</p>
+  <p>Homework takes the form of slides, reports or videos, to be delivered by the deadline set for each assignment. It goes into a shared OneDrive folder that Prof. Longo creates on request. Every assignment is given a mark: one that is not delivered is marked 16, and one delivered late carries a penalty of five points, with 16 as the floor in any case. The marks are published on the e-learning platform.</p>
   <p>At the oral examination a single mark is given to the project and the discussion together. The final mark is the average of all the marks assigned.</p>
   <p>Registration for an exam session is on Esse3, which is also where the project deadline for that session is announced.</p>
 </details>
@@ -45,7 +45,7 @@ course_id: embedded-systems
     <li><b>An advanced project on STM32 or FPGA</b>: an advanced or research-oriented topic, with a higher level of design complexity, system integration and technical depth. Maximum grade 30/30, with honours.</li>
   </ul>
   <p class="faq-warning">On the Arduino boards only standard C with direct hardware access is allowed. The Arduino programming model, with <code>setup()</code> and <code>loop()</code>, and every Arduino function or library, such as <code>digitalRead()</code> and <code>digitalWrite()</code>, are forbidden: a project that uses them is not accepted. The Arduino IDE may be used to compile and upload, and for nothing else.</p>
-  <p>Three things have to be delivered by the deadline: a report explaining the theoretical background and the implementation, a slide deck to support the presentation, and all the source code, including scripts, configuration files and anything else needed to run or test the system. Prof. Longo creates a shared OneDrive folder on request, and the materials go there and nowhere else: folders created by students are not accepted, and a project missing any of the three is not accepted either.</p>
+  <p>Three things have to be delivered by the deadline: a report explaining the theoretical background and the implementation, a slide deck to support the presentation, and all the source code, including scripts, configuration files and anything else needed to run or test the system. Prof. Longo creates a shared OneDrive folder for the project on request, separate from the one used for the homework, and the materials go there and nowhere else: folders created by students are not accepted, and a project missing any of the three is not accepted either.</p>
 </details>
 
 <details class="faq-item" id="prep-oral">

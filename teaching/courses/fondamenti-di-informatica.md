@@ -23,8 +23,8 @@ course_id: fondamenti-di-informatica
 
 <details class="faq-item" id="contact">
   <summary><h2>Come contatto il professore e dove trovo gli avvisi?</h2></summary>
-  <p>Il Prof. Longo è raggiungibile all'indirizzo <a href="mailto:flongo@unime.it">flongo@unime.it</a>, su WhatsApp o su Teams in qualunque momento: gli studenti non disturbano mai.</p>
-  <p>Il ricevimento in presenza è il martedì dalle 15.00 alle 16.00, al Dipartimento di Ingegneria, blocco B, settimo piano, stanza 743. È bene avvisare prima con una mail o un messaggio, per avere conferma che il Prof. Longo sia presente.</p>
+  <p>Il Prof. Longo è raggiungibile all'indirizzo <a href="mailto:francesco.longo@unime.it">francesco.longo@unime.it</a>, su WhatsApp o su Teams in qualunque momento: gli studenti non disturbano mai.</p>
+  <p>Il ricevimento in presenza è il martedì e il giovedì dalle 15.00 alle 16.00, al Dipartimento di Ingegneria, blocco B, settimo piano, stanza 743. È bene avvisare prima con una mail o un messaggio, per avere conferma che il Prof. Longo sia presente.</p>
   <p>Gli avvisi dell'ultimo minuto passano dalla chat WhatsApp di classe, usata dal Prof. Longo anche per condividere notizie dal Dipartimento e dall'Ateneo. Ne viene creata una nuova ogni anno accademico: il QR code per entrare si trova nel blocco di slide 0 del modulo A, sull'e-learning.</p>
 </details>
 
