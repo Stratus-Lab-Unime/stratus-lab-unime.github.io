@@ -7,7 +7,7 @@ title: Lavorare alla tesi
 permalink: /teaching/thesis/it/
 ---
 
-Per chi sta già facendo la tesi con il Prof. Francesco Longo allo STRATUS Lab: la burocrazia, il lavoro quotidiano, i modelli e la consegna. This page is also available <a href="{{ '/teaching/thesis/' | relative_url }}">in English</a>.
+Per chi sta già facendo la tesi con il Prof. Francesco Longo in STRATUS Lab: la burocrazia, il lavoro quotidiano, i modelli e la consegna. This page is also available <a href="{{ '/teaching/thesis/' | relative_url }}">in English</a>.
 
 <details class="faq-item" id="richiesta">
   <summary><h2>Come si ufficializza la richiesta di tesi?</h2></summary>
@@ -25,7 +25,7 @@ Per chi sta già facendo la tesi con il Prof. Francesco Longo allo STRATUS Lab: 
 <details class="faq-item" id="tirocinio">
   <summary><h2>Come si attiva il tirocinio?</h2></summary>
   <p>Il tirocinio vale <b>225 ore, 9 CFU</b> per la triennale e <b>175 ore, 7 CFU</b> per la magistrale.</p>
-  <p>Si può svolgere allo STRATUS Lab, e in quel caso si usa il modulo per il tirocinio presso strutture dell'Ateneo. In alternativa si può concordare un tirocinio in azienda: il laboratorio collabora stabilmente con imprese grandi, medie e piccole del territorio nei settori dei sistemi embedded, della cybersecurity e dell'intelligenza artificiale, e i partner più stabili sono elencati <a href="{{ '/#partners' | relative_url }}">in home page</a>.</p>
+  <p>Si può svolgere in STRATUS Lab, e in quel caso si usa il modulo per il tirocinio presso strutture dell'Ateneo. In alternativa si può concordare un tirocinio in azienda: il laboratorio collabora stabilmente con imprese grandi, medie e piccole del territorio nei settori dei sistemi embedded, della cybersecurity e dell'intelligenza artificiale, e i partner più stabili sono elencati <a href="{{ '/#partners' | relative_url }}">in home page</a>.</p>
   <ul>
     <li><a href="https://ingegneria.unime.it/sites/dip05/files/2025-01/istanza%20tirocinio%20-%20ulteriori%20attivit%C3%A0%20presso%20Unime%20-%20ultima%20versione.pdf">Istanza di tirocinio presso strutture dell'Ateneo</a>, per il tirocinio in laboratorio</li>
     <li><a href="https://ingegneria.unime.it/sites/dip05/files/2026-07/istanza%20tirocinio%20presso%20imprese%20ecc%20agg.%2021.07.2026.pdf">Istanza di tirocinio presso imprese ed enti</a>, per il tirocinio in azienda</li>

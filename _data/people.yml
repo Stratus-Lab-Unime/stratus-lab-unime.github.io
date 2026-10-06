@@ -3,7 +3,7 @@
 # I collegamenti vuoti non vengono mostrati.
 #
 # Manca lo Scopus di Pispisa, Sosta, Trungadi e Candela.
-# Sosta e Candela usano un indirizzo @studenti.unime.it in attesa di quello @unime.it.
+# Candela usa un indirizzo @studenti.unime.it in attesa di quello @unime.it.
 
 - id: merlino
   name: Giovanni Merlino
@@ -94,7 +94,7 @@
 
 - id: sosta
   name: Domenico Sosta
-  role: Graduate Researcher
+  role: PhD Student
   photo: /images/people/Sosta.jpg
   bio: >-
     Domenico Sosta works on reinforcement learning for devices that can barely
@@ -103,7 +103,7 @@
   links:
     github: https://github.com/Nico281102
     linkedin: https://www.linkedin.com/in/domenico-sosta-274aa3284
-    email: domenico.sosta@studenti.unime.it  # DA SOSTITUIRE con l'indirizzo @unime.it
+    email: domenico.sosta@unime.it
 
 - id: trungadi
   name: Francesco Trungadi
