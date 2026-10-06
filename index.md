@@ -101,7 +101,7 @@ The lab supports two student teams: [Zancle E-Drive](https://www.zancle-edrive.i
 
 ---
 
-<div class="partners-section">
+<div class="partners-section" id="partners">
   <h3>Our Partners</h3>
   <div class="partners-grid">
     <a href="https://www.st.com/" target="_blank" rel="noopener" title="STMicroelectronics"><img src="/images/ST.png" alt="STMicroelectronics"></a>

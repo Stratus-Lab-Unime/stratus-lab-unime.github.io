@@ -245,6 +245,12 @@ a:hover,
   padding-left: 1.2em;
 }
 
+/* Un paragrafo dopo un elenco ha bisogno dello stesso stacco che hanno fra
+   loro due paragrafi: l'elenco non porta margine sotto. */
+.faq-item ul + p {
+  margin-top: 0.7em;
+}
+
 .faq-item li {
   margin-bottom: 0.6em;
 }

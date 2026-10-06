@@ -19,7 +19,7 @@ Corsi, tesi e tirocini con Francesco Longo. This page is also available <a href=
   <p class="wip">In costruzione.</p>
 </div>
 
-<div class="audience">
-  <h2>Per chi sta già facendo la tesi</h2>
-  <p class="wip">In costruzione.</p>
+<div class="audience audience--link">
+  <h2><a href="{{ '/teaching/thesis/it/' | relative_url }}">Per chi sta già facendo la tesi</a></h2>
+  <p>La burocrazia della richiesta di tesi e del tirocinio, come si lavora durante la tesi, i modelli da scaricare e che cosa serve per la consegna e per la laurea.</p>
 </div>

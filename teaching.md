@@ -18,7 +18,7 @@ Teaching, thesis supervision and internships with Francesco Longo. Questa pagina
   <p class="wip">Under construction.</p>
 </div>
 
-<div class="audience">
-  <h2>If you are already working on your thesis with me</h2>
-  <p class="wip">Under construction.</p>
+<div class="audience audience--link">
+  <h2><a href="{{ '/teaching/thesis/' | relative_url }}">If you are already working on your thesis with me</a></h2>
+  <p>The paperwork for the thesis request and the internship, how the work goes while writing, the templates to download, and what submission and graduation require.</p>
 </div>
