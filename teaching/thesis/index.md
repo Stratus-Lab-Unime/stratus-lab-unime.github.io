@@ -1,7 +1,5 @@
 ---
 layout: page
-translation: /teaching/thesis/it/
-translation_label: Italiano
 title: Working on your thesis
 permalink: /teaching/thesis/
 ---
@@ -70,6 +68,24 @@ For students already writing their thesis with Prof. Francesco Longo at STRATUS 
   <p>The title page <b>does not need printing</b>: it is filled in, sent in the thesis chat, signed by the supervisor and sent back there.</p>
   <p>The plagiarism check produces a receipt and a report: formally the report is the one required, but it is safer to upload everything the system returns.</p>
   <p class="faq-warning">Within the same window the supervisor must approve the thesis: that approval is the last step of the deposit, which must be completed at least <b>7 working days</b> before the final examination. This is also the minimum gap required between the last course exam and the graduation examination.</p>
+</details>
+
+<details class="faq-item" id="presentation">
+  <summary><h2>How is the presentation prepared?</h2></summary>
+  <p>The presentation lasts <b>10 minutes</b> for the bachelor's degree and <b>15 minutes</b> for the master's degree, plus <b>5 minutes</b> of questions from the examination board.</p>
+  <p>The slides follow this outline:</p>
+  <ul>
+    <li>the first one mirrors the title page of the thesis;</li>
+    <li>the second one is an outline of what is about to be said;</li>
+    <li>theoretical introduction and background are kept to a minimum;</li>
+    <li>most of the time goes on the problem and on the work done, which is what the board has to see and what deserves to be brought out;</li>
+    <li>where there are experimental measurements, and at master's level there usually are, they deserve more time;</li>
+    <li>the second-to-last slide carries the conclusions and the future developments;</li>
+    <li>the last one gives thanks and stays open to questions.</li>
+  </ul>
+  <p>The rule that holds for all of them: <b>plenty of graphics and little text</b>. A slide full of lines gets read instead of listened to, and ten minutes are not enough for both.</p>
+  <p>There is no template to download, because a presentation is a personal thing and it shows when it is not. The guidance above, however, is to be followed.</p>
+  <p>Before the day of the graduation Prof. Longo usually holds a rehearsal, in his office or online: that is the moment to get comments both on the slides and on the way they are delivered.</p>
 </details>
 
 {% include faq-toggle.html %}

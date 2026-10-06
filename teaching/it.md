@@ -1,7 +1,5 @@
 ---
 layout: page
-translation: /teaching/
-translation_label: English
 lang: it
 title: Didattica
 permalink: /teaching/it/

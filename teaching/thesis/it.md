@@ -1,7 +1,5 @@
 ---
 layout: page
-translation: /teaching/thesis/
-translation_label: English
 lang: it
 title: Lavorare alla tesi
 permalink: /teaching/thesis/it/
@@ -71,6 +69,24 @@ Per chi sta già facendo la tesi con il Prof. Francesco Longo in STRATUS Lab: la
   <p>Il frontespizio <b>non va stampato</b>: si compila, si manda nella chat della tesi, il relatore lo firma e lo rimanda lì.</p>
   <p>L'antiplagio produce una ricevuta e un report: formalmente serve il report, ma conviene caricare tutto quello che il sistema restituisce, così non si sbaglia.</p>
   <p class="faq-warning">Entro la stessa finestra il relatore deve approvare l'elaborato: quella approvazione è l'atto finale del deposito della tesi, che va completato almeno <b>7 giorni lavorativi</b> prima della prova finale. Questa è anche la distanza minima prevista fra l'ultimo esame di profitto e l'esame di laurea.</p>
+</details>
+
+<details class="faq-item" id="presentazione">
+  <summary><h2>Come si prepara la presentazione?</h2></summary>
+  <p>La presentazione dura <b>10 minuti</b> per la triennale e <b>15 minuti</b> per la magistrale, ai quali si aggiungono <b>5 minuti</b> di domande della commissione.</p>
+  <p>Le slide seguono questa traccia:</p>
+  <ul>
+    <li>la prima ricalca il frontespizio della tesi;</li>
+    <li>la seconda è l'indice di quello che si sta per dire;</li>
+    <li>l'introduzione teorica e il background vanno ridotti al minimo;</li>
+    <li>il grosso del tempo va sul problema e sul lavoro svolto, che è quello che la commissione deve vedere e che va valorizzato;</li>
+    <li>dove ci sono misure sperimentali, e alla magistrale di solito ci sono, va dedicato loro più tempo;</li>
+    <li>la penultima slide porta le conclusioni e i lavori futuri;</li>
+    <li>l'ultima ringrazia e resta aperta alle domande.</li>
+  </ul>
+  <p>L'indicazione che vale per tutte: <b>molti elementi grafici e poco testo</b>. Una slide piena di righe viene letta invece che ascoltata, e in dieci minuti non c'è tempo per entrambe le cose.</p>
+  <p>Non c'è un modello da scaricare, perché la presentazione è una cosa personale e si vede quando non lo è. Le indicazioni qui sopra però vanno seguite.</p>
+  <p>Prima del giorno della laurea il Prof. Longo fa di solito una prova, nel suo studio oppure online: è l'occasione per ricevere osservazioni sia sulle slide sia sul modo di esporle.</p>
 </details>
 
 {% include faq-toggle.html %}

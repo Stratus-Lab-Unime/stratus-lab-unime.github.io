@@ -1,7 +1,5 @@
 ---
 layout: page
-translation: /teaching/courses/it/
-translation_label: Italiano
 title: Courses
 permalink: /teaching/courses/
 ---
