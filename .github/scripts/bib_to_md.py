@@ -118,6 +118,32 @@ if os.path.exists(LINKS_FILE):
     print(f"Loaded {len(manual_links)} manual links and {len(excluded)} exclusions from {LINKS_FILE}.")
 
 # Leggi file
+
+def normalizza_venue(v):
+    """Ripulisce il nome della sede dalle ridondanze che arrivano da Scopus.
+
+    Scopus toglie la punteggiatura e lascia l'anno dentro il titolo, che la
+    pagina mostra comunque di fianco: ne esce "SmartComp Companion 2026 2026".
+
+    Qui si tolgono solo le cose che non possono cambiare il nome di una sede.
+    In particolare NON si tocca "Proceedings": sembra un prefisso di servizio,
+    ma "Proceedings of the ACM on Measurement and Analysis of Computing
+    Systems" e` il nome vero di una rivista, e toglierlo la inventerebbe.
+
+    Restano lunghi i nomi dei congressi co-locati, dove Scopus concatena i
+    titoli di tutte le conferenze: accorciarli richiede una tabella scritta a
+    mano, perche` solo chi li conosce sa quale sia la sede giusta.
+    """
+    v = re.sub(r"\s+(19|20)\d\d$", "", v)                 # l'anno finale, gia` mostrato a fianco
+    v = re.sub(r"^(Proceedings)\s+(19|20)\d\d\s+", r"\1 ", v)   # e quello subito dopo "Proceedings"
+    v = re.sub(r"^Lecture Notes in Computer Science Including Subseries.*$",
+               "Lecture Notes in Computer Science", v)
+    # Scopus toglie il trattino da "On-Line" e ne esce "on on Line Testing":
+    # qui il nome si corregge, non si accorcia.
+    v = v.replace("Symposium on on Line Testing", "Symposium on On-Line Testing")
+    return v.strip()
+
+
 with open(BIB_FILE, "r", encoding="utf-8") as f:
     bib_text = f.read()
 
@@ -159,6 +185,7 @@ for year in sorted(by_year.keys(), reverse=True):
         author_str = ', '.join(formatted_authors)
 
         venue = fields.get('journal') or fields.get('booktitle') or fields.get('publisher') or ''
+        venue = normalizza_venue(venue)
 
         url = fields.get('url', '') or fields.get('doi', '')
         if url and url.startswith('10.'):

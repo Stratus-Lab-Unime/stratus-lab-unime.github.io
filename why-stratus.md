@@ -23,6 +23,43 @@ permalink: /why-stratus/
   text-align: center;
 }
 
+/* La mappa satellitare. L'immagine è un file servito dal repository, non un
+   riquadro incorporato: nessuno dei visitatori finisce a chiamare un servizio
+   di mappe, come già per jQuery. Il segnaposto sta sopra in HTML e non dentro
+   il JPEG, così il testo resta nitido a qualunque ingrandimento e traducibile.
+   Le due percentuali vengono dalla proiezione: le calcola
+   .github/scripts/stretto_satellite.py, da cui esce anche l'immagine. */
+.mappa {
+  position: relative;
+  max-width: 520px;
+  margin-inline: auto;
+}
+
+.mappa-punto {
+  position: absolute;
+  left: 54.3%;
+  top: 12.9%;
+  width: 14px;
+  height: 14px;
+  margin: -7px 0 0 -7px;
+  border-radius: 50%;
+  background: var(--accent-bright);
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.35);
+}
+
+.mappa-etichetta {
+  position: absolute;
+  left: 54.3%;
+  top: 12.9%;
+  transform: translate(16px, -0.75em);
+  font-size: 0.78em;
+  line-height: 1.3;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
+  white-space: nowrap;
+}
+
 .acronym {
   color: var(--accent);
   font-weight: bold;
@@ -47,6 +84,13 @@ And the Strait of Messina produces one of the finest examples in the Mediterrane
 It is advection fog. In spring the water of the Strait stays below 17 °C, kept cold by the deep currents that constantly exchange water between the Tyrrhenian and the Ionian. When the first warm, humid air of North African origin drifts across that cold surface, it cools abruptly, condenses, and settles into a layer one to two hundred metres thick that crosses the Strait and swallows both shores in minutes.
 
 A stratus, lying on the sea, where we happen to work.
+
+<figure class="lupa-photo mappa">
+  <img src="/images/lupa/stretto-satellite.jpg" alt="Satellite view of the Strait of Messina, with Sicily on the left and Calabria on the right, the sickle of Messina harbour at the centre and Capo Peloro at the top">
+  <span class="mappa-punto" aria-hidden="true"></span>
+  <span class="mappa-etichetta">Department of Engineering</span>
+  <figcaption>The Strait, from Capo Peloro down the whole length of the city. <a href="https://s2maps.eu">Sentinel-2 cloudless 2024</a> by EOX IT Services, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> &mdash; contains modified Copernicus Sentinel data 2024. The mosaic is built from the days without clouds, so this is the one picture of the Strait with no Lupa in it.</figcaption>
+</figure>
 
 As for the name, the most credible account is that the fog made the boats howl. Unable to see one another, crews would sound a conch shell to signal their position, and the noise carried over the water like wolves calling in the dark. Other explanations compete: the wolf as the devil, blamed for ruining the crops; the hunger of sailors who could not go out to fish; or simply a curse muttered at the weather.
 

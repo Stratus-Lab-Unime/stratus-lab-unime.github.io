@@ -17,3 +17,6 @@ _modelli-tesi/latex-*/*.lot
 _modelli-tesi/latex-*/*.bbl
 _modelli-tesi/latex-*/*.blg
 _modelli-tesi/latex-*/*.out
+
+# La cache delle tessere satellitari, scaricabile quando serve
+.github/scripts/tessere/
