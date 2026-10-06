@@ -31,6 +31,18 @@ Per chi sta già facendo la tesi con il Prof. Francesco Longo in STRATUS Lab: la
   <p>Entrambi i moduli vanno indirizzati al Coordinatore del Corso di Laurea, indicano come docente tutor il Prof. Longo, le ore e i crediti, e richiedono di aver frequentato un corso sulla sicurezza sul lavoro.</p>
 </details>
 
+<details class="faq-item" id="chiusura-tirocinio">
+  <summary><h2>Come si chiude il tirocinio?</h2></summary>
+  <p>Con la modulistica di chiusura, che sta sulla stessa pagina del Dipartimento dei moduli di attivazione. Servono il registro delle presenze e l'attestato con la valutazione finale, che esiste in due versioni a seconda di dove il tirocinio si è svolto.</p>
+  <ul>
+    <li><a href="https://ingegneria.unime.it/sites/dip05/files/2026-07/registro%20ITA%20ENG.xlsx">Registro delle presenze</a>, un foglio di calcolo, uguale nei due casi</li>
+    <li><a href="https://ingegneria.unime.it/sites/dip05/files/2026-07/Attestato_Valutazione%20fine%20tirocio_ITA.pdf">Attestato con valutazione</a>, per il tirocinio presso strutture dell'Ateneo</li>
+    <li><a href="https://ingegneria.unime.it/sites/dip05/files/2026-07/Attestato_valutazione_finetirocinio_ITA.pdf">Attestato con valutazione</a>, per il tirocinio presso imprese ed enti</li>
+  </ul>
+  <p>Chi firma dipende da dove si è svolto. Per il tirocinio in laboratorio l'attestato porta la firma del Prof. Longo come tutor universitario e quella del Coordinatore del Corso di Studi. Per il tirocinio in azienda lo firma il tutor dell'Ente, con allegato il questionario di valutazione e il foglio firme compilato, e poi il Coordinatore.</p>
+  <p>Le firme sono digitali: non c'è niente da stampare.</p>
+</details>
+
 <details class="faq-item" id="lavoro">
   <summary><h2>Come si lavora durante la tesi?</h2></summary>
   <p>Il Prof. Longo apre una chat su Teams dedicata alla tesi. <b>Tutte le comunicazioni sulla tesi passano da lì.</b> Periodicamente si organizzano incontri, online o in presenza, per verificare l'andamento del lavoro.</p>

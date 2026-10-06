@@ -30,6 +30,18 @@ For students already writing their thesis with Prof. Francesco Longo at STRATUS 
   <p>Both forms are addressed to the Coordinator of the degree programme, name Prof. Longo as the teaching tutor, the hours and the credits, and require having attended a workplace safety course.</p>
 </details>
 
+<details class="faq-item" id="internship-closing">
+  <summary><h2>How is the internship closed?</h2></summary>
+  <p>With the closing forms, which are on the same Department page as the activation ones. They are the attendance register and the certificate with the final assessment, which comes in two versions depending on where the internship took place.</p>
+  <ul>
+    <li><a href="https://ingegneria.unime.it/sites/dip05/files/2026-07/registro%20ITA%20ENG.xlsx">Attendance register</a>, a spreadsheet, the same in both cases</li>
+    <li><a href="https://ingegneria.unime.it/sites/dip05/files/2026-07/Attestato_Valutazione%20fine%20tirocio_ITA.pdf">Certificate with assessment</a>, for the internship within University facilities</li>
+    <li><a href="https://ingegneria.unime.it/sites/dip05/files/2026-07/Attestato_valutazione_finetirocinio_ITA.pdf">Certificate with assessment</a>, for the internship with companies and institutions</li>
+  </ul>
+  <p>Who signs depends on where it took place. For the internship in the lab the certificate carries the signature of Prof. Longo as university tutor and that of the Coordinator of the degree programme. For the internship in a company it is signed by the host tutor, with the assessment questionnaire and the completed attendance sheet attached, and then by the Coordinator.</p>
+  <p>The signatures are digital: there is nothing to print.</p>
+</details>
+
 <details class="faq-item" id="working">
   <summary><h2>How does the work go while writing the thesis?</h2></summary>
   <p>Prof. Longo opens a Teams chat dedicated to the thesis. <b>Every communication about the thesis goes through it.</b> Meetings are arranged from time to time, online or in person, to check how the work is going.</p>
