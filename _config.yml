@@ -21,9 +21,8 @@ author:
   bio: "Secure TRustless Autonomous Technologies for Ubiquitous Systems Laboratory"
 
 copyright: >-
-  &copy; 2026 STRATUS Lab, University of Messina.
+  &copy; 2026 STRATUS Lab &middot; Department of Engineering &middot; University of Messina.
   Powered by [Jekyll](https://jekyllrb.com) &amp; [So Simple](https://github.com/mmistakes/so-simple-theme).
-  Built with [Claude Code](https://claude.com/claude-code).
 
 # Footer
 footer_links:

@@ -1,0 +1,28 @@
+# Le tre aree tematiche del laboratorio, dette come le direbbe uno studente.
+#
+# `key` è quello che compare in `areas:` dentro projects.yml e people.yml.
+# `label` è il nome lungo, quello delle pagine che presentano le aree.
+# `tag` è la forma corta delle etichette sulle card dei progetti, dove lo spazio
+# è poco e il nome lungo manderebbe a capo ogni pillola.
+#
+# Perché tre e non le quattro righe dell'acronimo: /research/ parla ai colleghi
+# e usa Secure, TRustless, Autonomous, Ubiquitous; queste tre parlano a chi deve
+# ancora scegliere, e usano i nomi degli insegnamenti che ha già visto.
+
+- key: iot
+  label_en: Embedded systems, IoT and cloud
+  label_it: Sistemi embedded, IoT e cloud
+  tag_en: Embedded &amp; IoT
+  tag_it: Embedded e IoT
+
+- key: security
+  label_en: Cybersecurity
+  label_it: Cybersecurity
+  tag_en: Cybersecurity
+  tag_it: Cybersecurity
+
+- key: ai
+  label_en: Artificial intelligence
+  label_it: Intelligenza artificiale
+  tag_en: AI
+  tag_it: IA

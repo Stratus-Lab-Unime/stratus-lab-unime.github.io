@@ -152,6 +152,15 @@ a.img-circle:focus-visible {
   margin-top: auto;
 }
 
+/* Le tre cose su cui la persona lavora, sotto il ruolo: chi cerca un relatore
+   o un collaboratore le legge senza aprire la scheda. */
+.person-keywords {
+  font-size: 0.68em;
+  line-height: 1.45;
+  color: var(--muted);
+  margin-top: 0.45em;
+}
+
 /* Gli ex membri restano volutamente più sobri di chi c'è ora: la pagina
    deve parlare prima del gruppo attuale. */
 .alumni-section {
@@ -302,6 +311,7 @@ The people of STRATUS Lab. Each photograph opens a short profile.
       </a>
       <span class="person-name">{{ p.name }}</span>
       <span class="person-role">{{ p.role }}</span>
+      {% if p.keywords %}<span class="person-keywords">{{ p.keywords }}</span>{% endif %}
     </div>
 {% endfor %}
   </div>

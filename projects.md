@@ -56,6 +56,40 @@ Projects in which Francesco Longo holds, or has held, a formal position of scien
   margin-bottom: 0.7em;
 }
 
+/* Il periodo era sepolto nella riga del programma, fra il decreto ministeriale
+   e la cifra: è la seconda cosa che si cerca dopo il nome, e sta in testa. */
+.project-period {
+  font-size: 0.8em;
+  color: var(--muted);
+}
+
+/* Le etichette tematiche. Le stesse tre chiavi di _data/areas.yml che marcano
+   persone e progetti: qui sono il primo posto in cui si vedono. */
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4em;
+  margin-top: 0.8em;
+}
+
+.project-tag {
+  font-size: 0.72em;
+  letter-spacing: 0.5px;
+  color: var(--muted);
+  border: 1px solid var(--line);
+  background: #fff;
+  border-radius: 20px;
+  padding: 0.2em 0.7em;
+}
+
+/* I dati di riferimento — bando, cifra, partner — stanno sotto e staccati:
+   servono a chi valuta, non a chi legge per capire cosa fa il progetto. */
+.project-ref {
+  margin-top: 1em;
+  padding-top: 0.8em;
+  border-top: 1px solid var(--line);
+}
+
 .project-scope {
   font-size: 0.78em;
   text-transform: uppercase;
@@ -76,7 +110,7 @@ Projects in which Francesco Longo holds, or has held, a formal position of scien
 .project-meta {
   font-size: 0.8em;
   color: var(--muted);
-  margin-bottom: 0.8em;
+  margin: 0;
   line-height: 1.6;
 }
 
@@ -112,17 +146,28 @@ Projects in which Francesco Longo holds, or has held, a formal position of scien
   <div class="project-item" id="{{ p.id }}">
     <div class="project-head">
       <span class="project-acronym">{{ p.acronym }}</span>
+      <span class="project-period">{{ p.period }}</span>
       <span class="project-role">{{ p.role }}</span>
     </div>
     <div class="project-title">{{ p.title }}</div>
-    {%- if p.scope != "" or p.project != "" %}
-    <div class="project-scope">{{ p.scope }}{% if p.project != "" %}{% if p.scope != "" %} &mdash; {% endif %}Project {{ p.project }}{% if p.project_title != "" %} <span class="project-parent">{{ p.project_title }}</span>{% endif %}{% endif %}</div>
-    {%- endif %}
-    <div class="project-meta">
-      {{ p.programme }} &middot; {{ p.period }}{% if p.funding != "" %} &middot; <b>{{ p.funding }}</b>{% endif %}
-    </div>
     <p class="project-description">{{ p.description }}</p>
-    {% if p.partners != "" %}<p class="project-partners"><b>Main research partners:</b> {{ p.partners }}</p>{% endif %}
+    {%- if p.areas %}
+    <div class="project-tags">
+      {%- for key in p.areas -%}
+        {%- assign a = site.data.areas | where: "key", key | first -%}
+        <span class="project-tag">{{ a.tag_en }}</span>
+      {%- endfor -%}
+    </div>
+    {%- endif %}
+    <div class="project-ref">
+      {%- if p.scope != "" or p.project != "" %}
+      <div class="project-scope">{{ p.scope }}{% if p.project != "" %}{% if p.scope != "" %} &mdash; {% endif %}Project {{ p.project }}{% if p.project_title != "" %} <span class="project-parent">{{ p.project_title }}</span>{% endif %}{% endif %}</div>
+      {%- endif %}
+      <div class="project-meta">
+        {{ p.programme }}{% if p.funding != "" %} &middot; <b>{{ p.funding }}</b>{% endif %}
+      </div>
+      {% if p.partners != "" %}<p class="project-partners"><b>Main research partners:</b> {{ p.partners }}</p>{% endif %}
+    </div>
   </div>
 {% endfor %}
 
@@ -131,17 +176,28 @@ Projects in which Francesco Longo holds, or has held, a formal position of scien
   <div class="project-item" id="{{ p.id }}">
     <div class="project-head">
       <span class="project-acronym">{{ p.acronym }}</span>
+      <span class="project-period">{{ p.period }}</span>
       <span class="project-role">{{ p.role }}</span>
     </div>
     <div class="project-title">{{ p.title }}</div>
-    {%- if p.scope != "" or p.project != "" %}
-    <div class="project-scope">{{ p.scope }}{% if p.project != "" %}{% if p.scope != "" %} &mdash; {% endif %}Project {{ p.project }}{% if p.project_title != "" %} <span class="project-parent">{{ p.project_title }}</span>{% endif %}{% endif %}</div>
-    {%- endif %}
-    <div class="project-meta">
-      {{ p.programme }} &middot; {{ p.period }}{% if p.funding != "" %} &middot; <b>{{ p.funding }}</b>{% endif %}
-    </div>
     <p class="project-description">{{ p.description }}</p>
-    {% if p.partners != "" %}<p class="project-partners"><b>Main research partners:</b> {{ p.partners }}</p>{% endif %}
+    {%- if p.areas %}
+    <div class="project-tags">
+      {%- for key in p.areas -%}
+        {%- assign a = site.data.areas | where: "key", key | first -%}
+        <span class="project-tag">{{ a.tag_en }}</span>
+      {%- endfor -%}
+    </div>
+    {%- endif %}
+    <div class="project-ref">
+      {%- if p.scope != "" or p.project != "" %}
+      <div class="project-scope">{{ p.scope }}{% if p.project != "" %}{% if p.scope != "" %} &mdash; {% endif %}Project {{ p.project }}{% if p.project_title != "" %} <span class="project-parent">{{ p.project_title }}</span>{% endif %}{% endif %}</div>
+      {%- endif %}
+      <div class="project-meta">
+        {{ p.programme }}{% if p.funding != "" %} &middot; <b>{{ p.funding }}</b>{% endif %}
+      </div>
+      {% if p.partners != "" %}<p class="project-partners"><b>Main research partners:</b> {{ p.partners }}</p>{% endif %}
+    </div>
   </div>
 {% endfor %}
 </div>
