@@ -2,11 +2,11 @@
 layout: page
 translation: /teaching/thesis/it/
 translation_label: Italiano
-title: Thesis
+title: Working on your thesis
 permalink: /teaching/thesis/
 ---
 
-For students already writing their thesis with Francesco Longo: the paperwork, the day-to-day work, the templates and the submission. Questa pagina è disponibile anche <a href="{{ '/teaching/thesis/it/' | relative_url }}">in italiano</a>.
+For students already writing their thesis with Prof. Francesco Longo at STRATUS Lab: the paperwork, the day-to-day work, the templates and the submission. Questa pagina è disponibile anche <a href="{{ '/teaching/thesis/it/' | relative_url }}">in italiano</a>.
 
 <details class="faq-item" id="application">
   <summary><h2>How is the thesis request made official?</h2></summary>
@@ -16,7 +16,8 @@ For students already writing their thesis with Francesco Longo: the paperwork, t
     <li><a href="https://ingegneria.unime.it/sites/dip05/files/2025-07/richiesta%20tesi%20lauree%20magistrali%20attive%20agg.%20link.pdf">Thesis request, master's degree</a></li>
   </ul>
   <p class="faq-warning">The request must be submitted at least <b>90 days</b> before the start of the first available graduation session for the bachelor's degree, and at least <b>6 months</b> for the master's degree. What counts is the date the form is recorded in the register, not the day it is handed in.</p>
-  <p>The title written on the form is provisional: the final one is communicated with the graduation application. A co-supervisor is foreseen only for the master's degree, and requires a statement from the supervisor about their scientific or professional standing.</p>
+  <p>The form is addressed to the Director of the Department and to the Coordinator of the degree programme, but the only signatures to collect are the student's and the supervisor's, plus the co-supervisor's where there is one: the Director's approval comes afterwards.</p>
+  <p>The title and the topic written on the form are provisional. The topic is not strictly binding, and the final title is communicated with the graduation application. A co-supervisor is foreseen only for the master's degree, and requires a statement from the supervisor about their scientific or professional standing.</p>
   <p>All the forms are in the <a href="https://ingegneria.unime.it/it/didattica/modulistica-didattica">Department's teaching forms</a>, in Italian.</p>
 </details>
 
@@ -28,7 +29,7 @@ For students already writing their thesis with Francesco Longo: the paperwork, t
     <li><a href="https://ingegneria.unime.it/sites/dip05/files/2025-01/istanza%20tirocinio%20-%20ulteriori%20attivit%C3%A0%20presso%20Unime%20-%20ultima%20versione.pdf">Internship application within University facilities</a>, for the internship in the lab</li>
     <li><a href="https://ingegneria.unime.it/sites/dip05/files/2026-07/istanza%20tirocinio%20presso%20imprese%20ecc%20agg.%2021.07.2026.pdf">Internship application with companies and institutions</a>, for the internship in a company</li>
   </ul>
-  <p>Both forms are addressed to the Coordinator of the degree programme, name a teaching tutor, the hours and the credits, and require having attended a workplace safety course.</p>
+  <p>Both forms are addressed to the Coordinator of the degree programme, name Prof. Longo as the teaching tutor, the hours and the credits, and require having attended a workplace safety course.</p>
 </details>
 
 <details class="faq-item" id="working">
@@ -59,7 +60,6 @@ For students already writing their thesis with Francesco Longo: the paperwork, t
 
 <details class="faq-item" id="submission">
   <summary><h2>How is the thesis submitted, and how does graduation work?</h2></summary>
-  <p>The title page <b>does not need printing</b>: it is filled in, sent in the thesis chat, signed by the supervisor and sent back there.</p>
   <p>The graduation application is made on Esse3, where the procedure opens <b>40 days</b> before the graduation date. Four documents are uploaded:</p>
   <ul>
     <li>a valid identity document;</li>
@@ -67,8 +67,9 @@ For students already writing their thesis with Francesco Longo: the paperwork, t
     <li>the final content of the thesis;</li>
     <li>every file returned by the plagiarism-detection system.</li>
   </ul>
+  <p>The title page <b>does not need printing</b>: it is filled in, sent in the thesis chat, signed by the supervisor and sent back there.</p>
   <p>The plagiarism check produces a receipt and a report: formally the report is the one required, but it is safer to upload everything the system returns.</p>
-  <p class="faq-warning">Within the same window the supervisor approves or rejects the thesis, and if it is rejected the procedure can be repeated with the agreed changes. The deposit must be completed at least <b>7 working days</b> before the final examination, which is also the minimum gap required between the last course exam and the graduation examination.</p>
+  <p class="faq-warning">Within the same window the supervisor must approve the thesis: that approval is the last step of the deposit, which must be completed at least <b>7 working days</b> before the final examination. This is also the minimum gap required between the last course exam and the graduation examination.</p>
 </details>
 
 {% include faq-toggle.html %}

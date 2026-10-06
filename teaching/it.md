@@ -7,7 +7,7 @@ title: Didattica
 permalink: /teaching/it/
 ---
 
-Corsi, tesi e tirocini con Francesco Longo. This page is also available <a href="{{ '/teaching/' | relative_url }}">in English</a>.
+Corsi, tesi e tirocini con il Prof. Francesco Longo. This page is also available <a href="{{ '/teaching/' | relative_url }}">in English</a>.
 
 <div class="audience audience--link">
   <h2><a href="{{ '/teaching/courses/it/' | relative_url }}">Per chi segue uno dei corsi</a></h2>

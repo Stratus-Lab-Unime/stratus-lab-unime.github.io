@@ -3,11 +3,11 @@ layout: page
 translation: /teaching/thesis/
 translation_label: English
 lang: it
-title: Tesi
+title: Lavorare alla tesi
 permalink: /teaching/thesis/it/
 ---
 
-Per chi sta già facendo la tesi con Francesco Longo: la burocrazia, il lavoro quotidiano, i modelli e la consegna. This page is also available <a href="{{ '/teaching/thesis/' | relative_url }}">in English</a>.
+Per chi sta già facendo la tesi con il Prof. Francesco Longo allo STRATUS Lab: la burocrazia, il lavoro quotidiano, i modelli e la consegna. This page is also available <a href="{{ '/teaching/thesis/' | relative_url }}">in English</a>.
 
 <details class="faq-item" id="richiesta">
   <summary><h2>Come si ufficializza la richiesta di tesi?</h2></summary>
@@ -17,7 +17,8 @@ Per chi sta già facendo la tesi con Francesco Longo: la burocrazia, il lavoro q
     <li><a href="https://ingegneria.unime.it/sites/dip05/files/2025-07/richiesta%20tesi%20lauree%20magistrali%20attive%20agg.%20link.pdf">Richiesta di tesi, laurea magistrale</a></li>
   </ul>
   <p class="faq-warning">La domanda va presentata almeno <b>90 giorni</b> prima dell'inizio della prima sessione di laurea utile per la triennale, almeno <b>6 mesi</b> per la magistrale. Fa fede la data di registrazione al protocollo, non quella in cui si consegna il foglio.</p>
-  <p>Il titolo indicato nel modulo è provvisorio: quello definitivo si comunica al momento della domanda di laurea. Il correlatore è previsto solo per la magistrale, e richiede un'attestazione del relatore sulla sua qualificazione scientifica o professionale.</p>
+  <p>Il modulo è indirizzato al Direttore del Dipartimento e al Coordinatore del Corso di Laurea, ma le uniche firme da procurarsi sono quella dello studente e quella del relatore, più quella del correlatore dove c'è: il visto del Direttore arriva dopo.</p>
+  <p>Il titolo e l'argomento indicati nel modulo sono provvisori. L'argomento non è strettamente vincolante e il titolo definitivo si comunica al momento della domanda di laurea. Il correlatore è previsto solo per la magistrale, e richiede un'attestazione del relatore sulla sua qualificazione scientifica o professionale.</p>
   <p>Tutti i moduli si trovano nella <a href="https://ingegneria.unime.it/it/didattica/modulistica-didattica">modulistica didattica del Dipartimento</a>.</p>
 </details>
 
@@ -29,7 +30,7 @@ Per chi sta già facendo la tesi con Francesco Longo: la burocrazia, il lavoro q
     <li><a href="https://ingegneria.unime.it/sites/dip05/files/2025-01/istanza%20tirocinio%20-%20ulteriori%20attivit%C3%A0%20presso%20Unime%20-%20ultima%20versione.pdf">Istanza di tirocinio presso strutture dell'Ateneo</a>, per il tirocinio in laboratorio</li>
     <li><a href="https://ingegneria.unime.it/sites/dip05/files/2026-07/istanza%20tirocinio%20presso%20imprese%20ecc%20agg.%2021.07.2026.pdf">Istanza di tirocinio presso imprese ed enti</a>, per il tirocinio in azienda</li>
   </ul>
-  <p>Entrambi i moduli vanno indirizzati al Coordinatore del Corso di Laurea, indicano un docente tutor, le ore e i crediti, e richiedono di aver frequentato un corso sulla sicurezza sul lavoro.</p>
+  <p>Entrambi i moduli vanno indirizzati al Coordinatore del Corso di Laurea, indicano come docente tutor il Prof. Longo, le ore e i crediti, e richiedono di aver frequentato un corso sulla sicurezza sul lavoro.</p>
 </details>
 
 <details class="faq-item" id="lavoro">
@@ -60,7 +61,6 @@ Per chi sta già facendo la tesi con Francesco Longo: la burocrazia, il lavoro q
 
 <details class="faq-item" id="consegna">
   <summary><h2>Come si consegna la tesi e ci si laurea?</h2></summary>
-  <p>Il frontespizio <b>non va stampato</b>: si compila, si manda nella chat della tesi, il relatore lo firma e lo rimanda lì.</p>
   <p>La domanda di conseguimento del titolo si presenta su Esse3, dove la procedura si apre <b>40 giorni</b> prima della data di laurea. Vanno caricati quattro documenti:</p>
   <ul>
     <li>il documento d'identità in corso di validità;</li>
@@ -68,8 +68,9 @@ Per chi sta già facendo la tesi con Francesco Longo: la burocrazia, il lavoro q
     <li>il contenuto definitivo della tesi;</li>
     <li>tutti i file restituiti dal sistema antiplagio.</li>
   </ul>
+  <p>Il frontespizio <b>non va stampato</b>: si compila, si manda nella chat della tesi, il relatore lo firma e lo rimanda lì.</p>
   <p>L'antiplagio produce una ricevuta e un report: formalmente serve il report, ma conviene caricare tutto quello che il sistema restituisce, così non si sbaglia.</p>
-  <p class="faq-warning">Entro la stessa finestra il relatore approva o rifiuta l'elaborato, e in caso di rifiuto la procedura si può ripetere con le modifiche concordate. Il deposito va completato almeno <b>7 giorni lavorativi</b> prima della prova finale, che è anche la distanza minima prevista fra l'ultimo esame di profitto e l'esame di laurea.</p>
+  <p class="faq-warning">Entro la stessa finestra il relatore deve approvare l'elaborato: quella approvazione è l'atto finale del deposito della tesi, che va completato almeno <b>7 giorni lavorativi</b> prima della prova finale. Questa è anche la distanza minima prevista fra l'ultimo esame di profitto e l'esame di laurea.</p>
 </details>
 
 {% include faq-toggle.html %}
