@@ -1,10 +1,12 @@
 ---
 layout: page
+translation: /teaching/it/
+translation_label: Vai all'italiano
 title: Teaching
 permalink: /teaching/
 ---
 
-Teaching, thesis supervision and internships with Prof. Francesco Longo. Questa pagina è disponibile anche <a href="{{ '/teaching/it/' | relative_url }}">in italiano</a>.
+Teaching, thesis supervision and internships with Prof. Francesco Longo. Questa pagina è disponibile anche in italiano: basta cliccare sul pulsante in alto a destra.
 
 <div class="audience audience--link">
   <h2><a href="{{ '/teaching/courses/' | relative_url }}">If you are taking one of my courses</a></h2>

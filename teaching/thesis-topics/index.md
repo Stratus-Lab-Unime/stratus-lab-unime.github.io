@@ -1,10 +1,12 @@
 ---
 layout: page
+translation: /teaching/thesis-topics/it/
+translation_label: Vai all'italiano
 title: Doing your thesis at STRATUS Lab
 permalink: /teaching/thesis-topics/
 ---
 
-Interested in cybersecurity, artificial intelligence, autonomous systems, or advanced computing technologies? Questa pagina è disponibile anche <a href="{{ '/teaching/thesis-topics/it/' | relative_url }}">in italiano</a>.
+Interested in cybersecurity, artificial intelligence, autonomous systems, or advanced computing technologies? Questa pagina è disponibile anche in italiano: basta cliccare sul pulsante in alto a destra.
 
 At STRATUS Lab, students can participate in research-oriented bachelor's and master's theses and internships, working on challenging problems through software development, simulation, experimental evaluation, and hardware prototyping.
 

@@ -272,6 +272,45 @@ a:hover,
   margin-top: 1em;
 }
 
+/* Cambio di lingua
+   Il pulsante sta nell'intestazione, accanto al titolo, e compare solo sulle
+   pagine che esistono davvero in due lingue: le pagine dei corsi non lo hanno,
+   perché stanno nella lingua in cui il corso è insegnato e una traduzione non
+   esiste.
+   L'etichetta e` una frase intera e non una parola sola, percio` qui niente
+   maiuscoletto: «VAI ALL'ITALIANO» tutto maiuscolo a corpo piccolo si legge
+   peggio di «Vai all'italiano».
+   ========================================================================== */
+.page-header--translated {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.6em 1.2em;
+}
+
+/* `margin-left: auto` tiene il pulsante a destra anche quando lo schermo e`
+   stretto e va a capo sotto il titolo: altrimenti finirebbe a sinistra e la
+   frase nel testo, che dice «in alto a destra», direbbe una cosa falsa. */
+.lang-switch {
+  font-size: 0.8em;
+  white-space: nowrap;
+  margin-left: auto;
+  margin-bottom: 0.6em;
+  color: var(--accent);
+  background: var(--accent-soft);
+  border-radius: 20px;
+  padding: 0.4em 1em;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.lang-switch:hover {
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+}
+
 /* Giustificazione
    Giustificare senza sillabare apre buchi bianchi fra le parole, e su uno schermo
    stretto diventano fiumi verticali: `hyphens` è quindi parte della regola, non un

@@ -1,10 +1,12 @@
 ---
 layout: page
+translation: /teaching/thesis/it/
+translation_label: Vai all'italiano
 title: Working on your thesis
 permalink: /teaching/thesis/
 ---
 
-For students already writing their thesis with Prof. Francesco Longo at STRATUS Lab: the paperwork, the day-to-day work, the templates and the submission. Questa pagina è disponibile anche <a href="{{ '/teaching/thesis/it/' | relative_url }}">in italiano</a>.
+For students already writing their thesis with Prof. Francesco Longo at STRATUS Lab: the paperwork, the day-to-day work, the templates and the submission. Questa pagina è disponibile anche in italiano: basta cliccare sul pulsante in alto a destra.
 
 <details class="faq-item" id="application">
   <summary><h2>How is the thesis request made official?</h2></summary>

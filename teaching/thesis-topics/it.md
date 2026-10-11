@@ -1,11 +1,13 @@
 ---
 layout: page
+translation: /teaching/thesis-topics/
+translation_label: Go to English
 lang: it
 title: Fare la tesi in STRATUS Lab
 permalink: /teaching/thesis-topics/it/
 ---
 
-Ti interessano la cybersecurity, l'intelligenza artificiale, i sistemi autonomi o le tecnologie di calcolo avanzate? This page is also available <a href="{{ '/teaching/thesis-topics/' | relative_url }}">in English</a>.
+Ti interessano la cybersecurity, l'intelligenza artificiale, i sistemi autonomi o le tecnologie di calcolo avanzate? This page is also available in English: just click the button at the top right.
 
 In STRATUS Lab si possono fare tesi triennali e magistrali e tirocini di taglio sperimentale, lavorando su problemi aperti attraverso sviluppo software, simulazione, valutazione sperimentale e prototipazione hardware.
 

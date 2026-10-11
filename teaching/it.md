@@ -1,11 +1,13 @@
 ---
 layout: page
+translation: /teaching/
+translation_label: Go to English
 lang: it
 title: Didattica
 permalink: /teaching/it/
 ---
 
-Corsi, tesi e tirocini con il Prof. Francesco Longo. This page is also available <a href="{{ '/teaching/' | relative_url }}">in English</a>.
+Corsi, tesi e tirocini con il Prof. Francesco Longo. This page is also available in English: just click the button at the top right.
 
 <div class="audience audience--link">
   <h2><a href="{{ '/teaching/courses/it/' | relative_url }}">Per chi segue uno dei corsi</a></h2>

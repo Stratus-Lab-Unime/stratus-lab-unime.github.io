@@ -1,5 +1,7 @@
 ---
 layout: page
+translation: /teaching/courses/it/
+translation_label: Vai all'italiano
 title: Courses
 permalink: /teaching/courses/
 ---
@@ -75,7 +77,7 @@ permalink: /teaching/courses/
 }
 </style>
 
-Courses taught by Francesco Longo at the Department of Engineering of the University of Messina and in other departments and doctoral schools of the University. Questa pagina è disponibile anche <a href="{{ '/teaching/courses/it/' | relative_url }}">in italiano</a>.
+Courses taught by Francesco Longo at the Department of Engineering of the University of Messina and in other departments and doctoral schools of the University. Questa pagina è disponibile anche in italiano: basta cliccare sul pulsante in alto a destra.
 
 <div class="teaching-section">
 {% assign current = site.data.teaching | where: "status", "current" %}

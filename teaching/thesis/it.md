@@ -1,11 +1,13 @@
 ---
 layout: page
+translation: /teaching/thesis/
+translation_label: Go to English
 lang: it
 title: Lavorare alla tesi
 permalink: /teaching/thesis/it/
 ---
 
-Per chi sta già facendo la tesi con il Prof. Francesco Longo in STRATUS Lab: la burocrazia, il lavoro quotidiano, i modelli e la consegna. This page is also available <a href="{{ '/teaching/thesis/' | relative_url }}">in English</a>.
+Per chi sta già facendo la tesi con il Prof. Francesco Longo in STRATUS Lab: la burocrazia, il lavoro quotidiano, i modelli e la consegna. This page is also available in English: just click the button at the top right.
 
 <details class="faq-item" id="richiesta">
   <summary><h2>Come si ufficializza la richiesta di tesi?</h2></summary>
