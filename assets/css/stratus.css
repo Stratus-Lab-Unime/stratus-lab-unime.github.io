@@ -281,12 +281,24 @@ a:hover,
    maiuscoletto: «VAI ALL'ITALIANO» tutto maiuscolo a corpo piccolo si legge
    peggio di «Vai all'italiano».
    ========================================================================== */
+/* `center` e non `baseline`: il titolo e` grande e il pulsante piccolo, e
+   allineando le basi il pulsante finisce in fondo al titolo, come se fosse
+   caduto. Centrato sull'altezza del titolo sta dove l'occhio lo cerca.
+   Il margine sotto il titolo passa all'intestazione: restando sul titolo
+   entrerebbe nel calcolo del centro e tirerebbe giu` il pulsante di meta` del
+   margine. Il valore e` quello del tema, 0.5em del titolo, scritto in rem
+   perche' qui sotto il titolo non c'e` piu`. */
 .page-header--translated {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 0.6em 1.2em;
+  margin-bottom: 1.68rem;
+}
+
+.page-header--translated .page-title {
+  margin-bottom: 0;
 }
 
 /* `margin-left: auto` tiene il pulsante a destra anche quando lo schermo e`
@@ -296,7 +308,6 @@ a:hover,
   font-size: 0.8em;
   white-space: nowrap;
   margin-left: auto;
-  margin-bottom: 0.6em;
   color: var(--accent);
   background: var(--accent-soft);
   border-radius: 20px;
