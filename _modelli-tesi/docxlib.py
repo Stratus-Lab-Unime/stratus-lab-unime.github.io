@@ -77,6 +77,11 @@ STYLES = '''<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
     <w:basedOn w:val="Normal"/><w:next w:val="Normal"/>
     <w:pPr><w:pageBreakBefore/><w:outlineLvl w:val="0"/><w:spacing w:before="1000" w:after="800"/><w:jc w:val="left"/></w:pPr>
     <w:rPr><w:b/><w:sz w:val="50"/><w:szCs w:val="50"/></w:rPr></w:style>
+  <w:style w:type="paragraph" w:styleId="Appendice"><w:name w:val="Appendice"/>
+    <w:basedOn w:val="Normal"/><w:next w:val="Normal"/>
+    <w:pPr><w:pageBreakBefore/><w:numPr><w:ilvl w:val="0"/><w:numId w:val="2"/></w:numPr>
+      <w:outlineLvl w:val="0"/><w:spacing w:before="1734" w:after="800"/><w:jc w:val="left"/></w:pPr>
+    <w:rPr><w:b/><w:sz w:val="50"/><w:szCs w:val="50"/></w:rPr></w:style>
   <w:style w:type="paragraph" w:styleId="Heading2"><w:name w:val="heading 2"/>
     <w:basedOn w:val="Normal"/><w:next w:val="Normal"/>
     <w:pPr><w:numPr><w:ilvl w:val="1"/><w:numId w:val="1"/></w:numPr>
@@ -123,7 +128,7 @@ STYLES = '''<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 </w:styles>'''
 
 def write_docx(path, body, immagini=(), parola_capitolo="Capitolo",
-               numeri_di_pagina=False):
+               parola_appendice="Appendice", numeri_di_pagina=False):
     rels = ('<?xml version="1.0" encoding="UTF-8" standalone="yes"?>'
             '<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">'
             '<Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles" Target="styles.xml"/>'
@@ -164,7 +169,7 @@ def write_docx(path, body, immagini=(), parola_capitolo="Capitolo",
         z.writestr("_rels/.rels", root_rels)
         z.writestr("word/document.xml", doc)
         z.writestr("word/styles.xml", STYLES)
-        z.writestr("word/numbering.xml", NUMBERING_TMPL.replace("{CAP}", parola_capitolo))
+        z.writestr("word/numbering.xml", NUMBERING_TMPL.replace("{CAP}", parola_capitolo).replace("{APP}", parola_appendice))
         z.writestr("word/settings.xml", SETTINGS)
         if numeri_di_pagina:
             z.writestr("word/footer1.xml", FOOTER)
@@ -222,7 +227,16 @@ NUMBERING_TMPL = '''<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
       <w:pStyle w:val="Heading4"/><w:lvlText w:val="%1.%2.%3.%4"/><w:lvlJc w:val="left"/>
       <w:pPr><w:ind w:left="0" w:firstLine="0"/></w:pPr></w:lvl>
   </w:abstractNum>
+  <w:abstractNum w:abstractNumId="1">
+    <w:multiLevelType w:val="singleLevel"/>
+    <w:lvl w:ilvl="0"><w:start w:val="1"/><w:numFmt w:val="upperLetter"/>
+      <w:pStyle w:val="Appendice"/><w:lvlText w:val="{APP} %1 "/><w:lvlJc w:val="left"/>
+      <w:suff w:val="nothing"/>
+      <w:pPr><w:ind w:left="0" w:firstLine="0"/></w:pPr>
+      <w:rPr><w:b/><w:sz w:val="50"/><w:szCs w:val="50"/></w:rPr></w:lvl>
+  </w:abstractNum>
   <w:num w:numId="1"><w:abstractNumId w:val="0"/></w:num>
+  <w:num w:numId="2"><w:abstractNumId w:val="1"/></w:num>
 </w:numbering>'''
 
 SETTINGS = ('<?xml version="1.0" encoding="UTF-8" standalone="yes"?>'
@@ -287,6 +301,12 @@ def tabella(righe, larghezze):
     x.append('</w:tbl><w:p><w:pPr><w:spacing w:after="120"/></w:pPr></w:p>')
     return "".join(x)
 
+
+def titolo_appendice(testo):
+    """Come il titolo di un capitolo, ma la numerazione e` alfabetica."""
+    salto = '<w:r><w:rPr><w:sz w:val="48"/></w:rPr><w:br/><w:br/></w:r>'
+    return para(salto + run(testo), style="Appendice",
+                space_before=1734, space_after=800, line=240)
 
 def titolo_capitolo(testo, suggerimento=""):
     """Il numero ("Capitolo N") arriva dalla numerazione, il titolo va a capo:

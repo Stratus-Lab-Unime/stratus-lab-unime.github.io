@@ -116,6 +116,20 @@ IT = dict(
           "Scholar, che però propone solo MLA, APA, Chicago, Harvard e Vancouver: da lì prendi i "
           "dati, la forma la dai tu seguendo gli esempi.",
 
+    g_dedica="Questa pagina è per la dedica. Se non la vuoi, cancellala.",
+    appendice="Appendice", titolo_appendice="Titolo dell'appendice",
+    g_app1="Le appendici servono a togliere dal corpo della tesi quello che lo appesantirebbe senza "
+           "aggiungere niente al discorso: la procedura di installazione di un ambiente, la "
+           "configurazione di una scheda, le tabelle complete dei dati di cui nel capitolo hai "
+           "mostrato solo il riassunto, il codice che serve a riprodurre il lavoro ma che non "
+           "contiene nessuna decisione interessante.",
+    g_app2="Il criterio è lo stesso di un listato: se una cosa serve a chi vuole rifare quello che "
+           "hai fatto, ma a chi legge per capire il lavoro fa solo perdere il filo, va in appendice.",
+    g_app3="Si numerano con le lettere e compaiono nell'indice. Come le figure, vanno richiamate nel "
+           "testo: un'appendice che nessuno cita non la legge nessuno. Un possibile esempio è il "
+           "seguente:",
+    e_app="La procedura completa di installazione dell'ambiente di sviluppo è riportata in Appendice A.",
+    g_app4="Se non hai niente da metterci, cancella questa parte.",
     fig="Figura", tab="Tabella", lst="Listato",
     cap_fig=": Didascalia della figura.", cap_tab=": Didascalia della tabella.",
     cap_lst=": Didascalia del listato.",
@@ -244,6 +258,19 @@ EN = dict(
           "on Google Scholar, which however only offers MLA, APA, Chicago, Harvard and Vancouver: "
           "take the data from there, the form is up to you, following the examples.",
 
+    g_dedica="This page is for the dedication. If you do not want one, delete it.",
+    appendice="Appendix", titolo_appendice="Title of the appendix",
+    g_app1="Appendices take out of the body of the thesis what would weigh it down without adding "
+           "anything to the argument: the procedure for installing an environment, the "
+           "configuration of a board, the complete data tables of which the chapter showed only the "
+           "summary, the code needed to reproduce the work but holding no interesting decision.",
+    g_app2="The criterion is the same as for a listing: if something is needed by whoever wants to "
+           "redo what you did, but only makes the reader lose the thread, it belongs in an appendix.",
+    g_app3="Appendices are lettered and appear in the table of contents. Like figures, they must be "
+           "referred to in the text: an appendix nobody cites is an appendix nobody reads. A "
+           "possible example is the following:",
+    e_app="The complete procedure for installing the development environment is given in Appendix A.",
+    g_app4="If you have nothing to put there, delete this part.",
     fig="Figure", tab="Table", lst="Listing",
     cap_fig=": Caption of the figure.", cap_tab=": Caption of the table.",
     cap_lst=": Caption of the listing.",

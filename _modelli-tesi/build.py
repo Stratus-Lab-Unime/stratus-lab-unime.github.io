@@ -42,15 +42,21 @@ def voci(t):
          (1, f"{cp} 3 {c[2]}", f"{cp} 3"),
          (2, f"3.1 {s[5]}", s[5]), (2, f"3.2 {s[6]}", s[6]), (2, f"3.3 {s[7]}", s[7]),
          (1, f"{cp} 4 {c[3]}", f"{cp} 4"),
-         (1, t["bibliografia"], t["bibliografia"])]
+         (1, t["bibliografia"], t["bibliografia"]),
+         (1, f'{t["appendice"]} A {t["titolo_appendice"]}', f'{t["appendice"]} A')]
     f = [(2, f'{t["fig"]} 1{t["cap_fig"]}', t["cap_fig"].lstrip(": ")),
          (2, f'{t["fig"]} 2{t["cap_graf"]}', t["cap_graf"].lstrip(": "))]
     tb = [(2, f'{t["tab"]} 1{t["cap_tab"]}', t["cap_tab"].lstrip(": "))]
     return v, f, tb
 
 
-def pagine_dal_pdf(pdf, token):
-    """Pagina stampata in cui compare ciascun token, scorrendo in avanti."""
+def pagine_dal_pdf(pdf, token, prima_numerata):
+    """Pagina stampata in cui compare ciascun token, scorrendo in avanti.
+
+    Lo scarto fra pagina del PDF e pagina stampata non e` fisso: davanti
+    all'indice ci sono il frontespizio e la dedica, che non portano numero e
+    non si contano. Lo si ricava cercando l'indice stesso, che e` la pagina 1.
+    """
     import subprocess
     n = int(subprocess.run(["pdfinfo", pdf], capture_output=True, text=True)
             .stdout.split("Pages:")[1].split()[0])
@@ -59,13 +65,14 @@ def pagine_dal_pdf(pdf, token):
     testo = [spazi(subprocess.run(["pdftotext", "-f", str(p), "-l", str(p), pdf, "-"],
                                   capture_output=True, text=True).stdout) for p in range(1, n + 1)]
     token = [spazi(x) for x in token]
+    scarto = next(i for i, t in enumerate(testo) if spazi(prima_numerata) in t)
     fuori = []
     p, pos = 0, 0
     for tk in token:
         while p < len(testo):
             i = testo[p].find(tk, pos)
             if i >= 0:
-                fuori.append(p)          # pagina stampata = indice PDF meno il frontespizio
+                fuori.append(p - scarto + 1)
                 pos = i + len(tk)
                 break
             p += 1
@@ -77,6 +84,8 @@ def pagine_dal_pdf(pdf, token):
 
 def corpo(t, pag_toc, pag_fig, pag_tab):
     b = frontespizio(t)
+    b.append(page_break())
+    b.append(para(run(t["g_dedica"], italic=True), style=G))
     b.append(fine_frontespizio())
 
     b.append(para(run(t["indice"], bold=True, size=25), align=L, space_before=1734, space_after=800, line=240))
@@ -168,26 +177,34 @@ def corpo(t, pag_toc, pag_fig, pag_tab):
     b.append(para(run(t["g_bib"], italic=True), style=G))
     for r in t["bib"]:
         b.append(para(run(r), align=L))
+
+    b.append(titolo_appendice(t["titolo_appendice"]))
+    b.append(para(run(t["g_app1"], italic=True), style=G))
+    b.append(para(run(t["g_app2"], italic=True), style=G))
+    b.append(para(run(t["g_app3"], italic=True), style=G))
+    b.append(para(run(t["e_app"]), style=E))
+    b.append(para(run(t["g_app4"], italic=True), style=G))
     return b
 
 import subprocess
 
 for t, nome in ((IT, "triennale"), (EN, "magistrale")):
     write_docx(t["nome_frontespizio"] + ".docx", "".join(frontespizio(t)), immagini=("logo-unime.png",),
-               parola_capitolo=t["parola_capitolo"])
+               parola_capitolo=t["parola_capitolo"], parola_appendice=t["appendice"])
     v, f, tb = voci(t)
     pag = ([0] * len(v), [0] * len(f), [0] * len(tb))
     for passata in range(4):
         nome_file = t["nome_modello"] + ".docx"
         write_docx(nome_file, "".join(corpo(t, *pag)), immagini=("logo-unime.png", f"grafico-{t['lingua']}.png"),
-                   parola_capitolo=t["parola_capitolo"], numeri_di_pagina=True)
+                   parola_capitolo=t["parola_capitolo"], parola_appendice=t["appendice"],
+                   numeri_di_pagina=True)
         subprocess.run(["soffice", "--headless", "--convert-to", "pdf", nome_file],
                        capture_output=True)
         pdf = nome_file.replace(".docx", ".pdf")
         dopo = t["g_abstract"][:40]      # gli elenchi in testa non devono trarre in inganno
-        nuovo = (pagine_dal_pdf(pdf, [x[2] for x in v]),
-                 pagine_dal_pdf(pdf, [dopo] + [x[2] for x in f])[1:],
-                 pagine_dal_pdf(pdf, [dopo] + [x[2] for x in tb])[1:])
+        nuovo = (pagine_dal_pdf(pdf, [x[2] for x in v], t["indice"]),
+                 pagine_dal_pdf(pdf, [dopo] + [x[2] for x in f], t["indice"])[1:],
+                 pagine_dal_pdf(pdf, [dopo] + [x[2] for x in tb], t["indice"])[1:])
         if nuovo == pag:
             print(f"{nome}: indice stabile dopo {passata} passate")
             break

@@ -59,6 +59,25 @@
   {\def\@noitemerr{\@latex@warning{Bibliografia vuota}}\endlist}
 \makeatother
 
+
+\makeatletter   % l'indice sta su una pagina: lo stacco prima dei capitoli da 1 em a 0,4
+\renewcommand*\l@chapter[2]{%
+  \ifnum \c@tocdepth >\m@ne
+    \addpenalty{-\@highpenalty}%
+    \vskip 0.4em \@plus\p@
+    \setlength\@tempdima{1.5em}%
+    \begingroup
+      \parindent \z@ \rightskip \@pnumwidth
+      \parfillskip -\@pnumwidth
+      \leavevmode \bfseries
+      \advance\leftskip\@tempdima
+      \hskip -\leftskip
+      #1\nobreak\hfil \nobreak\hb@xt@\@pnumwidth{\hss #2}\par
+      \penalty\@highpenalty
+    \endgroup
+  \fi}
+\makeatother
+
 \onehalfspacing
 \newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
 \newcommand{\guida}[1]{{\itshape\color{gray}#1\par}}
@@ -89,6 +108,13 @@
 \begin{document}
 
 \input{frontespizio}
+
+% La dedica: pagina a se`, senza titolo e senza numero.
+\thispagestyle{empty}
+\guida{This page is for the dedication. If you do not want one, delete it.}
+\clearpage
+% La dedica non si conta: la numerazione riparte dall'indice, come in Word.
+\setcounter{page}{1}
 
 \tableofcontents
 \listoffigures
@@ -213,5 +239,16 @@ limitations and indicates the directions in which the work can be continued.}
 
 \bibliographystyle{ieeetr}
 \bibliography{bibliografia}
+
+% Da qui i capitoli si numerano con le lettere: ci pensa \appendix.
+\appendix
+
+\chapter{Title of the appendix}
+\label{app:esempio}
+\guida{Appendices take out of the body of the thesis what would weigh it down without adding anything to the argument: the procedure for installing an environment, the configuration of a board, the complete data tables of which the chapter showed only the summary, the code needed to reproduce the work but holding no interesting decision.}
+\guida{The criterion is the same as for a listing: if something is needed by whoever wants to redo what you did, but only makes the reader lose the thread, it belongs in an appendix.}
+\guida{Appendices are lettered and appear in the table of contents. Like figures, they must be referred to in the text: an appendix nobody cites is an appendix nobody reads. A possible example is the following:}
+\esempio{The complete procedure for installing the development environment is given in Appendix~\ref{app:esempio}.}
+\guida{If you have nothing to put there, delete this part.}
 
 \end{document}

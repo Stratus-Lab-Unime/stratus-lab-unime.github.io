@@ -61,6 +61,25 @@
   {\def\@noitemerr{\@latex@warning{Bibliografia vuota}}\endlist}
 \makeatother
 
+
+\makeatletter   % l'indice sta su una pagina: lo stacco prima dei capitoli da 1 em a 0,4
+\renewcommand*\l@chapter[2]{%
+  \ifnum \c@tocdepth >\m@ne
+    \addpenalty{-\@highpenalty}%
+    \vskip 0.4em \@plus\p@
+    \setlength\@tempdima{1.5em}%
+    \begingroup
+      \parindent \z@ \rightskip \@pnumwidth
+      \parfillskip -\@pnumwidth
+      \leavevmode \bfseries
+      \advance\leftskip\@tempdima
+      \hskip -\leftskip
+      #1\nobreak\hfil \nobreak\hb@xt@\@pnumwidth{\hss #2}\par
+      \penalty\@highpenalty
+    \endgroup
+  \fi}
+\makeatother
+
 \onehalfspacing
 \newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
 \newcommand{\guida}[1]{{\itshape\color{gray}#1\par}}
@@ -90,6 +109,13 @@
 \begin{document}
 
 \input{frontespizio}
+
+% La dedica: pagina a se`, senza titolo e senza numero.
+\thispagestyle{empty}
+\guida{Questa pagina è per la dedica. Se non la vuoi, cancellala.}
+\clearpage
+% La dedica non si conta: la numerazione riparte dall'indice, come in Word.
+\setcounter{page}{1}
 
 \tableofcontents
 \listoffigures
@@ -214,5 +240,16 @@ discutono i limiti e si indicano le direzioni in cui il lavoro può proseguire.}
 
 \bibliographystyle{ieeetr}
 \bibliography{bibliografia}
+
+% Da qui i capitoli si numerano con le lettere: ci pensa \appendix.
+\appendix
+
+\chapter{Titolo dell'appendice}
+\label{app:esempio}
+\guida{Le appendici servono a togliere dal corpo della tesi quello che lo appesantirebbe senza aggiungere niente al discorso: la procedura di installazione di un ambiente, la configurazione di una scheda, le tabelle complete dei dati di cui nel capitolo hai mostrato solo il riassunto, il codice che serve a riprodurre il lavoro ma che non contiene nessuna decisione interessante.}
+\guida{Il criterio è lo stesso di un listato: se una cosa serve a chi vuole rifare quello che hai fatto, ma a chi legge per capire il lavoro fa solo perdere il filo, va in appendice.}
+\guida{Si numerano con le lettere e compaiono nell'indice. Come le figure, vanno richiamate nel testo: un'appendice che nessuno cita non la legge nessuno. Un possibile esempio è il seguente:}
+\esempio{La procedura completa di installazione dell'ambiente di sviluppo è riportata in Appendice~\ref{app:esempio}.}
+\guida{Se non hai niente da metterci, cancella questa parte.}
 
 \end{document}
