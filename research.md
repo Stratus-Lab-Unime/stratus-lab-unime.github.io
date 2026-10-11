@@ -4,7 +4,13 @@ title: Research
 permalink: /research/
 ---
 
-The group's work follows the four lines that give the laboratory its name.
+At STRATUS, we investigate how intelligent cyber-physical systems can become more secure,
+verifiable, and autonomous, while operating across increasingly distributed and heterogeneous
+computing environments.
+
+Our research is organized around four complementary pillars, connecting foundational research
+with experimental applications in robotics, autonomous mobility, industrial systems, and
+ubiquitous computing.
 
 <style>
 /* Riquadri e colori arrivano da /assets/css/stratus.css */
@@ -48,37 +54,19 @@ The group's work follows the four lines that give the laboratory its name.
 </style>
 
 <div class="research-grid">
-
+{%- comment -%}
+I quattro riquadri non sono scritti qui: vengono da _data/areas.yml, come le
+quattro sezioni della pagina delle tesi. Lì ogni area porta due descrizioni, e
+questa pagina legge `research_en`, quella in registro scientifico.
+{%- endcomment -%}
+{%- for a in site.data.areas %}
   <div class="research-item">
     <div class="research-header">
-      {% include icon.html name="shield-alt" %}
-      <h3>Secure</h3>
+      {% include icon.html name=a.icon %}
+      <h3>{{ a.label }}</h3>
     </div>
-    <p>Industrial and automotive systems were built before the threats they now face. We work on post-quantum cryptography for legacy protocols such as Modbus, anomaly detection on automotive CAN buses, and formal verification of security properties in containerized IoT deployments.</p>
+    <p>{{ a.research_en }}</p>
   </div>
-
-  <div class="research-item">
-    <div class="research-header">
-      {% include icon.html name="key" %}
-      <h3>TRustless</h3>
-    </div>
-    <p>Rather than hardening the central authority, we remove it: self-sovereign identity in place of central credential issuers, zero-trust architectures for software-defined vehicles, and federated learning that keeps data where it is produced — together with the attacks that federation does not, by itself, prevent.</p>
-  </div>
-
-  <div class="research-item">
-    <div class="research-header">
-      {% include icon.html name="cogs" %}
-      <h3>Autonomous</h3>
-    </div>
-    <p>Machines that decide for themselves, within the limits of the hardware they run on: decentralized control migration for long-endurance robot swarms, reinforcement learning inside the memory budget of an edge device, and neuro-symbolic models that pair learning with domain knowledge.</p>
-  </div>
-
-  <div class="research-item">
-    <div class="research-header">
-      {% include icon.html name="cloud" %}
-      <h3>Ubiquitous Systems</h3>
-    </div>
-    <p>The substrate everything else depends on, from the embedded device to the data center: virtualization of embedded FPGAs, distributed hypervisors, serverless orchestration across the cloud-to-things continuum, and the IoT infrastructure that ties them together.</p>
-  </div>
+{%- endfor %}
 
 </div>

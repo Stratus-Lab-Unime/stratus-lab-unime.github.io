@@ -6,14 +6,22 @@
 # sono le lettere dell'acronimo, e tradurle lo scioglierebbe. Qui «Trustless» ha
 # la sola T maiuscola; la doppia maiuscola di «TRustless» vale solo dove si sta
 # sciogliendo il nome del laboratorio.
-# `tagline` è la riga che segue il titolo, `description` il paragrafo sotto.
+# `icon` è il nome dell'icona in _data/icons.yml.
 # `tag` è la forma corta sulle card dei progetti.
+#
+# OGNI AREA PORTA DUE DESCRIZIONI, perché i due lettori sono diversi.
+# `tagline_*` e `description_*` parlano allo studente che cerca una tesi: dicono
+# in concreto cosa si fa, e stanno in italiano e in inglese perché la pagina
+# «Fare la tesi in STRATUS Lab» esiste in due lingue.
+# `research_en` parla a chi legge la pagina Research: stesso contenuto, registro
+# scientifico. Solo in inglese, perché quella pagina esiste solo in inglese.
 #
 # I temi di ciascuna area non stanno qui: stanno in _data/topics.yml, che dice a
 # quale area ciascun tema appartiene.
 
 - key: secure
   label: Secure
+  icon: shield-alt
   tagline_en: Making intelligent and cyber-physical systems safer, more resilient, and verifiable.
   tagline_it: Rendere i sistemi intelligenti e ciberfisici più sicuri, più resilienti e verificabili.
   description_en: >-
@@ -26,10 +34,17 @@
     fisico, dai dispositivi connessi alle infrastrutture critiche fino al software
     intelligente. Le attività mettono insieme cybersecurity, crittografia avanzata e
     tecniche per migliorare la sicurezza e l'affidabilità dell'intelligenza artificiale.
+  research_en: >-
+    As software increasingly interacts with the physical world, cybersecurity must
+    protect not only information but also the integrity and behavior of entire systems.
+    We investigate security, resilience, and verification in cyber-physical and
+    intelligent systems, combining advanced cryptography, formal methods, vulnerability
+    analysis, and trustworthy artificial intelligence.
   tag: Secure
 
 - key: trustless
   label: Trustless
+  icon: key
   tagline_en: Building systems where trust is verified rather than assumed.
   tagline_it: Costruire sistemi in cui la fiducia si verifica invece di darla per scontata.
   description_en: >-
@@ -42,10 +57,17 @@
     appoggiarsi a una fiducia implicita? Studiamo architetture decentralizzate, identità
     digitale, esecuzione sicura e verificabile, e tecnologie che riducono al minimo le
     dipendenze di fiducia nei sistemi distribuiti e ciberfisici.
+  research_en: >-
+    Building dependable distributed systems requires moving beyond implicit assumptions
+    of trust. We investigate architectures and mechanisms that minimize trust
+    dependencies through decentralized technologies, digital identity, Zero Trust
+    principles, and secure and verifiable computation, enabling reliable interactions
+    across heterogeneous and potentially untrusted environments.
   tag: Trustless
 
 - key: autonomous
   label: Autonomous
+  icon: cogs
   tagline_en: Enabling machines to perceive, learn, reason, and act in the physical world.
   tagline_it: Mettere le macchine in condizione di percepire, imparare, ragionare e agire nel mondo fisico.
   description_en: >-
@@ -58,10 +80,17 @@
     imparare dall'esperienza e adattarsi ad ambienti complessi. La ricerca esplora il
     reinforcement learning, l'embodied AI, la robotica guidata dagli LLM e approcci
     emergenti come i world model.
+  research_en: >-
+    We investigate how intelligent machines can perceive their environment, learn from
+    experience, reason, and make decisions with increasing autonomy. Our research spans
+    autonomous driving, advanced robotics, reinforcement learning, and embodied
+    intelligence, exploring emerging paradigms such as LLM-guided robotics and world
+    models, with particular attention to real-world constraints.
   tag: Autonomous
 
 - key: ubiquitous
   label: Ubiquitous
+  icon: cloud
   tagline_en: Extending computation from embedded devices to distributed and cloud infrastructures.
   tagline_it: Estendere il calcolo dai dispositivi embedded alle infrastrutture distribuite e cloud.
   description_en: >-
@@ -74,4 +103,10 @@
     orchestrate lungo il Compute Continuum. Le attività spaziano dall'hardware embedded e
     riconfigurabile alle architetture di calcolo aperte, dalla virtualizzazione distribuita
     ai sistemi connessi al cloud.
+  research_en: >-
+    Computing is evolving into a pervasive continuum spanning embedded devices,
+    intelligent edge systems, and cloud infrastructures. We investigate novel hardware and
+    software architectures, reconfigurable computing, distributed virtualization, and
+    resource orchestration to enable efficient, flexible, and interoperable computation
+    across heterogeneous environments.
   tag: Ubiquitous
