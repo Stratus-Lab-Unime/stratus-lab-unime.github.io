@@ -13,7 +13,7 @@ Teaching, thesis supervision and internships with Prof. Francesco Longo. Questa 
 
 <div class="audience audience--link">
   <h2><a href="{{ '/teaching/thesis-topics/' | relative_url }}">If you would like to do your thesis or internship with me</a></h2>
-  <p>The three areas the lab works on, the topics that are open right now, the people you would work with, and how to ask.</p>
+  <p>The four areas the lab works on, the topics that are open right now, the people you would work with, and how to ask.</p>
 </div>
 
 <div class="audience audience--link">

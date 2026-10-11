@@ -14,7 +14,7 @@ Corsi, tesi e tirocini con il Prof. Francesco Longo. This page is also available
 
 <div class="audience audience--link">
   <h2><a href="{{ '/teaching/thesis-topics/it/' | relative_url }}">Per chi vuole fare la tesi o il tirocinio</a></h2>
-  <p>Le tre aree su cui il laboratorio lavora, i temi aperti adesso, le persone con cui lavoreresti e come si chiede.</p>
+  <p>Le quattro aree su cui il laboratorio lavora, i temi aperti adesso, le persone con cui lavoreresti e come si chiede.</p>
 </div>
 
 <div class="audience audience--link">
