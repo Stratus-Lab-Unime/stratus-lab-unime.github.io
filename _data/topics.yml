@@ -1,0 +1,89 @@
+# Il vocabolario dei temi di ricerca, scritto una volta sola.
+#
+# `key` è quello che compare in `topics:` dentro people.yml.
+# `label` è come il tema si legge sul sito, in inglese anche sulle pagine
+# italiane: sono i termini con cui poi si cercano i paper.
+# `areas` sono le chiavi di _data/areas.yml. Più d'una quando il tema sta
+# davvero a cavallo.
+#
+# DA DOVE VENGONO. Li hanno scritti i dottorandi e i tesisti, non sono dedotti
+# dalle loro biografie, e le etichette sono le loro parole esatte.
+#
+# L'AREA invece l'ha assegnata Claude leggendo il tema, perché loro hanno
+# mandato le sole parole chiave: è la parte da ricontrollare.
+#
+# COSA SI DERIVA DA QUI. La riga di parole chiave sotto ogni foto nella pagina
+# Team, le aree di ciascuna persona, l'elenco dei temi di ogni area sulla
+# pagina delle tesi e le facce sotto ciascuna area. Nessuno di questi è scritto
+# a mano da nessuna parte.
+#
+# Un tema senza nessuno compare lo stesso sulla pagina delle tesi, senza facce
+# sotto: è il modo di annunciare un filone per cui si cerca un tesista.
+
+- key: cloud-continuum
+  label: Cloud Continuum
+  areas: [iot]
+
+- key: distributed-virtualization
+  label: Distributed Virtualization
+  areas: [iot]
+
+- key: fpga-reconfigurable
+  label: FPGA &amp; Reconfigurable Computing
+  areas: [iot]
+
+- key: riscv-open-hardware
+  label: RISC-V &amp; Open Hardware
+  areas: [iot]
+
+- key: embedded-ai
+  label: Embedded AI
+  areas: [iot, ai]
+
+- key: cps-security
+  label: Cyber-Physical Systems Security
+  areas: [iot, security]
+
+- key: zero-trust
+  label: Zero-Trust Architectures
+  areas: [iot, security]
+
+- key: tee
+  label: Trusted Execution Environments
+  areas: [iot, security]
+
+- key: post-quantum
+  label: Post-Quantum Cryptography
+  areas: [security]
+
+- key: decentralized-identity
+  label: Decentralized Identity
+  areas: [security]
+
+- key: trustworthy-ml
+  label: Trustworthy Machine Learning
+  areas: [security, ai]
+
+- key: reinforcement-learning
+  label: Reinforcement Learning
+  areas: [ai]
+
+- key: machine-unlearning
+  label: Machine Unlearning
+  areas: [ai]
+
+- key: world-models
+  label: World Models
+  areas: [ai]
+
+- key: embodied-ai
+  label: Embodied AI
+  areas: [ai]
+
+- key: llm-robotics
+  label: LLMs for Robotics
+  areas: [ai]
+
+- key: autonomous-driving
+  label: Autonomous Driving
+  areas: [ai]

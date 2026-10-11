@@ -144,12 +144,15 @@ a.img-circle:focus-visible {
 /* Stessa tipografia del ruolo del direttore, ma in grigio: l'azzurro resta
    riservato a chi guida il gruppo. Allineato in fondo alla scheda, così resta
    alla stessa altezza anche quando il nome accanto occupa due righe. */
+/* Ruolo e parole chiave stanno attaccati al nome. Prima `margin-top: auto`
+   li spingeva in fondo alla scheda per allinearli fra colonne, ma con nomi di
+   lunghezza diversa si staccavano dalla persona a cui si riferiscono. */
 .person-role {
   font-size: 0.7em;
   text-transform: uppercase;
   letter-spacing: 1px;
   line-height: 1.4;
-  margin-top: auto;
+  margin-top: 0.1em;
 }
 
 /* Le tre cose su cui la persona lavora, sotto il ruolo: chi cerca un relatore
@@ -311,7 +314,23 @@ The people of STRATUS Lab. Each photograph opens a short profile.
       </a>
       <span class="person-name">{{ p.name }}</span>
       <span class="person-role">{{ p.role }}</span>
-      {% if p.keywords %}<span class="person-keywords">{{ p.keywords }}</span>{% endif %}
+      {%- comment -%}
+        La riga sotto il nome: i temi di _data/topics.yml per chi li ha mandati,
+        le vecchie parole chiave scritte a mano per chi deve ancora rispondere.
+      {%- endcomment -%}
+      {%- if p.topics -%}
+        {%- comment -%} l'ordine e` quello in cui la persona ha scritto i propri
+          temi, non quello del vocabolario: il primo e` il tema principale. {%- endcomment -%}
+        {%- assign righe = "" -%}
+        {%- for k in p.topics -%}
+          {%- assign t = site.data.topics | where: "key", k | first -%}
+          {%- if righe == "" -%}{%- assign righe = t.label -%}
+          {%- else -%}{%- assign righe = righe | append: " &middot; " | append: t.label -%}{%- endif -%}
+        {%- endfor -%}
+        <span class="person-keywords">{{ righe }}</span>
+      {%- elsif p.keywords -%}
+        <span class="person-keywords">{{ p.keywords }}</span>
+      {%- endif -%}
     </div>
 {% endfor %}
   </div>

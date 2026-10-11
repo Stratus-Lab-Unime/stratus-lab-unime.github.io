@@ -1,7 +1,8 @@
 # Membri attuali del gruppo. L'ordine qui è l'ordine mostrato sulla pagina Team.
 # `id` compare nell'indirizzo della scheda: /team/#merlino
-# `keywords` sono le tre cose su cui la persona lavora, sotto il nome nella griglia:
-# servono a chi cerca un relatore o un collaboratore e non ha voglia di aprire otto schede.
+# `topics` sono le chiavi di _data/topics.yml: da li` si ricavano sia la riga sotto
+# il nome nella griglia sia le aree della persona. `keywords` e `areas` sono la forma
+# vecchia, scritta a mano, e restano solo su chi non ha ancora mandato i propri temi.
 # I collegamenti vuoti non vengono mostrati.
 #
 # Manca lo Scopus di Pispisa, Sosta, Trungadi e Candela.
@@ -31,7 +32,11 @@
 - id: pispisa
   name: Gaetano Pio Pispisa
   role: PhD Student
-  keywords: Robot swarms · Edge machine learning · Autonomous systems
+  topics:
+    - embodied-ai
+    - llm-robotics
+    - reinforcement-learning
+    - autonomous-driving
   photo: /images/people/Pispisa.png
   photo_position: 75% top
   bio: >-
@@ -48,7 +53,11 @@
 - id: bucaria
   name: Vincenzo Alessio Bucaria
   role: PhD Student
-  keywords: FPGA virtualization · Software-defined vehicles · Security architectures
+  topics:
+    - fpga-reconfigurable
+    - distributed-virtualization
+    - riscv-open-hardware
+    - cloud-continuum
   photo: /images/people/Bucaria.png
   bio: >-
     Vincenzo Alessio Bucaria works on the virtualization of reconfigurable hardware,
@@ -65,7 +74,11 @@
 - id: fabiano
   name: Manuel Fabiano
   role: PhD Student
-  keywords: Industrial control security · Post-quantum cryptography · Decentralized identity
+  topics:
+    - reinforcement-learning
+    - machine-unlearning
+    - trustworthy-ml
+    - decentralized-identity
   photo: /images/people/Fabiano.png
   bio: >-
     Manuel Fabiano works on the security of industrial control systems, designed long
@@ -83,7 +96,11 @@
 - id: lombardo
   name: Giovanni Lombardo
   role: PhD Student
-  keywords: Automotive security · Distributed hypervisors · Hyperspectral machine learning
+  topics:
+    - zero-trust
+    - cps-security
+    - distributed-virtualization
+    - cloud-continuum
   photo: /images/people/Lombardo.png
   bio: >-
     Giovanni Lombardo's research follows two lines. One concerns the security and
@@ -102,7 +119,11 @@
 - id: sosta
   name: Domenico Sosta
   role: PhD Student
-  keywords: Reinforcement learning · Edge devices · Constrained hardware
+  topics:
+    - reinforcement-learning
+    - world-models
+    - embedded-ai
+    - zero-trust
   photo: /images/people/Sosta.jpg
   bio: >-
     Domenico Sosta works on reinforcement learning for devices that can barely
@@ -116,7 +137,10 @@
 - id: trungadi
   name: Francesco Trungadi
   role: Undergraduate Researcher
-  keywords: Legacy industrial protocols · Post-quantum cryptography · Decentralized identity
+  topics:
+    - cps-security
+    - decentralized-identity
+    - post-quantum
   photo: /images/people/Trungadi.jpg
   bio: >-
     Francesco Trungadi works on securing legacy industrial control systems. His
@@ -132,7 +156,10 @@
 - id: candela
   name: Marco Candela
   role: Undergraduate Researcher
-  keywords: Trusted execution environments · Embedded systems · Cyber-physical systems
+  topics:
+    - cps-security
+    - zero-trust
+    - tee
   photo: /images/people/Candela.jpg
   bio: >-
     Marco Candela works on trusted execution environments for embedded systems, as

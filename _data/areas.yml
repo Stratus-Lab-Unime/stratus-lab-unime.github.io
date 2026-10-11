@@ -2,6 +2,8 @@
 #
 # `key` è quello che compare in `areas:` dentro projects.yml e people.yml.
 # `label` è il nome lungo, quello delle pagine che presentano le aree.
+# I temi di ciascuna area non stanno qui: stanno in _data/topics.yml, che dice a
+# quali aree ciascun tema appartiene.
 # `tag` è la forma corta delle etichette sulle card dei progetti, dove lo spazio
 # è poco e il nome lungo manderebbe a capo ogni pillola.
 #
@@ -10,19 +12,48 @@
 # ancora scegliere, e usano i nomi degli insegnamenti che ha già visto.
 
 - key: iot
-  label_en: Embedded systems, IoT and cloud
-  label_it: Sistemi embedded, IoT e cloud
+  label_en: Embedded systems, IoT and Cloud
+  label_it: Sistemi embedded, IoT e Cloud
+  description_it: >-
+    Virtualizzazione distribuita su hardware che non nasce per essere condiviso, FPGA e
+    architetture aperte come RISC-V, inferenza che gira sul dispositivo invece che nel
+    centro dati, e continuità di esecuzione lungo dispositivo, edge e cloud, dove le
+    risorse non sono omogenee e la rete non è garantita.
+  description_en: >-
+    Distributed virtualization on hardware not built to be shared, FPGAs and open
+    architectures such as RISC-V, inference running on the device rather than in the
+    data centre, and continuity of execution across device, edge and cloud, where
+    resources are heterogeneous and the network is not guaranteed.
   tag_en: Embedded &amp; IoT
   tag_it: Embedded e IoT
 
 - key: security
   label_en: Cybersecurity
   label_it: Cybersecurity
+  description_it: >-
+    Architetture zero-trust e ambienti di esecuzione fidati su dispositivi che non hanno
+    margine di calcolo, crittografia post-quantistica e identità decentralizzata al
+    posto di un'autorità che la rilasci, e affidabilità dei modelli di apprendimento,
+    che sono a loro volta attaccabili.
+  description_en: >-
+    Zero-trust architectures and trusted execution environments on devices with no spare
+    computation, post-quantum cryptography and decentralized identity in place of an
+    authority that issues it, and the trustworthiness of learning models, which can
+    themselves be attacked.
   tag_en: Cybersecurity
   tag_it: Cybersecurity
 
 - key: ai
   label_en: Artificial intelligence
   label_it: Intelligenza artificiale
+  description_it: >-
+    Agenti che imparano per tentativi e modelli del mondo su cui pianificare, portati
+    dentro i vincoli di memoria ed energia di un dispositivo o di un robot. E il
+    problema inverso, l'unlearning: togliere a un modello già addestrato l'effetto di
+    dati che non dovevano entrarci.
+  description_en: >-
+    Agents that learn by trial and world models to plan on, brought within the memory
+    and energy budget of a device or a robot. And the opposite problem, unlearning:
+    removing from a trained model the effect of data that should not have gone in.
   tag_en: AI
   tag_it: IA
