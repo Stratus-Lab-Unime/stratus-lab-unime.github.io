@@ -313,3 +313,189 @@ a:hover,
   width: 2em;
   height: 2em;
 }
+
+/* Lo schema della pagina «Fare la tesi in STRATUS Lab»
+   Testo e colori stanno qui e non dentro l'SVG, così seguono il sito e si
+   cambiano in un posto solo.
+   ========================================================================== */
+.stack-diagram {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 2.4em 0 2em;
+  font-family: inherit;
+}
+
+.sd-kicker {
+  font-size: 13px;
+  letter-spacing: 2px;
+  fill: var(--muted);
+}
+
+.sd-axis {
+  stroke: var(--line);
+  stroke-width: 2;
+}
+
+.sd-axis-head {
+  fill: var(--line);
+}
+
+.sd-layer {
+  fill: var(--surface);
+  stroke: var(--line);
+  stroke-width: 1;
+}
+
+.sd-edge {
+  fill: var(--accent);
+}
+
+.sd-layer-name {
+  font-size: 17px;
+  font-weight: 700;
+  fill: var(--ink);
+}
+
+.sd-layer-ex {
+  font-size: 13.5px;
+  fill: var(--muted);
+}
+
+.sd-link {
+  stroke: var(--line);
+  stroke-width: 2;
+}
+
+.sd-link-head {
+  fill: var(--line);
+}
+
+.sd-card {
+  fill: var(--surface);
+  stroke: var(--line);
+  stroke-width: 1;
+}
+
+.sd-cap-0 { fill: #01579B; }
+.sd-cap-1 { fill: var(--accent); }
+.sd-cap-2 { fill: var(--accent-bright); }
+
+.sd-verb {
+  font-size: 19px;
+  font-weight: 700;
+  fill: var(--ink);
+}
+
+.sd-area {
+  font-size: 13.5px;
+  fill: var(--accent);
+}
+
+.sd-foot {
+  font-size: 13.5px;
+  fill: var(--muted);
+  font-style: italic;
+}
+
+/* «Fare la tesi in STRATUS Lab»
+   Pagina persuasiva, non informativa: niente riquadri richiudibili, tutto
+   aperto e lungo, perché chi arriva qui deve scorrere e lasciarsi convincere.
+   ========================================================================== */
+.area {
+  margin: 2.4em 0;
+}
+
+.area h2 {
+  margin: 0 0 0.7em;
+  font-size: 1.35em;
+  line-height: 1.2;
+}
+
+/* La riga che segue il titolo dell'area: dice in una frase a cosa serve. */
+.area-lead {
+  font-size: 1.05em;
+  line-height: 1.5;
+  color: var(--accent);
+  margin: 0 0 0.8em;
+  max-width: 44em;
+}
+
+.area-text {
+  font-size: 1.02em;
+  line-height: 1.7;
+  color: var(--body-text);
+  margin: 0 0 1em;
+  max-width: 44em;
+}
+
+.area h3 {
+  margin: 1.8em 0 0.9em;
+  font-size: 0.85em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--muted);
+}
+
+/* I temi aperti: quelli su cui si lavora adesso, non i titoli dei progetti.
+   Restano in inglese perché sono i termini con cui poi si cercano i paper. */
+.temi {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.4em;
+}
+
+.temi li {
+  font-size: 0.85em;
+  color: var(--accent);
+  background: var(--accent-soft);
+  border-radius: 20px;
+  padding: 0.3em 0.9em;
+}
+
+.faces {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.4em;
+}
+
+.face {
+  display: block;
+  width: 92px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.face img {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--line);
+  transition: border-color 0.2s;
+}
+
+.face:hover img {
+  border-color: var(--accent);
+}
+
+.face span {
+  display: block;
+  margin-top: 0.5em;
+  font-size: 0.78em;
+  line-height: 1.3;
+  color: var(--body-text);
+}
+
+.area--door {
+  background: var(--accent-soft);
+  border-radius: var(--radius);
+  padding: 1.6em 1.8em;
+}
+
+.area--door h2 {
+  font-size: 1.4em;
+}

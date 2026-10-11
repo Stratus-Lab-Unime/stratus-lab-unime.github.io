@@ -1,0 +1,68 @@
+{%- comment -%}
+NON IN USO. La pagina delle tesi non lo include piu`: la struttura e` passata
+alle quattro righe dell'acronimo e il disegno, che ne mostrava tre, e` rimasto
+fuori. Resta qui perche` va rifatto, non buttato.
+
+Lo schema della pagina «Fare la tesi in STRATUS Lab»: i quattro livelli del
+sistema e i tre modi di lavorarci.
+
+Il Cloud sta in alto e il dispositivo in basso, come si disegna di solito.
+
+Disegnato in SVG invece che fotografato perché scala senza sfocarsi e pesa
+pochi kilobyte. I colori stanno nella scala dell'azzurro di stratus.css: il
+sito usa un solo colore fuori da quella scala, il rosso degli avvisi, e questo
+non è un avviso. Testo e colori sono in stratus.css, non qui dentro.
+
+Le etichette cambiano con page.lang.
+{%- endcomment -%}
+{%- assign it = false -%}{%- if page.lang == 'it' -%}{%- assign it = true -%}{%- endif -%}
+
+{%- if it -%}
+  {%- assign nomi = "Cloud,Rete,Edge,Dispositivo" | split: "," -%}
+  {%- assign esempi = "virtualizzazione, orchestrazione, servizi|protocolli, comunicazioni, federazione|single board computer, GPU, gateway, inferenza sul posto|microcontrollori, acceleratori (FPGA, ASIC), sensori e attuatori" | split: "|" -%}
+  {%- assign verbi = "Costruire,Proteggere,Rendere intelligente" | split: "," -%}
+  {%- assign riga1 = "Sistemi embedded,Cybersecurity,Intelligenza" | split: "," -%}
+  {%- assign riga2 = "IoT e Cloud| |artificiale" | split: "|" -%}
+{%- else -%}
+  {%- assign nomi = "Cloud,Network,Edge,Device" | split: "," -%}
+  {%- assign esempi = "virtualization, orchestration, services|protocols, communications, federation|single board computers, GPUs, gateways, on-the-spot inference|microcontrollers, accelerators (FPGAs, ASICs), sensors and actuators" | split: "|" -%}
+  {%- assign verbi = "Build it,Make it secure,Make it intelligent" | split: "," -%}
+  {%- assign riga1 = "Embedded systems,Cybersecurity,Artificial" | split: "," -%}
+  {%- assign riga2 = "IoT and Cloud| |intelligence" | split: "|" -%}
+{%- endif -%}
+
+<svg class="stack-diagram" viewBox="0 0 760 452" role="img"
+     aria-labelledby="stack-title" xmlns="http://www.w3.org/2000/svg">
+  <title id="stack-title">{% if it %}I quattro livelli del sistema e i tre modi di lavorarci{% else %}The four layers of the system and the three ways of working on it{% endif %}</title>
+
+  {%- for nome in nomi -%}
+    {%- assign y = forloop.index0 | times: 66 | plus: 8 -%}
+    {%- assign yn = y | plus: 25 -%}
+    {%- assign ye = y | plus: 45 -%}
+    <rect class="sd-layer" x="40" y="{{ y }}" width="680" height="58" rx="8"/>
+    <rect class="sd-edge" x="40" y="{{ y }}" width="4" height="58"/>
+    <text class="sd-layer-name" x="72" y="{{ yn }}">{{ nome }}</text>
+    <text class="sd-layer-ex" x="72" y="{{ ye }}">{{ esempi[forloop.index0] }}</text>
+  {%- endfor -%}
+
+  {%- comment -%} i tre modi risalgono verso il sistema: agiscono su di esso {%- endcomment -%}
+  {%- for i in (0..2) -%}
+    {%- assign x = i | times: 240 | plus: 140 -%}
+    {%- assign xl = x | minus: 5 -%}
+    {%- assign xr = x | plus: 5 -%}
+    <line class="sd-link" x1="{{ x }}" y1="340" x2="{{ x }}" y2="294"/>
+    <path class="sd-link-head" d="M {{ xl }} 302 L {{ x }} 290 L {{ xr }} 302 Z"/>
+  {%- endfor -%}
+
+  {%- for verbo in verbi -%}
+    {%- assign i = forloop.index0 -%}
+    {%- assign x = i | times: 240 | plus: 40 -%}
+    {%- assign xt = x | plus: 100 -%}
+    <rect class="sd-card" x="{{ x }}" y="340" width="200" height="96" rx="8"/>
+    <rect class="sd-cap-{{ i }}" x="{{ x }}" y="340" width="200" height="4"/>
+    <text class="sd-verb" x="{{ xt }}" y="375" text-anchor="middle">{{ verbo }}</text>
+    <text class="sd-area" x="{{ xt }}" y="400" text-anchor="middle">{{ riga1[i] }}</text>
+    {%- assign seconda = riga2[i] | strip -%}
+    {%- if seconda != "" -%}<text class="sd-area" x="{{ xt }}" y="419" text-anchor="middle">{{ seconda }}</text>{%- endif -%}
+  {%- endfor -%}
+</svg>

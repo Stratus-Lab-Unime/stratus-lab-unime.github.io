@@ -11,9 +11,9 @@ Teaching, thesis supervision and internships with Prof. Francesco Longo. Questa 
   <p>Every course, current and past, with credits, hours and degree programme. Those currently taught have a page of their own, with the syllabus, the material, the exam and the past papers.</p>
 </div>
 
-<div class="audience">
-  <h2>If you would like to do your thesis or internship with me</h2>
-  <p class="wip">Under construction.</p>
+<div class="audience audience--link">
+  <h2><a href="{{ '/teaching/thesis-topics/' | relative_url }}">If you would like to do your thesis or internship with me</a></h2>
+  <p>The three areas the lab works on, the topics that are open right now, the people you would work with, and how to ask.</p>
 </div>
 
 <div class="audience audience--link">

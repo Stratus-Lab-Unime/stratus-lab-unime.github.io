@@ -1,8 +1,8 @@
 # Progetti in cui Francesco Longo ha un ruolo formale di responsabilità.
 # `status: current` li mette fra quelli attivi, `past` fra i conclusi.
-#
-# `areas` usa le tre chiavi di _data/areas.yml: sono le etichette tematiche sulle
-# card. Un progetto puo` averne piu` di una, perche` i temi si toccano davvero.
+# `areas` usa le chiavi di _data/areas.yml, cioe` le quattro righe dell'acronimo:
+# sono le etichette sulle card. Un progetto ne ha spesso piu` d'una, perche` un
+# progetto copre piu` filoni di un singolo tema di tesi.
 # L'ordine qui è quello mostrato in pagina, dal più recente.
 #
 # CONVENZIONE. Ogni voce è resa su quattro righe:
@@ -40,7 +40,7 @@
 # DEMETRA sono nomi propri affiancati a un titolo descrittivo.
 
 - id: quantas
-  areas: [iot, ai]
+  areas: [autonomous, ubiquitous]
   scope: "Activity 2.4, work package 2 &ldquo;AGRI BIO&rdquo;"
   project: "SYNERGIA"
   project_title: "Sistemi e Sensori per l'Agroalimentare Resiliente ed Energeticamente Sostenibile"
@@ -59,7 +59,7 @@
   partners: CNR-IMM (work package leader), SmartMe.IO, Federico II of Naples, Bari, Catania, Palermo, Pavia, Scuola Normale Superiore.
 
 - id: cyber21-2025
-  areas: [security, iot]
+  areas: [secure, trustless, ubiquitous]
   scope: "Research line 2.15"
   project: ""
   project_title: ""
@@ -78,7 +78,7 @@
   partners: CNR Institute for Advanced Energy Technologies "Nicola Giordano".
 
 - id: zed
-  areas: [iot, ai]
+  areas: [autonomous]
   scope: ""
   project: ""
   project_title: ""
@@ -97,7 +97,7 @@
   partners: ""
 
 - id: cyber21-2023
-  areas: [security, iot]
+  areas: [trustless, secure]
   scope: "Research line 2.10"
   project: ""
   project_title: ""
@@ -115,7 +115,7 @@
   partners: CNR Institute for Advanced Energy Technologies "Nicola Giordano".
 
 - id: demetra
-  areas: [ai, iot]
+  areas: [autonomous, ubiquitous]
   scope: ""
   project: ""
   project_title: ""
@@ -134,7 +134,7 @@
   partners: University of Pisa, CNR Institute of Information Science and Technologies "Alessandro Faedo".
 
 - id: airfactories
-  areas: [security, iot]
+  areas: [trustless, ubiquitous]
   scope: ""
   project: ""
   project_title: ""
@@ -152,7 +152,7 @@
   partners: ""
 
 - id: toolsmart
-  areas: [iot]
+  areas: [ubiquitous]
   scope: ""
   project: ""
   project_title: ""
@@ -170,7 +170,7 @@
   partners: City of Turin (lead), City of Messina, Padua, Lecce and Syracuse.
 
 - id: cloudwave
-  areas: [iot]
+  areas: [ubiquitous]
   scope: "Work packages 2.1 and 6.1"
   project: ""
   project_title: ""
@@ -188,7 +188,7 @@
   partners: IBM Haifa Research Lab, University of Duisburg-Essen, SAP, Intel.
 
 - id: visioncloud
-  areas: [iot]
+  areas: [ubiquitous]
   scope: ""
   project: ""
   project_title: ""

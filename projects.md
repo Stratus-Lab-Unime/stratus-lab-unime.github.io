@@ -155,7 +155,7 @@ Projects in which Francesco Longo holds, or has held, a formal position of scien
     <div class="project-tags">
       {%- for key in p.areas -%}
         {%- assign a = site.data.areas | where: "key", key | first -%}
-        <span class="project-tag">{{ a.tag_en }}</span>
+        <span class="project-tag">{{ a.tag }}</span>
       {%- endfor -%}
     </div>
     {%- endif %}
@@ -185,7 +185,7 @@ Projects in which Francesco Longo holds, or has held, a formal position of scien
     <div class="project-tags">
       {%- for key in p.areas -%}
         {%- assign a = site.data.areas | where: "key", key | first -%}
-        <span class="project-tag">{{ a.tag_en }}</span>
+        <span class="project-tag">{{ a.tag }}</span>
       {%- endfor -%}
     </div>
     {%- endif %}

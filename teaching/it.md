@@ -12,9 +12,9 @@ Corsi, tesi e tirocini con il Prof. Francesco Longo. This page is also available
   <p>Tutti i corsi, attuali e passati, con crediti, ore e corso di studi. Quelli attualmente insegnati hanno una pagina dedicata, con il programma, il materiale, le modalità d'esame e i testi delle prove già assegnate.</p>
 </div>
 
-<div class="audience">
-  <h2>Per chi vuole fare la tesi o il tirocinio</h2>
-  <p class="wip">In costruzione.</p>
+<div class="audience audience--link">
+  <h2><a href="{{ '/teaching/thesis-topics/it/' | relative_url }}">Per chi vuole fare la tesi o il tirocinio</a></h2>
+  <p>Le tre aree su cui il laboratorio lavora, i temi aperti adesso, le persone con cui lavoreresti e come si chiede.</p>
 </div>
 
 <div class="audience audience--link">
