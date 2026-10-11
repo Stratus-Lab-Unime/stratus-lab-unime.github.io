@@ -40,6 +40,25 @@ image:
   margin-bottom: 0.9em;
 }
 
+/* L'acronimo sciolto, subito sotto il nome del laboratorio.
+   Le lettere che lo compongono sono in colore: senza, la riga sembra un
+   sottotitolo qualunque e nessuno si accorge che STRATUS vuol dire questo.
+   Il selettore nomina .page-content perche' li' dentro i paragrafi sono
+   giustificati, e questo va centrato. */
+.page-content p.acronimo {
+  text-align: center;
+  margin: -0.4em 0 1.6em;
+  font-size: 1.02em;
+  line-height: 1.4;
+  color: var(--muted);
+  letter-spacing: 0.3px;
+}
+
+.page-content p.acronimo b {
+  color: var(--accent);
+  font-weight: 700;
+}
+
 .site-footer {
   margin-top: 10px !important;
   margin-bottom: 10px !important;
@@ -93,9 +112,13 @@ image:
 }
 </style>
 
-The **STRATUS Lab** — *Secure, TRustless, Autonomous Technologies for Ubiquitous Systems Laboratory* — is a research group at the Department of Engineering of the University of Messina, led by Prof. Francesco Longo.
+<p class="acronimo"><b>S</b>ecure, <b>TR</b>ustless, <b>A</b>utonomous <b>T</b>echnologies for <b>U</b>biquitous <b>S</b>ystems Laboratory</p>
 
-The group works where computing has left the data center: security and formal verification for industrial and automotive systems, trustless architectures built on self-sovereign identity and federated learning, autonomy for robots and vehicles under real-world constraints, and the virtualization and orchestration that hold the cloud-to-things continuum together. This work is carried out through national and international research projects, and through long-standing collaborations with leading industrial and academic partners in Italy, Europe and the United States.
+STRATUS Lab is a research group at the Department of Engineering of the University of Messina, led by Prof. Francesco Longo.
+
+Our research lies at the intersection of cybersecurity, artificial intelligence, autonomous systems, and ubiquitous computing. Organized around four complementary pillars — Secure, Trustless, Autonomous, and Ubiquitous — we investigate intelligent cyber-physical systems that can learn, act autonomously, and operate securely across heterogeneous computing environments, from embedded devices and intelligent machines to distributed cloud infrastructures.
+
+This work is carried out through national and international research projects, and through long-standing collaborations with leading industrial and academic partners in Italy, Europe and the United States.
 
 The lab supports two student teams: [Zancle E-Drive](https://www.zancle-edrive.it/), which builds a fully electric single-seater for Formula Student and races in RoboRacer, and the MetaGriPwn HackLab, which competes in CyberChallenge.IT and other cybersecurity competitions.
 
