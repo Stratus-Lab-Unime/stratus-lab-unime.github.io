@@ -126,9 +126,9 @@
     - zero-trust
   photo: /images/people/Sosta.jpg
   bio: >-
-    Domenico Sosta works on reinforcement learning for devices that can barely
-    afford it: bringing agents that learn from interaction onto hardware bound by
-    strict limits of memory, computation and power.
+    Domenico Sosta works on reinforcement learning for resource-constrained
+    embedded devices: bringing agents that learn from interaction onto hardware
+    bound by strict limits of memory, computation and power.
   links:
     github: https://github.com/Nico281102
     linkedin: https://www.linkedin.com/in/domenico-sosta-274aa3284
@@ -163,8 +163,8 @@
   photo: /images/people/Candela.jpg
   bio: >-
     Marco Candela works on trusted execution environments for embedded systems, as
-    a building block towards cyber-physical systems where no component has to be
-    trusted by default.
+    a building block for secure and verifiable execution in cyber-physical
+    systems.
   links:
     github: https://github.com/marcocandel9
     linkedin: https://www.linkedin.com/in/marcocandel9
