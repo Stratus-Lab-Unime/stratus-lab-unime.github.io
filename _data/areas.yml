@@ -25,15 +25,17 @@
   tagline_en: Making intelligent and cyber-physical systems safer, more resilient, and verifiable.
   tagline_it: Rendere i sistemi intelligenti e ciberfisici più sicuri, più resilienti e verificabili.
   description_en: >-
-    We investigate how to protect and verify systems that interact with the physical
-    world, from connected devices and critical infrastructures to intelligent software.
-    Our activities combine cybersecurity, advanced cryptography, and techniques for
-    improving the security and reliability of artificial intelligence.
+    Thesis activities may involve identifying vulnerabilities, developing security
+    mechanisms, and experimentally evaluating their effectiveness in connected and
+    cyber-physical systems. Students can also explore advanced cryptographic
+    techniques and methods for assessing the security and robustness of artificial
+    intelligence.
   description_it: >-
-    Studiamo come proteggere e verificare i sistemi che interagiscono con il mondo
-    fisico, dai dispositivi connessi alle infrastrutture critiche fino al software
-    intelligente. Le attività mettono insieme cybersecurity, crittografia avanzata e
-    tecniche per migliorare la sicurezza e l'affidabilità dell'intelligenza artificiale.
+    Le attività di tesi possono riguardare l'individuazione di vulnerabilità, lo
+    sviluppo di meccanismi di sicurezza e la valutazione sperimentale della loro
+    efficacia nei sistemi connessi e ciberfisici. Si possono anche esplorare tecniche
+    crittografiche avanzate e metodi per valutare la sicurezza e la robustezza
+    dell'intelligenza artificiale.
   research_en: >-
     As software increasingly interacts with the physical world, cybersecurity must
     protect not only information but also the integrity and behavior of entire systems.
@@ -48,15 +50,17 @@
   tagline_en: Building systems where trust is verified rather than assumed.
   tagline_it: Costruire sistemi in cui la fiducia si verifica invece di darla per scontata.
   description_en: >-
-    How can devices, applications, and services interact securely without relying on
-    implicit trust? We investigate decentralized architectures, digital identity, secure
-    and verifiable execution, and technologies that minimize trust dependencies in
-    distributed and cyber-physical systems.
+    Students may design and evaluate mechanisms for secure interactions between
+    distributed components, exploring decentralized identity, access control, and
+    verifiable execution. Activities can combine software prototyping, security
+    analysis, and experimental evaluation of architectures that minimize implicit
+    trust.
   description_it: >-
-    Come possono dispositivi, applicazioni e servizi interagire in sicurezza senza
-    appoggiarsi a una fiducia implicita? Studiamo architetture decentralizzate, identità
-    digitale, esecuzione sicura e verificabile, e tecnologie che riducono al minimo le
-    dipendenze di fiducia nei sistemi distribuiti e ciberfisici.
+    Si possono progettare e valutare meccanismi per l'interazione sicura fra
+    componenti distribuiti, esplorando identità decentralizzata, controllo degli
+    accessi ed esecuzione verificabile. Le attività possono combinare prototipazione
+    software, analisi di sicurezza e valutazione sperimentale di architetture che
+    riducono al minimo la fiducia implicita.
   research_en: >-
     Building dependable distributed systems requires moving beyond implicit assumptions
     of trust. We investigate architectures and mechanisms that minimize trust
@@ -71,15 +75,17 @@
   tagline_en: Enabling machines to perceive, learn, reason, and act in the physical world.
   tagline_it: Mettere le macchine in condizione di percepire, imparare, ragionare e agire nel mondo fisico.
   description_en: >-
-    We investigate how robots and autonomous vehicles can develop intelligent behaviors,
-    learn from experience, and adapt to complex environments. Our research explores
-    reinforcement learning, embodied AI, LLM-guided robotics, and emerging approaches
-    such as world models.
+    Thesis projects may involve developing, training, and evaluating intelligent
+    algorithms through simulation and experimentation with robotic and automotive
+    platforms. Students can explore reinforcement learning, embodied AI, LLMs, and
+    world models, addressing practical challenges in perception, decision-making, and
+    autonomous control.
   description_it: >-
-    Studiamo come robot e veicoli autonomi possano sviluppare comportamenti intelligenti,
-    imparare dall'esperienza e adattarsi ad ambienti complessi. La ricerca esplora il
-    reinforcement learning, l'embodied AI, la robotica guidata dagli LLM e approcci
-    emergenti come i world model.
+    I progetti di tesi possono riguardare lo sviluppo, l'addestramento e la
+    valutazione di algoritmi intelligenti, attraverso simulazione e sperimentazione su
+    piattaforme robotiche e automotive. Si possono esplorare reinforcement learning,
+    embodied AI, LLM e world model, affrontando problemi concreti di percezione,
+    decisione e controllo autonomo.
   research_en: >-
     We investigate how intelligent machines can perceive their environment, learn from
     experience, reason, and make decisions with increasing autonomy. Our research spans
@@ -94,15 +100,17 @@
   tagline_en: Extending computation from embedded devices to distributed and cloud infrastructures.
   tagline_it: Estendere il calcolo dai dispositivi embedded alle infrastrutture distribuite e cloud.
   description_en: >-
-    We investigate how heterogeneous computing resources can be virtualized, shared, and
-    orchestrated across the Compute Continuum. Our activities span embedded and
-    reconfigurable hardware, open computing architectures, distributed virtualization,
-    and cloud-connected systems.
+    Students may design and experimentally evaluate embedded software, reconfigurable
+    computing platforms, and mechanisms for sharing computational resources across
+    distributed systems. Activities can address virtualization, hardware acceleration,
+    and efficient resource management, from resource-constrained devices to cloud
+    infrastructures.
   description_it: >-
-    Studiamo come risorse di calcolo eterogenee possano essere virtualizzate, condivise e
-    orchestrate lungo il Compute Continuum. Le attività spaziano dall'hardware embedded e
-    riconfigurabile alle architetture di calcolo aperte, dalla virtualizzazione distribuita
-    ai sistemi connessi al cloud.
+    Si possono progettare e valutare sperimentalmente software embedded, piattaforme
+    di calcolo riconfigurabile e meccanismi per condividere risorse di calcolo fra
+    sistemi distribuiti. Le attività possono riguardare la virtualizzazione,
+    l'accelerazione hardware e la gestione efficiente delle risorse, dai dispositivi
+    con risorse limitate alle infrastrutture cloud.
   research_en: >-
     Computing is evolving into a pervasive continuum spanning embedded devices,
     intelligent edge systems, and cloud infrastructures. We investigate novel hardware and
