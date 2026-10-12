@@ -104,7 +104,7 @@ Courses taught by Francesco Longo at the Department of Engineering of the Univer
         {%- if c.since != "" %} &middot; since {{ c.since }}{% endif -%}
       </p>
       {%- if cp %}
-      <p class="course-more">{% if c.language == "Italian" %}Per maggiori informazioni{% else %}For more information{% endif %} &rarr;</p>
+      {% include course-more.html cp=cp %}
       {%- endif %}
     </div>
 {% endfor %}
@@ -126,7 +126,7 @@ Courses taught by Francesco Longo at the Department of Engineering of the Univer
         {{ c.hours }} hours &middot; taught in {{ c.language }} &middot; {{ c.since }}
       </p>
       {%- if cp %}
-      <p class="course-more">{% if c.language == "Italian" %}Per maggiori informazioni{% else %}For more information{% endif %} &rarr;</p>
+      {% include course-more.html cp=cp %}
       {%- endif %}
     </div>
 {% endfor %}

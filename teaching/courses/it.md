@@ -105,7 +105,7 @@ Corsi tenuti da Francesco Longo al Dipartimento di Ingegneria dell'Università d
         {%- if c.since != "" %} &middot; dal {{ c.since }}{% endif -%}
       </p>
       {%- if cp %}
-      <p class="course-more">{% if c.language == "Italian" %}Per maggiori informazioni{% else %}For more information{% endif %} &rarr;</p>
+      {% include course-more.html cp=cp %}
       {%- endif %}
     </div>
 {% endfor %}
@@ -127,7 +127,7 @@ Corsi tenuti da Francesco Longo al Dipartimento di Ingegneria dell'Università d
         {{ c.hours }} ore &middot; in {{ site.data.i18n.language[c.language] | default: c.language }} &middot; {{ c.since }}
       </p>
       {%- if cp %}
-      <p class="course-more">{% if c.language == "Italian" %}Per maggiori informazioni{% else %}For more information{% endif %} &rarr;</p>
+      {% include course-more.html cp=cp %}
       {%- endif %}
     </div>
 {% endfor %}
