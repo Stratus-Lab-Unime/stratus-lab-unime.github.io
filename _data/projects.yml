@@ -96,6 +96,27 @@
     electronic, software and commercial divisions.
   partners: ""
 
+- id: cloverleaf
+  areas: [secure, trustless, ubiquitous]
+  scope: ""
+  project: "SERICS"
+  project_title: "SEcurity and RIghts in the CyberSpace"
+  status: past
+  acronym: CLOVERLEAF
+  title: seCure edge-cLoud autOmotiVe cybER-physicaL systEm plAtForm
+  programme: PNRR M4C2 Investment 1.3 &mdash; cascade call of Spoke 7 &ldquo;Infrastructure Security&rdquo;, project area SCAR &mdash; Politecnico di Torino, DDG 1435/2024
+  period: 2024 &ndash; 2025
+  role: Principal Investigator
+  funding: "&euro;309,003"
+  description: >-
+    Vehicle control units are real-time and closed; the cloud is elastic and shared.
+    The project joins them, extending the Stack4Things middleware and the I/Ocloud
+    paradigm to the OT subsystems on board, so that misbehaviour can be detected and
+    analysed off the vehicle. Hardware encryption and trusted execution environments
+    protect what runs on the car, and distributed ledgers keep an auditable record of
+    what data leaves it.
+  partners: ""
+
 - id: cyber21-2023
   areas: [trustless, secure]
   scope: "Research line 2.10"
