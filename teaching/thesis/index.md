@@ -59,12 +59,14 @@ For students already writing their thesis with Prof. Francesco Longo at STRATUS 
     <li><a href="{{ '/teaching/thesis/tesi-triennale-modello.docx' | relative_url }}">Full template, Word</a></li>
     <li><a href="{{ '/teaching/thesis/tesi-triennale-modello-latex.zip' | relative_url }}">Full template, LaTeX</a></li>
     <li><a href="{{ '/teaching/thesis/tesi-triennale-frontespizio.docx' | relative_url }}">Title page only, Word</a></li>
+    <li><a href="{{ '/teaching/thesis/tesi-triennale-frontespizio-latex.zip' | relative_url }}">Title page only, LaTeX</a></li>
   </ul>
   <p><b>Master's thesis, in English</b></p>
   <ul>
     <li><a href="{{ '/teaching/thesis/masters-thesis-template.docx' | relative_url }}">Full template, Word</a></li>
     <li><a href="{{ '/teaching/thesis/masters-thesis-template-latex.zip' | relative_url }}">Full template, LaTeX</a></li>
     <li><a href="{{ '/teaching/thesis/masters-thesis-title-page.docx' | relative_url }}">Title page only, Word</a></li>
+    <li><a href="{{ '/teaching/thesis/masters-thesis-title-page-latex.zip' | relative_url }}">Title page only, LaTeX</a></li>
   </ul>
   <p>The two formats produce the same document, so the choice is only a matter of habit. For LaTeX, <a href="https://www.overleaf.com/">Overleaf</a> is recommended: the archive is uploaded with New Project &rarr; Upload Project and compiled with pdfLaTeX, with nothing to install.</p>
   <p>Artificial intelligence tools may be used to improve the form, the clarity and the correctness of the language, not to generate content, results or arguments that the student cannot explain and defend.</p>

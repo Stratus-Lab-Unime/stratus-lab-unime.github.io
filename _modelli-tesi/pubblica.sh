@@ -25,6 +25,13 @@ while read FRONTESPIZIO MODELLO CARTELLA; do
   rm -f "../teaching/thesis/$MODELLO-latex.zip"
   (cd "$CARTELLA" && zip -q "../../teaching/thesis/$MODELLO-latex.zip" \
       tesi.tex frontespizio.tex bibliografia.bib logo-unime.png grafico.png)
+
+  # Il solo frontespizio, in parallelo al .docx: e` lo stesso frontespizio.tex
+  # del modello completo, che compilato da solo si tira dietro il preambolo che
+  # gli serve. Un file unico, due usi: non ci sono due frontespizi da allineare.
+  rm -f "../teaching/thesis/$FRONTESPIZIO-latex.zip"
+  (cd "$CARTELLA" && zip -q "../../teaching/thesis/$FRONTESPIZIO-latex.zip" \
+      frontespizio.tex logo-unime.png)
 done < nomi.tmp
 
 rm -f nomi.tmp *.pdf *.docx

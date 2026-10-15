@@ -60,12 +60,14 @@ Per chi sta già facendo la tesi con il Prof. Francesco Longo in STRATUS Lab: la
     <li><a href="{{ '/teaching/thesis/tesi-triennale-modello.docx' | relative_url }}">Modello completo, Word</a></li>
     <li><a href="{{ '/teaching/thesis/tesi-triennale-modello-latex.zip' | relative_url }}">Modello completo, LaTeX</a></li>
     <li><a href="{{ '/teaching/thesis/tesi-triennale-frontespizio.docx' | relative_url }}">Solo il frontespizio, Word</a></li>
+    <li><a href="{{ '/teaching/thesis/tesi-triennale-frontespizio-latex.zip' | relative_url }}">Solo il frontespizio, LaTeX</a></li>
   </ul>
   <p><b>Tesi magistrale, in inglese</b></p>
   <ul>
     <li><a href="{{ '/teaching/thesis/masters-thesis-template.docx' | relative_url }}">Modello completo, Word</a></li>
     <li><a href="{{ '/teaching/thesis/masters-thesis-template-latex.zip' | relative_url }}">Modello completo, LaTeX</a></li>
     <li><a href="{{ '/teaching/thesis/masters-thesis-title-page.docx' | relative_url }}">Solo il frontespizio, Word</a></li>
+    <li><a href="{{ '/teaching/thesis/masters-thesis-title-page-latex.zip' | relative_url }}">Solo il frontespizio, LaTeX</a></li>
   </ul>
   <p>I due formati producono lo stesso documento, quindi la scelta è solo questione di abitudine. Per LaTeX si consiglia <a href="https://www.overleaf.com/">Overleaf</a>: l'archivio si carica con New Project &rarr; Upload Project e si compila con pdfLaTeX, senza installare niente.</p>
   <p>Gli strumenti di intelligenza artificiale si possono usare per migliorare la forma, la chiarezza e la correttezza della lingua, non per generare contenuti, risultati o argomentazioni che lo studente non sappia spiegare e difendere.</p>

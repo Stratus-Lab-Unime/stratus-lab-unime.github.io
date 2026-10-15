@@ -1,8 +1,40 @@
 % ---------------------------------------------------------------------------
-% Frontispiece. Compiling it on its own is useful per stamparlo e farlo firmare: il PDF
-% firmato e` uno dei file da caricare su Esse3 con la domanda di laurea.
-% Dentro la tesi non si compila da solo, viene incluso da tesi.tex.
+% Title page.
+%
+% The same file serves two purposes. When tesi.tex includes it, the block below
+% is skipped, because tesi.tex has already defined those commands. Compiled on
+% its own, it produces a one-page PDF with the title page alone: that is the one
+% to fill in, send in the chat and have the supervisor sign.
+%
+% The data are the same commands either way: if you compile the whole thesis you
+% fill them in in tesi.tex, if you compile this file alone you fill them in here.
 % ---------------------------------------------------------------------------
+\ifdefined\titolotesi\else
+  \documentclass[12pt,a4paper,oneside]{report}
+  \usepackage[T1]{fontenc}
+  \usepackage{mathptmx}
+  \usepackage[utf8]{inputenc}
+  \usepackage[english]{babel}
+  \usepackage[a4paper,margin=3cm]{geometry}
+  \usepackage{graphicx}
+  \usepackage{array}
+  \usepackage{setspace}
+  \onehalfspacing
+  \setlength{\parindent}{0pt}
+  \setlength{\parskip}{6pt}
+  \newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+  % --- TO BE FILLED IN, if you compile this file on its own ------------------
+  \newcommand{\corsodilaurea}{Master's Degree in \dotfill}
+  \newcommand{\titolotesi}{Title of the thesis}
+  \newcommand{\candidato}{Name Surname}
+  \newcommand{\relatore}{Prof. Francesco Longo}
+  \newcommand{\correlatore}{Prof. Name Surname}
+  \newcommand{\annoaccademico}{20\ldots/20\ldots}
+  % ---------------------------------------------------------------------------
+  \def\frontespiziodasolo{}
+  \begin{document}
+\fi
+
 \begin{titlepage}
   \centering
 
@@ -28,3 +60,4 @@
   {\bfseries ACADEMIC YEAR \annoaccademico}
 
 \end{titlepage}
+\ifdefined\frontespiziodasolo\end{document}\fi

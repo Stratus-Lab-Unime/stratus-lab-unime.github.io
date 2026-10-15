@@ -1,8 +1,39 @@
 % ---------------------------------------------------------------------------
-% Frontespizio. Compilarlo da solo serve per stamparlo e farlo firmare: il PDF
-% firmato e` uno dei file da caricare su Esse3 con la domanda di laurea.
-% Dentro la tesi non si compila da solo, viene incluso da tesi.tex.
+% Frontespizio.
+%
+% Lo stesso file serve due volte. Incluso da tesi.tex, il blocco qui sotto non
+% viene eseguito, perche` quei comandi tesi.tex li ha gia` definiti. Compilato
+% da solo, produce un PDF di una pagina con il solo frontespizio: e` quello da
+% riempire, mandare in chat e far firmare al relatore.
+%
+% I dati sono gli stessi cinque comandi in tutti e due i casi: se compili la
+% tesi intera li riempi in tesi.tex, se compili solo questo file li riempi qui.
 % ---------------------------------------------------------------------------
+\ifdefined\titolotesi\else
+  \documentclass[12pt,a4paper,oneside]{report}
+  \usepackage[T1]{fontenc}
+  \usepackage{mathptmx}
+  \usepackage[utf8]{inputenc}
+  \usepackage[italian]{babel}
+  \usepackage[a4paper,margin=3cm]{geometry}
+  \usepackage{graphicx}
+  \usepackage{array}
+  \usepackage{setspace}
+  \onehalfspacing
+  \setlength{\parindent}{0pt}
+  \setlength{\parskip}{6pt}
+  \newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+  % --- DA RIEMPIRE, se compili questo file da solo ---------------------------
+  \newcommand{\corsodilaurea}{Corso di Laurea in \dotfill}
+  \newcommand{\titolotesi}{Titolo della tesi}
+  \newcommand{\candidato}{Nome Cognome}
+  \newcommand{\relatore}{Chiar.mo Prof. Francesco Longo}
+  \newcommand{\annoaccademico}{20\ldots/20\ldots}
+  % ---------------------------------------------------------------------------
+  \def\frontespiziodasolo{}
+  \begin{document}
+\fi
+
 \begin{titlepage}
   \centering
 
@@ -26,3 +57,4 @@
   {\bfseries ANNO ACCADEMICO \annoaccademico}
 
 \end{titlepage}
+\ifdefined\frontespiziodasolo\end{document}\fi
