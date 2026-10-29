@@ -65,6 +65,7 @@ course_id: fondamenti-informatica-biomedica
   <p>La prova consiste in una serie di problemi da risolvere progettando e implementando in C dei semplici algoritmi. Dura due ore e si svolge al calcolatore.</p>
   <p>Gli esercizi sono sei, ognuno in un file <code>.c</code> a sé. Ogni file contiene il testo del problema, un esempio con i dati in ingresso e il risultato atteso, e lo scheletro del programma già scritto: le direttive, il <code>main</code> e a volte le variabili con il loro commento. Si completa solo la parte delimitata dai commenti che la segnalano; il resto del codice non va modificato. I file si scaricano dall'e-learning all'inizio della prova e vanno ricaricati lì alla fine.</p>
   <p>Gli argomenti seguono l'ordine del programma: selezione e cicli, cicli con array, array di strutture, e poi le funzioni, con il passaggio per valore, il passaggio di un array e il passaggio per riferimento.</p>
+  <p>Il voto della prova dipende da quanti dei sei esercizi vengono risolti e dalla qualità delle soluzioni. La prova è superata con almeno 18.</p>
   <p>Per esercitarsi ci sono le <a href="{{ c.links.archive_2 }}">prove e le esercitazioni assegnate in passato</a>.</p>
   <p>Per tutto il resto valgono le <a href="#prep-1">stesse regole della prima prova</a>: iscrizione, turni, prerequisiti tecnici, materiale consentito, divieti e misure compensative.</p>
 </details>
