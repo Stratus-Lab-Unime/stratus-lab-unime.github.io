@@ -41,13 +41,13 @@
 
 - id: quantas
   areas: [autonomous, ubiquitous]
-  scope: "Activity 2.4, work package 2 &ldquo;AGRI BIO&rdquo;"
+  scope: "Activity 2.4, work package 2"
   project: "SYNERGIA"
   project_title: "Sistemi e Sensori per l'Agroalimentare Resiliente ed Energeticamente Sostenibile"
   status: current
   acronym: AES-PLANT
   title: Autonomous embedded system for offline inference of plant nutritional status from VIS/NIR spectroscopy
-  programme: MUR, Programma Nazionale Ricerca e Innovazione (PN RIC) 2021&ndash;2027 &mdash; D.D. 307/2025
+  programme: MUR, Programma Nazionale &ldquo;Ricerca, Innovazione e Competitività per la transizione verde e digitale&rdquo; 2021&ndash;2027, co-funded by the European Union (ERDF) &mdash; D.D. 307 of 18/03/2025, Action 1.1.2
   period: 2026 &ndash; 2028
   role: Scientific lead of the activity
   funding: "&euro;55,000 for the activity"
